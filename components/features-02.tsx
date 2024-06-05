@@ -8,7 +8,7 @@ import Safeguard from '@/public/images/safeguard.png'
 export default function Features02() {
   return (
     <section>
-      <div className="py-12 md:py-20">
+      <div className="pt-5 pb-10 md:py-15">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           
           <div className="max-w-xs mx-auto sm:max-w-none grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-4 lg:gap-8">

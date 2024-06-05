@@ -44,7 +44,7 @@ export default function Why() {
                   <p className="text-sm text-slate-600 mb-4">{item.quote}</p>
                 </div>
                 <div className="mt-auto">
-                  <Image className="shrink-0" src={item.img} alt={item.name} width={200} />
+                  <Image className="shrink-0" src={item.img} alt={item.name} height={50} />
                 </div>
               </div>
             ))}

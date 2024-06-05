@@ -165,10 +165,10 @@
 .logo-row4,
 .logo-row5 {
   /* position: absolute; */
-  border-radius: var(--br-xs);
+  border-radius: 20px;
     background-color: var(--back-block);
     color: var(--base-white);
-    box-shadow: 0 4px 24px rgb(122 40 217 / 29%);
+    box-shadow: 0 4px 24px rgb(121 121 121 / 29%);
     height: 10em;
     border: 1px solid #2b2b2b;
     padding: 0px 23px 23px 23px;
@@ -190,13 +190,12 @@
 .logo-row3-1,
 .logo-row4-1,
 .logo-row5-1 {
-/* position: absolute; */
-border-radius: var(--br-xs);
-background-color: var(--back-block);
-color: var(--base-white);
-box-shadow: 0 4px 24px rgb(122 40 217 / 29%);
-height: 8.4rem;
-border: 1px solid #2b2b2b;
+    border-radius: 20px;
+    background-color: var(--back-block);
+    color: var(--base-white);
+    box-shadow: 0 4px 24px rgb(121 121 121 / 29%);
+    height: 8.4rem;
+    border: 1px solid #2b2b2b;
 }
 
 .logo-row2-1 {

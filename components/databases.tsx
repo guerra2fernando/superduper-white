@@ -60,12 +60,12 @@ const integrations = [
     { src: postgresml, name: 'PostgresML' },
 ];
 
-const DATABASES_PER_ROW = 5;
+const DATABASES_PER_ROW = 6;
 
 const DatabasesSec: React.FC = () => {
     return (
         <section className='bg-zinc-800 pb-20'>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20">
 
           {/* Section header */}

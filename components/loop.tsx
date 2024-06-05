@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Highlighter, { HighlighterItem } from './highlighter'
 
 import Loop2 from '@/public/images/loop.png'
 
@@ -20,17 +19,12 @@ export default function Loop() {
 
           <div className="max-w-3xl mx-auto">
             <div data-aos="fade-down">
-              <Highlighter className="group">
-                <HighlighterItem>
-                  <div className="relative h-full bg-slate-900 rounded-[inherit] z-20 overflow-hidden">
+                  <div className="relative h-full  z-20 overflow-hidden">
                     {/* Radial gradient */}
                     <div className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square" aria-hidden="true">
-                      <div className="absolute inset-0 translate-z-0 bg-purple-500 rounded-full blur-[120px]" />
                     </div>
                     <Image src={Loop2} width={768} height={400} alt="Feature 04" />
                   </div>
-                </HighlighterItem>
-              </Highlighter>
             </div>
           </div>
 
