@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Logo from './logo'
-import MobileMenu from './mobile-menu'
 
 export default function Header() {
   return (
@@ -65,7 +64,6 @@ export default function Header() {
             </li>
           </ul>
 
-          <MobileMenu />
 
         </div>
       </div>
