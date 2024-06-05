@@ -253,3 +253,18 @@ animation: slideToLeft2 12s linear infinite; /* Adjust duration and other proper
   text-align: center;
   font-size: 15px;
 }
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  display: flex;
+  width: 200%; /* Double the width for smooth scrolling */
+  animation: scroll 60s linear infinite;
+}
+
+.shadow-light {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

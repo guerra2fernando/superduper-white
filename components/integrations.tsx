@@ -20,7 +20,7 @@ const integrations = [
     { src: anthropic, name: 'Anthropic' },
     { src: huggingface, name: 'Hugging Face' },
     { src: openai, name: 'OpenAI' },
-    { src: googleBigQuery, name: 'Google BigQuery' },
+    { src: googleBigQuery, name: 'BigQuery' },
     { src: cohere, name: 'Cohere' },
     { src: langchain, name: 'LangChain' },
     { src: lancedb, name: 'LanceDB' },
@@ -33,40 +33,49 @@ const integrations = [
     { src: postgresml, name: 'PostgresML' },
 ];
 
-const INTEGRATIONS_PER_ROW = 5;
 
 const IntegrationsSec: React.FC = () => {
-    return (
-        <section className='bg-zinc-800 pb-20'>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-12 md:pt-20">
+  return (
+      <section className='bg-zinc-800 pb-20'>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
+              <div className="pt-12 md:pt-20">
 
-          {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            
-            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-200">Work with your favorite technologies and solutions</h2>
-            <p className="text-lg text-slate-400">Best-in-class support for your favorite AI frameworks, libraries, models and APIs. By nature compatible with anything Python.</p>
-          </div>
-            <div className="database-logos">
-                {integrations.map((integration, index) => (
-                  <div
-                    key={index}
-                    className={`logo-row${Math.floor(index / INTEGRATIONS_PER_ROW) + 1}`}
-                  >
-                    <Image
-                      className="database-logo"
-                      loading="lazy"
-                      src={integration.src}
-                      alt={`Logo of ${integration.name}`}
-                    />
-                    <p className="grow max-w-md text-sm text-zinc-500 text-database">{integration.name}</p>
+                  {/* Section header */}
+                  <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+                      <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-200">
+                          Instead of bringing your data to AI, bring your AI deployment to your data.
+                      </h2>
+                      <p className="text-lg text-slate-400">
+                          Superduper integrates with your existing databases, facilitating data transfer to AI models APIs and frameworks, ensuring that all steps of your AI workflows are contained in your databases end-to-end, instead of being spread across various places and systems and environments.
+                      </p>
                   </div>
-                ))}
-            </div>
-            </div>
-            </div>
-        </section>
-    );
+
+                  <div className="overflow-hidden relative">
+                      <div className="flex space-x-6 animate-scroll">
+                          {[...integrations, ...integrations].map((integrations, index) => (
+                              <div key={index} className="flex flex-col items-center min-w-[8rem] bg-transparent shadow-light border border-gray-700 p-4 mx-2 rounded-lg">
+                                  <Image
+                                      className="h-16 w-auto mb-2"
+                                      loading="lazy"
+                                      src={integrations.src}
+                                      alt={`Logo of ${integrations.name}`}
+                                  />
+                                  <p className="text-sm text-zinc-500">{integrations.name}</p>
+                              </div>
+                          ))}
+                      </div>
+                  </div>
+
+                  {/* Gradient for fading effect */}
+                  <div className="absolute top-0 bottom-0 left-0 right-0 pointer-events-none">
+                      <div className="absolute top-0 bottom-0 left-0 w-32 bg-gradient-to-r from-zinc-800 to-transparent"></div>
+                      <div className="absolute top-0 bottom-0 right-0 w-32 bg-gradient-to-l from-zinc-800 to-transparent"></div>
+                  </div>
+
+              </div>
+          </div>
+      </section>
+  );
 };
 
 export default IntegrationsSec;
