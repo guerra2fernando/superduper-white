@@ -14,6 +14,7 @@ import DatabasesSec from '@/components/databases'
 import Loop from '@/components/loop'
 import Why from '@/components/feat'
 import IntegrationsSec from '@/components/integrations'
+import MediaTabs from '@/components/mediatab'
 
 export default function Home() {
   return (
@@ -24,8 +25,8 @@ export default function Home() {
       <DatabasesSec />
       <Why />
       <IntegrationsSec />
-      <PricingTabs />
-      <Testimonials />
+      <Features01 />
+      <MediaTabs />
       <Cta />
     </>
   )

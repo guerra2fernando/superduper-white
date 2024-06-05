@@ -49,28 +49,26 @@ const listItems = [
     image: '/images/code-9.png',
     content: 'Easily define and work with custom data types.',
   },
-];
-
-const MediaTabs = () => {
+];const MediaTabs = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
     <div className="max-w-[1300px] w-4/5 mx-auto mt-20">
-      <div className="grid grid-cols-12 gap-4">
+      <div className="grid grid-cols-12 gap-2">  {/* Reduced gap between the tabs */}
         <div className="col-span-8 flex items-center">
           <img src={listItems[activeTab].image} alt="Media content" className="w-full h-auto" />
         </div>
         <div className="col-span-4 flex flex-col justify-center">
           {listItems.map((item, index) => (
-            <div key={index} className="mb-4">
+            <div key={index} className="mb-1"> {/* Reduced margin-bottom */}
               <button
-                className={`w-full px-4 py-2 mb-1 text-left font-medium text-slate-50 ${activeTab === index ? 'bg-blue-500' : 'bg-gray-800'}`}
+                className={`w-full px-4 py-2 mb-1 text-left font-medium ${activeTab === index ? 'text-zinc-200' : 'text-zinc-500'} border border-gray-200 rounded-lg ${activeTab === index ? 'bg-gray-600' : 'bg-gray-200'}`}
                 onClick={() => setActiveTab(index)}
               >
                 {item.title}
               </button>
               {activeTab === index && (
-                <div className="bg-gray-900 bg-opacity-75 p-4 text-sm text-slate-400">
+                <div className="pb-5 pt-2 pl-5 text-sm text-slate-400">
                   {item.content}
                 </div>
               )}
