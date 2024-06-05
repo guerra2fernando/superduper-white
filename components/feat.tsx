@@ -39,11 +39,17 @@ export default function Why() {
 
   return (
     <section className="relative">
+      
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      
         <div className="py-12 md:py-20">
+        <div className="max-w-3xl mx-auto text-center pb-12">
+            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4">Build, Deploy, Manage.</h2>
+            </div>
         
           {/* Grid */}
           <div className="grid lg:grid-cols-3 gap-4 sm:gap-6 max-w-xs mx-auto lg:max-w-none">
+            
             {items.map((item, index) => ( 
               <div key={index} className="relative flex flex-col justify-between p-5 h-full border border-transparent [background:linear-gradient(theme(colors.white),theme(colors.zinc.50))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] rounded-lg">
                 <div className="mb-4">

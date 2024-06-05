@@ -26,7 +26,7 @@ export default function Home() {
       <Why />
       <IntegrationsSec />
       <Features01 />
-      <MediaTabs />
+      <Features03 />
       <Cta />
     </>
   )
