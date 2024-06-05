@@ -43,11 +43,8 @@ const IntegrationsSec: React.FC = () => {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <div>
-              <div className="inline-flex font-medium bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-purple-200 pb-3">Integrations
-</div>
-            </div>
-            <h2 className="h2 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">Work with your favorite technologies and solutions</h2>
+            
+            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-200">Work with your favorite technologies and solutions</h2>
             <p className="text-lg text-slate-400">Best-in-class support for your favorite AI frameworks, libraries, models and APIs. By nature compatible with anything Python.</p>
           </div>
             <div className="database-logos">
