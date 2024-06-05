@@ -2,19 +2,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 import HeroImage from '@/public/images/hero-image.png'
 import Stats from '@/components/stats'
-import Illustration from '@/public/images/enterpriseGrid.svg'
 
 export default function Hero() {
   return (
     <section className="relative before:absolute before:inset-0 before:h-80 before:pointer-events-none before:bg-gradient-to-b before:from-zinc-100 before:-z-10">
       <div className="pt-32 pb-12 md:pt-40 md:pb-20">
         
-        {/* Illustration */}
-        <div className="absolute inset-0 -z-10 -mx-28 rounded-b-[3rem] pointer-events-none overflow-hidden" aria-hidden="true">
-          <div className="absolute left-1/2 -translate-x-1/2 bottom-0 -z-10">
-            <Image src={Illustration} className="max-w-none" width={2146} priority alt="Hero Illustration" />
-          </div>
-        </div>
         {/* Section content */}
         <div className="px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
