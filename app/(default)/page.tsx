@@ -15,6 +15,7 @@ import Loop from '@/components/loop'
 import Why from '@/components/feat'
 import IntegrationsSec from '@/components/integrations'
 import MediaTabs from '@/components/mediatab'
+import TestimonialsCarousel from '@/components/testimonials-carousel'
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <IntegrationsSec />
       <Features01 />
       <Features03 />
+      <TestimonialsCarousel />
       <Cta />
     </>
   )
