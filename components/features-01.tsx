@@ -32,7 +32,6 @@ export default function Features01() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl mx-auto text-center pb-12">
             <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4">Export and deploy your applications to production instantly</h2>
-            <p className="text-lg text-zinc-500">Using the Superduper application formalism you simply export your application including the configurations to JSON or YAML into human readible form. Not only can you share and reuse it withing your team but also deploy it without any infrastructure work. The workloads including inference and training will be distributed optimally on the available infrastructure - whether Superduper is running on-prem or your private or public cloud account.</p>
           </div>
           <div>
             {/* Tabs buttons */}
@@ -42,12 +41,12 @@ export default function Features01() {
                 onClick={(e) => { e.preventDefault(); setTab(1); }}
               >
                 <div className="flex items-center justify-between mb-1">
-                  <div className="font-inter-tight font-semibold text-zinc-900">1. Build an App</div>
+                  <div className="font-inter-tight font-semibold text-zinc-900">1. Build</div>
                   <svg className={`fill-zinc-400 shrink-0 ml-2 ${tab !== 1 ? 'hidden' : ''}`} xmlns="http://www.w3.org/2000/svg" width="10" height="10">
                     <path d="M8.667.186H2.675a.999.999 0 0 0 0 1.998h3.581L.971 7.469a.999.999 0 1 0 1.412 1.412l5.285-5.285v3.58a.999.999 0 1 0 1.998 0V1.186a.999.999 0 0 0-.999-.999Z" />
                   </svg>
                 </div>
-                <div className="text-sm text-zinc-500">Build an app in python, on jupyter or with any Web-UI kit</div>
+                <div className="text-sm text-zinc-500">Configure a custom AI application or workflow using your favorite IDE, like Jupyter or XYZ.</div>
               </button>
               <button
                 className={`text-left px-4 py-5 border border-transparent rounded ${tab !== 2 ? 'bg-zinc-100 opacity-60 hover:opacity-100 transition' : '[background:linear-gradient(theme(colors.white),theme(colors.white))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] shadow-sm rotate-1'}`}
@@ -59,7 +58,7 @@ export default function Features01() {
                     <path d="M8.667.186H2.675a.999.999 0 0 0 0 1.998h3.581L.971 7.469a.999.999 0 1 0 1.412 1.412l5.285-5.285v3.58a.999.999 0 1 0 1.998 0V1.186a.999.999 0 0 0-.999-.999Z" />
                   </svg>
                 </div>
-                <div className="text-sm text-zinc-500">Export your app through JSON or YAML</div>
+                <div className="text-sm text-zinc-500">Export your application into human readable form using the Superduper formalism.</div>
               </button>
               <button
                 className={`text-left px-4 py-5 border border-transparent rounded ${tab !== 3 ? 'bg-zinc-100 opacity-60 hover:opacity-100 transition' : '[background:linear-gradient(theme(colors.white),theme(colors.white))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] shadow-sm rotate-1'}`}
@@ -71,19 +70,19 @@ export default function Features01() {
                     <path d="M8.667.186H2.675a.999.999 0 0 0 0 1.998h3.581L.971 7.469a.999.999 0 1 0 1.412 1.412l5.285-5.285v3.58a.999.999 0 1 0 1.998 0V1.186a.999.999 0 0 0-.999-.999Z" />
                   </svg>
                 </div>
-                <div className="text-sm text-zinc-500">Let SuperDuper take care of the integrations, models, inference and training</div>
+                <div className="text-sm text-zinc-500">Upload your application to the Superduper environment and have it deployed without any infrastructure work. </div>
               </button >
               <button
                 className={`text-left px-4 py-5 border border-transparent rounded ${tab !== 4 ? 'bg-zinc-100 opacity-60 hover:opacity-100 transition' : '[background:linear-gradient(theme(colors.white),theme(colors.white))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] shadow-sm rotate-1'}`}
                 onClick={(e) => { e.preventDefault(); setTab(4); }}
               >
                 <div className="flex items-center justify-between mb-1">
-                  <div className="font-inter-tight font-semibold text-zinc-900">4. Done</div>
+                  <div className="font-inter-tight font-semibold text-zinc-900">4. Scale</div>
                   <svg className={`fill-zinc-400 shrink-0 ml-2 ${tab !== 4 ? 'hidden' : ''}`} xmlns="http://www.w3.org/2000/svg" width="10" height="10">
                     <path d="M8.667.186H2.675a.999.999 0 0 0 0 1.998h3.581L.971 7.469a.999.999 0 1 0 1.412 1.412l5.285-5.285v3.58a.999.999 0 1 0 1.998 0V1.186a.999.999 0 0 0-.999-.999Z" />
                   </svg>
                 </div>
-                <div className="text-sm text-zinc-500">You have different nodes machines running AI with your data</div>
+                <div className="text-sm text-zinc-500">Distribute the inference and training workloads on your infrastructure - whether on-prem, private or public cloud.</div>
               </button >
             </div>
             {/* Tabs items */}
