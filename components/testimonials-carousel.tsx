@@ -52,8 +52,8 @@ export default function TestimonialsCarousel() {
       <div className="pt-5 pb-10 md:py-15">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl mx-auto text-center pt-8 pb-12 md:pb-20">
-            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4">Jumpstart AI adoption with Superduper AI App Templates:</h2>
-            <p className="text-lg text-zinc-500">Check out our Preconfigured AI apps templates that include in-house models on different data science disciplines to be enabled with proprietary data.</p>
+            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4">Jumpstart AI adoption with Superduper AI App Templates: </h2>
+            <p className="text-lg text-zinc-500">Our enterprise platform comes with preconfigured AI App Templates, which enable you to easily implement use-case and business-logic configurations that meet your business logic and data requirements. The templates contain different model options for self-hosting as well as web user interfaces.</p>
           </div>
   
           <div className="relative before:absolute before:inset-0 before:-translate-x-full before:z-20 before:bg-gradient-to-l before:from-transparent before:to-white before:to-20% after:absolute after:inset-0 after:translate-x-full after:z-20 after:bg-gradient-to-r after:from-transparent after:to-white after:to-20%">
@@ -63,8 +63,8 @@ export default function TestimonialsCarousel() {
                   <article className="flex flex-col border border-transparent [background:linear-gradient(theme(colors.white),theme(colors.zinc.50))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] rounded-lg">
                     <div className="grow flex flex-col p-6">
                       <Image className="mb-3" src={CarouselImg01} width={56} height={56} alt="Icon 01" />
-                      <div className="font-bold text-lg text-zinc-900 mb-1">Solution 1</div>
-                      <p className="grow text-sm text-zinc-500 mb-3">Accurately retrieve mission-critical information from documents into your database for downstream business operations like accounting, analytics, and decision-making.</p>
+                      <div className="font-bold text-lg text-zinc-900 mb-1">Document Key-Value Extraction + RAG</div>
+                      <p className="grow text-sm text-zinc-500 mb-3">Accurately retrieve mission-critical information from your documents and store them in your database for downstream business operations like accounting, analytics, and decision-making.</p>
                       <div className="text-right">
                         <a className="text-sm font-medium text-zinc-700 hover:text-zinc-900 inline-flex items-center transition duration-150 ease-in-out group" href="#0">Learn More <span className="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span></a>
                       </div>
@@ -75,8 +75,8 @@ export default function TestimonialsCarousel() {
                   <article className="flex flex-col border border-transparent [background:linear-gradient(theme(colors.white),theme(colors.zinc.50))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] rounded-lg">
                     <div className="grow flex flex-col p-6">
                       <Image className="mb-3" src={CarouselImg02} width={56} height={56} alt="Icon 02" />
-                      <div className="font-bold text-lg text-zinc-900 mb-1">Solution 2</div>
-                      <p className="grow text-sm text-zinc-500 mb-3">Integrate and manage vector embedding models and APIs as well as vector search engines with your existing databases. This makes it super efficient to generate embeddings for your data and perform vector search without moving your data.</p>
+                      <div className="font-bold text-lg text-zinc-900 mb-1">In-Database RAG -multi-modal</div>
+                      <p className="grow text-sm text-zinc-500 mb-3">Configure custom RAG applications, such as AI chatbots, directly on your database.</p>
                       <div className="text-right">
                         <a className="text-sm font-medium text-zinc-700 hover:text-zinc-900 inline-flex items-center transition duration-150 ease-in-out group" href="#0">Learn More <span className="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span></a>
                       </div>
@@ -87,20 +87,8 @@ export default function TestimonialsCarousel() {
                   <article className="flex flex-col border border-transparent [background:linear-gradient(theme(colors.white),theme(colors.zinc.50))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] rounded-lg">
                     <div className="grow flex flex-col p-6">
                       <Image className="mb-3" src={CarouselImg03} width={56} height={56} alt="Icon 03" />
-                      <div className="font-bold text-lg text-zinc-900 mb-1">Solution 3</div>
-                      <p className="grow text-sm text-zinc-500 mb-3">Easily build generative AI RAG applications, such as AI chatbots, directly on your database.</p>
-                      <div className="text-right">
-                        <a className="text-sm font-medium text-zinc-700 hover:text-zinc-900 inline-flex items-center transition duration-150 ease-in-out group" href="#0">Learn More <span className="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span></a>
-                      </div>
-                    </div>
-                  </article>
-                </div>
-                <div className="swiper-slide h-auto group/slide">
-                  <article className="flex flex-col border border-transparent [background:linear-gradient(theme(colors.white),theme(colors.zinc.50))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] rounded-lg">
-                    <div className="grow flex flex-col p-6">
-                      <Image className="mb-3" src={CarouselImg04} width={56} height={56} alt="Icon 04" />
-                      <div className="font-bold text-lg text-zinc-900 mb-1">Solution 4</div>
-                      <p className="grow text-sm text-zinc-500 mb-3">You have different nodes.</p>
+                      <div className="font-bold text-lg text-zinc-900 mb-1">Vector Embedding Generation </div>
+                      <p className="grow text-sm text-zinc-500 mb-3">Integrate vector embedding models and APIs with your existing databases to generate embeddings for your data and perform vector search without moving your data. </p>
                       <div className="text-right">
                         <a className="text-sm font-medium text-zinc-700 hover:text-zinc-900 inline-flex items-center transition duration-150 ease-in-out group" href="#0">Learn More <span className="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span></a>
                       </div>

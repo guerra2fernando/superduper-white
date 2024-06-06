@@ -130,8 +130,6 @@ export default function Features03() {
                   </div>
                 </Transition>
               </div>
-              {/* Gear illustration */}
-              <Image className="absolute left-0 bottom-0 -translate-x-1/2 translate-y-1/3  max-lg:w-32" src={FeatureIllustration} alt="Features 02 illustration" width={173} height={167} aria-hidden="true" />
             </div>
 
           </div>

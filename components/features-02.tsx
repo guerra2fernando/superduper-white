@@ -28,7 +28,7 @@ export default function Features02() {
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-xs mx-auto sm:max-w-none grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-4 lg:gap-8">
-            <article className="flex flex-col border border-transparent [background:linear-gradient(theme(colors.white),theme(colors.zinc.50))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] rounded-lg">
+            <article className="flex flex-col border border-transparent ">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="25" strokeWidth="1.5" stroke="currentColor" className="size-6" style={{ color: '#D0342C' }}>
@@ -45,7 +45,7 @@ export default function Features02() {
                 </p>
               </div>
             </article>
-            <article className="flex flex-col border border-transparent [background:linear-gradient(theme(colors.white),theme(colors.zinc.50))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] rounded-lg">
+            <article className="flex flex-col border border-transparent ">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="25" strokeWidth="1.5" stroke="currentColor" className="size-6" style={{ color: '#45BE76' }}>
@@ -62,7 +62,7 @@ export default function Features02() {
                 </p>
               </div>
             </article>
-            <article className="flex flex-col border border-transparent [background:linear-gradient(theme(colors.white),theme(colors.zinc.50))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] rounded-lg">
+            <article className="flex flex-col border border-transparent">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="25" strokeWidth="1.5" stroke="currentColor" className="size-6" style={{ color: '#3073b7' }}>
