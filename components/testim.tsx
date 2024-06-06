@@ -9,7 +9,7 @@ import TestimonialImg06 from '@/public/images/testimonial-06.jpg'
 import TestimonialImg07 from '@/public/images/testimonial-07.jpg'
 import TestimonialImg08 from '@/public/images/testimonial-08.jpg'
 
-export default function Testimonials() {
+export default function UseCases() {
 
   const testimonials01 = [
     {
