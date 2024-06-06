@@ -266,5 +266,9 @@ animation: slideToLeft2 12s linear infinite; /* Adjust duration and other proper
 }
 
 .shadow-light {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 7px 5px rgb(0 0 0 / 20%);
+}
+
+.shadow-light2 {
+  box-shadow: 0px 3px 3px rgb(0 0 0 / 5%);
 }

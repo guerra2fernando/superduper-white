@@ -21,9 +21,9 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <DatabasesSec />
       <Features02 />
       <Loop />
-      <DatabasesSec />
       <Why />
       <IntegrationsSec />
       <Features01 />
