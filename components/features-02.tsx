@@ -31,34 +31,31 @@ export default function Features02() {
             <article className="flex flex-col border border-transparent ">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="25" strokeWidth="1.5" stroke="currentColor" className="size-6" style={{ color: '#D0342C' }}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="25" strokeWidth="1.5" stroke="currentColor" className="size-6" style={{ color: '#D0342C' }}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
                   </svg>
+                  
                   <h3 className="font-inter-tight font-semibold text-zinc-900">
                     Bring AI to your databases
                   </h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
-                  Eliminating data pipelines and moving data, minimizing
-                  engineering efforts, time to production, and computation
-                  resources.
+                Eliminate data pipelines and moving data, minimizing engineering efforts, time to production, and computation resources.
                 </p>
               </div>
             </article>
             <article className="flex flex-col border border-transparent ">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="25" strokeWidth="1.5" stroke="currentColor" className="size-6" style={{ color: '#45BE76' }}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="25" strokeWidth="1.5" stroke="currentColor" className="size-6" style={{ color: '#45BE76' }}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" />
                   </svg>
                   <h3 className="font-inter-tight font-semibold text-zinc-900">
                     Implement AI workflows
                   </h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
-                  With any open and closed source AI models and APIs, on any
-                  type of data, with any AI & Python framework, package, class
-                  or function.
+                in Integrate and combine any open and closed source AI models and APIs, on any type of data directly with your database.
                 </p>
               </div>
             </article>
@@ -73,9 +70,7 @@ export default function Features02() {
                   </h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
-                  And future-proof your AI stack by easily switching between
-                  APIs and models, including hosting and training on your own
-                  infrastructure.
+                Future-proof your AI stack by easily switching between APIs and models, including hosting and training on your own infrastructure. 
                 </p>
               </div>
             </article>
