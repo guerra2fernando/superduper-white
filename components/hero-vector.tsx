@@ -13,19 +13,16 @@ export default function HeroVector() {
           <div className="max-w-3xl mx-auto">
               <div className="text-center">
                 <h1 className="font-inter-tight text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900 pb-4">
-                Productionize AI on your existing data infrastructure and your data
+                Vector Search Embedding Generation
                 </h1>
                 <p className="text-lg text-zinc-500 mb-8">
-                Superduper is a platform for integrating AI models and workflows directly with and across major databases - for more flexible, secure and scalable enterprise AI solutions.
+                Integrate and manage vector embedding models and APIs as well as vector search engines with your existing databases. That makes it super efficient to generate embeddings for your data and perform vector search without moving your data. 
 
 
                 </p>
                 <div className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                   <div>
-                    <Link className="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow" href="/enterprise">Enterprise</Link>
-                  </div>
-                  <div>
-                    <a className="btn text-zinc-600 bg-white hover:text-zinc-900 w-full shadow" href="#0">Open Source on GitHub</a>
+                    <Link className="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow" href="/book-a-demo">Book a Demo</Link>
                   </div>
                 </div>
               </div>

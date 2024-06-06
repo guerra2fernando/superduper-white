@@ -13,10 +13,10 @@ export default function HeroInDatabase() {
           <div className="max-w-3xl mx-auto">
               <div className="text-center">
                 <h1 className="font-inter-tight text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900 pb-4">
-                Productionize AI on your existing data infrastructure and your data
+                In-Database RAG - Retrieval Augmented Generation
                 </h1>
                 <p className="text-lg text-zinc-500 mb-8">
-                Superduper is a platform for integrating AI models and workflows directly with and across major databases - for more flexible, secure and scalable enterprise AI solutions.
+                Easily build generative AI RAG applications, such as AI chatbots, directly on your database. 
 
 
                 </p>
