@@ -44,7 +44,7 @@ export default function Why() {
       
         <div className="py-12 md:py-20">
         <div className="max-w-3xl mx-auto text-center pb-12">
-            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4">Build, Deploy, Manage</h2>
+            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4">Build. Deploy. Manage.</h2>
             </div>
         
           {/* Grid */}

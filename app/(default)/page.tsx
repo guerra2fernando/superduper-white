@@ -24,11 +24,11 @@ export default function Home() {
       <DatabasesSec />
       <Features02 />
       <Loop />
+      <TestimonialsCarousel />
       <Why />
       <IntegrationsSec />
-      <Features01 />
       <Features03 />
-      <TestimonialsCarousel />
+      <Features01 />
       <Cta />
     </>
   )

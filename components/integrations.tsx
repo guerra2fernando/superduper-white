@@ -53,7 +53,7 @@ const IntegrationsSec: React.FC = () => {
         <div className="relative"> {/* Removed overflow-hidden */}
           <div className="flex space-x-6 animate-scroll">
             {[...integrations, ...integrations].map((integration, index) => (
-              <div key={index} className="flex flex-col items-center min-w-[8rem] bg-transparent shadow-light border border-gray-700 p-4 mx-2 rounded-lg">
+              <div key={index} className="flex flex-col items-center min-w-[8rem] [background:linear-gradient(#2E2E32,#2E2E32)_padding-box,linear-gradient(120deg,theme(colors.zinc.700),theme(colors.zinc.700/0),theme(colors.zinc.700))_border-box] p-4 mx-2 rounded-lg">
                 <Image
                   className="h-16 w-auto mb-2"
                   loading="lazy"
