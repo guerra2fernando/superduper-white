@@ -43,10 +43,10 @@ const IntegrationsSec: React.FC = () => {
                   {/* Section header */}
                   <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
                       <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-200">
-                          Instead of bringing your data to AI, bring your AI deployment to your data.
+                      Work with your favorite technologies and solutions.
                       </h2>
                       <p className="text-lg text-slate-400">
-                          Superduper integrates with your existing databases, facilitating data transfer to AI models APIs and frameworks, ensuring that all steps of your AI workflows are contained in your databases end-to-end, instead of being spread across various places and systems and environments.
+                      Best-in-class support for the latest AI frameworks, libraries, models and APIs. By nature compatible with anything Python.
                       </p>
                   </div>
 

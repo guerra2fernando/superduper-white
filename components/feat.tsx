@@ -54,7 +54,6 @@ export default function Why() {
               <div key={index} className="relative flex flex-col justify-between p-5 h-full border border-transparent [background:linear-gradient(theme(colors.white),theme(colors.zinc.50))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] rounded-lg">
                 <div className="mb-4">
                   <div className="flex items-center space-x-3 mb-4">
-                    <Image src={item.icon} className="max-w-none" width={25} priority alt={item.name} />
                     <div className="font-inter-tight font-semibold text-zinc-900 text-lg">{item.name}</div>
                   </div>
                   <p className="text-sm text-zinc-500 mb-4">{item.quote}</p>
