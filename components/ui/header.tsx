@@ -38,13 +38,13 @@ export default function Header() {
                 </ul>
               </li>
               <li>
-                <Link className="font-medium text-sm text-slate-600 hover:text-slate-800 mx-4 lg:mx-5 transition duration-150 ease-in-out" href="/pricing">Pricing</Link>
+                <Link className="font-medium text-sm text-slate-600 hover:text-slate-800  px-4 py-2  mx-4 lg:mx-5 transition duration-150 ease-in-out" href="/pricing">Pricing</Link>
               </li>
               <li>
-                <Link className="font-medium text-sm text-slate-600 hover:text-slate-800 mx-4 lg:mx-5 transition duration-150 ease-in-out" href="https://blog.superduperdb.com/">Blog</Link>
+                <Link className="font-medium text-sm text-slate-600 hover:text-slate-800  px-4 py-2  mx-4 lg:mx-5 transition duration-150 ease-in-out" href="https://blog.superduperdb.com/">Blog</Link>
               </li>
               <li>
-                <Link className="font-medium text-sm text-slate-600 hover:text-slate-800 mx-4 lg:mx-5 transition duration-150 ease-in-out" href="https://docs.superduperdb.com/">Docs</Link>
+                <Link className="font-medium text-sm text-slate-600 hover:text-slate-800  px-4 py-2  mx-4 lg:mx-5 transition duration-150 ease-in-out" href="https://docs.superduperdb.com/">Docs</Link>
               </li>
             </ul>
 
