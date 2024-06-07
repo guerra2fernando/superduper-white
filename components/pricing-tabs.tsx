@@ -28,7 +28,7 @@ export default function PricingTabs() {
       title: "Enterprise",
       price: "From $995 / month",
       description: "Streamlined cloud database experience on dedicated hardware",
-      button: "Get started",
+      button: "Contact us",
       features: [
         "Built for mission-critical use cases in the cloud",
         "Available on AWS, Azure, and GCP",
@@ -38,7 +38,7 @@ export default function PricingTabs() {
         "Automated, no downtime upgrades",
         "Daily and hourly backups"
       ],
-      link: "View pricing"
+      link: "Contact us"
     },
     {
       title: "Self-hosted",
@@ -54,7 +54,7 @@ export default function PricingTabs() {
         "Self-service, no downtime upgrades",
         "Self-service backups"
       ],
-      link: "Request pricing"
+      link: "Contact us"
     }
   ]
 

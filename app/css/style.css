@@ -265,6 +265,14 @@ animation: slideToLeft2 12s linear infinite; /* Adjust duration and other proper
   animation: scroll 60s linear infinite;
 }
 
+
+.mask-fade {
+  mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+  overflow: hidden;
+  position: relative;
+}
+
 .shadow-light {
   box-shadow: 0px 7px 5px rgb(0 0 0 / 20%);
 }

@@ -38,9 +38,6 @@ export default function Header() {
                 </ul>
               </li>
               <li>
-                <Link className="font-medium text-sm text-slate-600 hover:text-slate-800 mx-4 lg:mx-5 transition duration-150 ease-in-out" href="/enterprise">Enterprise</Link>
-              </li>
-              <li>
                 <Link className="font-medium text-sm text-slate-600 hover:text-slate-800 mx-4 lg:mx-5 transition duration-150 ease-in-out" href="/pricing">Pricing</Link>
               </li>
               <li>
@@ -56,7 +53,7 @@ export default function Header() {
           {/* Desktop sign in links */}
           <ul className="flex-1 flex justify-end items-center">
             <li className="ml-6">
-              <Link className="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow" href="/enterprise">Get Started</Link>
+              <Link className="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow" href="/contact">Get Started</Link>
             </li>
           </ul>
 

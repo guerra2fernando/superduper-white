@@ -38,9 +38,6 @@ export default function MobileMenu() {
             </ul>
           </li>
           <li>
-            <Link className="font-medium text-sm text-slate-300 hover:text-white transition duration-150 ease-in-out py-2" href="/enterprise">Enterprise</Link>
-          </li>
-          <li>
             <Link className="font-medium text-sm text-slate-300 hover:text-white transition duration-150 ease-in-out py-2" href="/pricing">Pricing</Link>
           </li>
           <li>
