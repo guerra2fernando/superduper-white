@@ -30,7 +30,6 @@ const integrations = [
     { src: scikitLearn, name: 'Scikit-Learn' },
     { src: weaviate, name: 'Weaviate' },
     { src: pytorch, name: 'PyTorch' },
-    { src: postgresml, name: 'PostgresML' },
 ];
 
 

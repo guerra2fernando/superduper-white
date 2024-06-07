@@ -20,20 +20,20 @@ export default function Why() {
     {
       img: Why01,
       icon: Houseicon,
-      name: 'Faster development of more robust AI apps',
-      quote: 'Implement even the most complex custom AI workflows on your database with a declarative interface and integrations with major AI frameworks, model hubs and APIs. Move fast across your data backends and AI components using our abstractions, building blocks and templates while still being able to drill down to any layer of customization, and producing high-quality code. Bring in any piece of Python to enhance your applications. Build your own reusable building blocks for future applications. ',
+      name: 'Faster development of more robust AI applications',
+      quote: 'Implement even the most complex custom AI workflows on your database with a declarative interface and integrations with major AI frameworks, model hubs and APIs. Use our abstractions, building blocks and templates and build your own, while still being able to drill down to any layer of customization. ',
     },
     {
       img: Why02,
       icon: Bolticon,
-      name: 'Streamlined state-of the art deployment ',
-      quote: 'Export your AI apps and workflows and deploy them with all needed components in minutes. A single scalable deployment including hosting your own models in house, training/fine-tuning, and streaming inference -  facilitating state-of-the art deployment and distributed compute technologies for maximum scalability and efficiency. No setup of repetitive infrastructure and setup of ETL/data pipelines with every new application.',
+      name: 'Secure deployment on your existing infrastructure',
+      quote: 'No setup of repetitive infrastructure and setup of ETL pipelines with every new application. Export your AI apps and workflows and deploy them with all needed components in minutes. A single scalable deployment including hosting your own models in house, fine-tuning, and streaming inference.',
     },
     {
       img: Why03,
       icon: Nodeicon,
-      name: 'The one platform for all enterprise AI',
-      quote: 'Stop switching between tools and environments when tackling different AI use-cases. Build your AI stack with a single, open platform on your own, existing infrastructure, turning your databases into your artifact store and metadata store. Implement any enterprise AI use-case and streamline your AI workflows, achieving maximum efficiency and truly own your AI. ',
+      name: 'One platform for all enterprise AI needs',
+      quote: 'Implement any enterprise AI use-case and streamline your AI workflows. Build your AI stack with a single, open platform on your own, existing infrastructure, turning your databases into your artifact store and metadata store. Stop switching between different deployments and environments.',
     },
   ]
 
