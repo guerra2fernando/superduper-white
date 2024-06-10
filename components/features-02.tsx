@@ -26,7 +26,7 @@ export default function Features02() {
                   </h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
-                Eliminate data pipelines and moving data, minimizing engineering efforts, time to production, and computation resources.
+                Implement AI workflows on any type of data directly with your existing databases, Eliminating data pipelines and moving data, ensuring production-readiness.  
                 </p>
               </div>
             </article>
@@ -41,8 +41,7 @@ export default function Features02() {
                   </h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
-                Integrate and combine any open and closed source AI models and APIs, on any type of data directly with your database.
-                </p>
+                Future-proof your AI stack by easily switching and combining any open and closed source models and APIs including upcoming models and providers.                </p>
               </div>
             </article>
             <article className="flex flex-col border border-transparent [background:linear-gradient(theme(colors.white),theme(colors.zinc.50))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box]  rounded-lg">

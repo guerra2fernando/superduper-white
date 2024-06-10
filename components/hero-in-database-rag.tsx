@@ -24,9 +24,6 @@ export default function HeroInDatabase() {
                   <div>
                     <Link className="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow" href="/contact">Schedule a Demo</Link>
                   </div>
-                  <div>
-                    <a className="btn text-zinc-600 bg-white hover:text-zinc-900 w-full shadow" href="#0">Open Source on GitHub</a>
-                  </div>
                 </div>
               </div>
           </div>

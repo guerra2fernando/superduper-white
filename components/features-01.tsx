@@ -37,7 +37,7 @@ export default function Features01() {
           </div>
           <div>
             {/* Tabs buttons */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-6">
               <button
                 className={`text-left px-4 py-5 border border-transparent rounded ${tab !== 1 ? 'bg-zinc-100 opacity-60 hover:opacity-100 transition' : '[background:linear-gradient(theme(colors.white),theme(colors.white))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] shadow-sm rotate-1'}`}
                 onClick={(e) => { e.preventDefault(); setTab(1); }}
@@ -79,8 +79,20 @@ export default function Features01() {
                 onClick={(e) => { e.preventDefault(); setTab(4); }}
               >
                 <div className="flex items-center justify-between mb-1">
-                  <div className="font-inter-tight font-semibold text-zinc-900">4. Reproduce & Adopt</div>
+                  <div className="font-inter-tight font-semibold text-zinc-900">4. Manage & Monitor</div>
                   <svg className={`fill-zinc-400 shrink-0 ml-2 ${tab !== 4 ? 'hidden' : ''}`} xmlns="http://www.w3.org/2000/svg" width="10" height="10">
+                    <path d="M8.667.186H2.675a.999.999 0 0 0 0 1.998h3.581L.971 7.469a.999.999 0 1 0 1.412 1.412l5.285-5.285v3.58a.999.999 0 1 0 1.998 0V1.186a.999.999 0 0 0-.999-.999Z" />
+                  </svg>
+                </div>
+                <div className="text-sm text-zinc-500">Scale inference and training workloads on your compute infrastructure and monitor performance.</div>
+              </button >
+              <button
+                className={`text-left px-4 py-5 border border-transparent rounded ${tab !== 5 ? 'bg-zinc-100 opacity-60 hover:opacity-100 transition' : '[background:linear-gradient(theme(colors.white),theme(colors.white))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] shadow-sm rotate-1'}`}
+                onClick={(e) => { e.preventDefault(); setTab(5); }}
+              >
+                <div className="flex items-center justify-between mb-1">
+                  <div className="font-inter-tight font-semibold text-zinc-900">5. Reproduce & Adopt</div>
+                  <svg className={`fill-zinc-400 shrink-0 ml-2 ${tab !== 5 ? 'hidden' : ''}`} xmlns="http://www.w3.org/2000/svg" width="10" height="10">
                     <path d="M8.667.186H2.675a.999.999 0 0 0 0 1.998h3.581L.971 7.469a.999.999 0 1 0 1.412 1.412l5.285-5.285v3.58a.999.999 0 1 0 1.998 0V1.186a.999.999 0 0 0-.999-.999Z" />
                   </svg>
                 </div>
@@ -144,6 +156,22 @@ export default function Features01() {
                 {/* Item 4 */}
                 <Transition
                   show={tab === 4}
+                  className="w-full text-center"
+                  enter="transition ease-in-out duration-700 transform order-first"
+                  enterFrom="opacity-0 -translate-y-4"
+                  enterTo="opacity-100 translate-y-0"
+                  leave="transition ease-in-out duration-300 transform absolute"
+                  leaveFrom="opacity-100 translate-y-0"
+                  leaveTo="opacity-0 translate-y-4"
+                  beforeEnter={() => heightFix()}
+                  unmount={false}                      
+                >
+                  <div className="inline-flex relative align-top">
+                    <Image className="rounded-t-lg border border-transparent [background:linear-gradient(theme(colors.white),theme(colors.white))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] box-content shadow-2xl" src={Doneimg} width={600} height={360} alt="Feature 04" />
+                  </div>
+                </Transition>
+                <Transition
+                  show={tab === 5}
                   className="w-full text-center"
                   enter="transition ease-in-out duration-700 transform order-first"
                   enterFrom="opacity-0 -translate-y-4"
