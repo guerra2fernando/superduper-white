@@ -73,24 +73,38 @@ const DatabasesSec: React.FC = () => {
             </div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
                 <div className="overflow-hidden relative mask-fade">
-                    <div className="flex space-x-6 animate-scroll">
-                        {[...databases, ...databases].map((database, index) => (
-                            <div key={index} className="flex flex-col items-center min-w-[8rem] bg-white shadow-light2 border border-gray-300 p-4 mx-2 rounded-lg">
-                                <Image
-                                    className="h-16 w-auto mb-2"
-                                    loading="lazy"
-                                    src={database.src}
-                                    alt={`Logo of ${database.name}`}
-                                />
-                                <p className="text-sm text-gray-700">{database.name}</p>
-                            </div>
-                        ))}
+                    <div className="flex flex-col space-y-6">
+                        <div className="flex space-x-6 animate-scroll-right">
+                            {[...databases, ...databases].map((database, index) => (
+                                <div key={index} className="flex flex-col items-center min-w-[8rem] bg-white shadow-light2 border border-gray-300 p-4 mx-2 rounded-lg">
+                                    <Image
+                                        className="h-16 w-auto mb-2"
+                                        loading="lazy"
+                                        src={database.src}
+                                        alt={`Logo of ${database.name}`}
+                                    />
+                                    <p className="text-sm text-gray-700">{database.name}</p>
+                                </div>
+                            ))}
+                        </div>
+                        <div className="flex space-x-6 animate-scroll-left">
+                            {[...databases, ...databases].map((database, index) => (
+                                <div key={index} className="flex flex-col items-center min-w-[8rem] bg-white shadow-light2 border border-gray-300 p-4 mx-2 rounded-lg">
+                                    <Image
+                                        className="h-16 w-auto mb-2"
+                                        loading="lazy"
+                                        src={database.src}
+                                        alt={`Logo of ${database.name}`}
+                                    />
+                                    <p className="text-sm text-gray-700">{database.name}</p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     );
 };
-
 
 export default DatabasesSec;

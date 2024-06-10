@@ -264,6 +264,40 @@ animation: slideToLeft2 12s linear infinite; /* Adjust duration and other proper
   width: 200%; /* Double the width for smooth scrolling */
   animation: scroll 60s linear infinite;
 }
+@keyframes scroll-right {
+  0% {
+      transform: translateX(-50%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-right {
+  animation: scroll-right 120s linear infinite;
+  
+  width: 200%; /* Double the width for smooth scrolling */
+}
+
+.animate-scroll-left {
+  animation: scroll-left 120s linear infinite;
+  
+  width: 200%; /* Double the width for smooth scrolling */
+}
+
+.mask-fade {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
 
 
 .mask-fade {
