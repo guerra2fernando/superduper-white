@@ -27,7 +27,7 @@ export default function Why() {
       img: Why02,
       icon: Bolticon,
       name: 'Secure deployment on your existing infrastructure',
-      quote: 'No setup of repetitive infrastructure and setup of ETL pipelines with every new application. Export your AI apps and workflows and deploy them with all needed components in minutes. A single scalable deployment including hosting your own models in house, fine-tuning, and streaming inference.',
+      quote: 'No setup of repetitive infrastructure and setup of ETL pipelines with every new application. Export your AI apps and workflows and deploy them with all needed components in minutes. A single scalable deployment including hosting your own models in-house, fine-tuning, and streaming inference.',
     },
     {
       img: Why03,

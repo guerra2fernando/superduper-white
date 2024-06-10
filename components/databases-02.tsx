@@ -40,7 +40,7 @@ const DatabasesSec2: React.FC = () => {
                             Instead of bringing your data to AI, bring your AI deployment to your data.
                         </h2>
                         <p className="text-lg text-slate-400">
-                            Superduper integrates with your existing databases, facilitating data transfer to AI models APIs and frameworks, ensuring that all steps of your AI workflows are contained in your databases end-to-end, instead of being spread across various places and systems and environments.
+                            Superduper integrates with your existing databases, facilitating data transfer to AI models, APIs and frameworks, ensuring that all steps of your AI workflows are contained in your databases end-to-end, instead of being spread across various places, systems and environments.
                         </p>
                     </div>
 

@@ -29,7 +29,7 @@ export default function Features02() {
                   </h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
-                Implement AI workflows on any type of data directly with your existing databases, Eliminating data pipelines and moving data, ensuring production-readiness.  
+                Implement AI workflows on any type of data directly with your existing databases, eliminating data pipelines and moving data, ensuring production-readiness.  
                 </p>
               </div>
             </article>
@@ -59,7 +59,7 @@ export default function Features02() {
                   </h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
-                Deploy SuperDuper, including your models, inference and training g on your own infrastructure: on-prem, on the edge, your private or public cloud accounts.                </p>
+                Deploy SuperDuper, including your models, inference and training on your own infrastructure: on-prem, on the edge, your private or public cloud accounts.                </p>
               </div>
             </article>
           </div>
