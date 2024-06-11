@@ -197,7 +197,7 @@ export default function TestimonialsCarousel() {
                     </div>
                   </article>
                 </div>
-                
+
                 <div className="swiper-slide h-auto group/slide">
                   <article className="flex flex-col border border-transparent [background:linear-gradient(#2E2E32,#2E2E32)_padding-box,linear-gradient(120deg,theme(colors.zinc.700),theme(colors.zinc.700/0),theme(colors.zinc.700))_border-box] rounded-lg min-h-[250px]">
                     <div className="grow flex flex-col p-6">
@@ -210,21 +210,23 @@ export default function TestimonialsCarousel() {
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke-width="1.5"
-                          stroke="#3073b7"
+                          className="size-6"
+                          stroke="#D0342C"
                           width="25"
                         >
                           <path
                             stroke-linecap="round"
                             stroke-linejoin="round"
-                            d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v16.5c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Zm3.75 11.625a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
+                            d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z"
                           />
                         </svg>
                       </div>
                       <div className="font-inter-tight font-semibold text-zinc-200 text-lg mb-1">
-                      Custom Workflows{" "}
+                        Custom Workflows{" "}
                       </div>
                       <p className="grow text-sm text-zinc-400 mb-3">
-                      Schedule a meeting If you are interested in a custom AI application or workflow that we haven’t covered yet.
+                        Schedule a meeting If you are interested in a custom AI
+                        application or workflow that we haven’t covered yet.
                       </p>
                       <div className="text-right">
                         <a

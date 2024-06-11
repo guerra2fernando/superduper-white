@@ -18,35 +18,11 @@ const databases = [
     { src: pandas, name: 'Pandas' },
     { src: s3, name: 'AWS S3' },
     { src: oracle, name: 'Oracle' },
-    { src: mongodb, name: 'MongoDB' },
     { src: sqlite, name: 'SQLite' },
     { src: postgresql, name: 'PostgreSQL' },
-    { src: mysql, name: 'MySQL' },
-    { src: snowflake, name: 'Snowflake' },
-    { src: duckdb, name: 'DuckDB' },
-    { src: impala, name: 'Impala' },
-    { src: clickhouse, name: 'ClickHouse' },
-    { src: trino, name: 'Trino' },
-    { src: pandas, name: 'Pandas' },
-    { src: s3, name: 'AWS S3' },
-    { src: oracle, name: 'Oracle' },
     { src: mongodb, name: 'MongoDB' },
-    { src: sqlite, name: 'SQLite' },
-    { src: postgresql, name: 'PostgreSQL' },
-    { src: mysql, name: 'MySQL' },
     { src: snowflake, name: 'Snowflake' },
-    { src: duckdb, name: 'DuckDB' },
-    { src: impala, name: 'Impala' },
-    { src: clickhouse, name: 'ClickHouse' },
-    { src: trino, name: 'Trino' },
-    { src: pandas, name: 'Pandas' },
-    { src: s3, name: 'AWS S3' },
-    { src: oracle, name: 'Oracle' },
-    { src: mongodb, name: 'MongoDB' },
-    { src: sqlite, name: 'SQLite' },
-    { src: postgresql, name: 'PostgreSQL' },
     { src: mysql, name: 'MySQL' },
-    { src: snowflake, name: 'Snowflake' },
     { src: duckdb, name: 'DuckDB' },
     { src: impala, name: 'Impala' },
     { src: clickhouse, name: 'ClickHouse' },
@@ -73,10 +49,28 @@ const DatabasesSec: React.FC = () => {
             </div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
                 <div className="overflow-hidden relative mask-fade">
-                    <div className="flex flex-col space-y-6">
-                        <div className="flex space-x-6 animate-scroll-right">
-                            {[...databases, ...databases].map((database, index) => (
-                                <div key={index} className="flex flex-col items-center min-w-[8rem] bg-white shadow-light2 border border-gray-300 p-4 mx-2 rounded-lg">
+                    <div className="flex space-x-6 animate-scroll items-center h-40">
+                        {[...databases, ...databases].map((database, index) => (
+                            (database.name === 'MongoDB' || database.name === 'Snowflake') ? (
+                                <div key={index} className="relative flex flex-col items-center justify-center min-w-[8rem] mx-2">
+                                    <div className="absolute top-0 left-0 right-0 flex justify-center bg-[#3073b7] text-white text-xs rounded-t-[10px] py-1" style={{ fontSize: '11px' }}>
+                                        Official Partners
+                                    </div>
+                                    <div className="flex flex-col items-center justify-center min-w-[8rem] p-4 mx-2 rounded-lg shadow-light2 border border-gray-300 bg-white mt-4 ">
+                                        <Image
+                                            className="h-16 w-auto mb-2"
+                                            loading="lazy"
+                                            src={database.src}
+                                            alt={`Logo of ${database.name}`}
+                                        />
+                                        <p className="text-sm text-gray-700">{database.name}</p>
+                                    </div>
+                                </div>
+                            ) : (
+                                <div 
+                                    key={index} 
+                                    className="flex flex-col items-center justify-center min-w-[8rem] p-4 mx-2 rounded-lg shadow-light2 border border-gray-300 bg-white"
+                                >
                                     <Image
                                         className="h-16 w-auto mb-2"
                                         loading="lazy"
@@ -85,21 +79,8 @@ const DatabasesSec: React.FC = () => {
                                     />
                                     <p className="text-sm text-gray-700">{database.name}</p>
                                 </div>
-                            ))}
-                        </div>
-                        <div className="flex space-x-6 animate-scroll-left">
-                            {[...databases, ...databases].map((database, index) => (
-                                <div key={index} className="flex flex-col items-center min-w-[8rem] bg-white shadow-light2 border border-gray-300 p-4 mx-2 rounded-lg">
-                                    <Image
-                                        className="h-16 w-auto mb-2"
-                                        loading="lazy"
-                                        src={database.src}
-                                        alt={`Logo of ${database.name}`}
-                                    />
-                                    <p className="text-sm text-gray-700">{database.name}</p>
-                                </div>
-                            ))}
-                        </div>
+                            )
+                        ))}
                     </div>
                 </div>
             </div>
