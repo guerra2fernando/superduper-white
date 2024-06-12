@@ -1,60 +1,60 @@
 'use client'
 import { 
-  BriefcaseIcon, 
-  ClipboardDocumentCheckIcon, 
-  UserCircleIcon, 
-  DocumentIcon, 
-  CurrencyDollarIcon, 
-  TruckIcon, 
+  AdjustmentsHorizontalIcon,
+  RocketLaunchIcon,
+  ShieldCheckIcon,
   LifebuoyIcon,
-  SparklesIcon 
+  SparklesIcon,
+  MagnifyingGlassCircleIcon,
+  BookOpenIcon,
+  PuzzlePieceIcon
 } from '@heroicons/react/24/outline'
 
-export default function UseCases() {
+export default function UseCasesVector() {
 
   const useCases01 = [
     {
-      icon: <BriefcaseIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'HR',
-      content: 'Employment contracts: salary, termination date, probation period, non-compete clause, personal details',
+      icon: <AdjustmentsHorizontalIcon className="h-8 w-8 text-zinc-300" />,
+      category: 'Integrate',
+      content: 'Integrate and manage the latest open-source embedding models and API providers for different applications side-by-side.',
     },
     {
-      icon: <CurrencyDollarIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Revenue Management',
-      content: 'Purchase orders: line items, quantity, price, customer name, payment terms, due dates',
+      icon: <RocketLaunchIcon className="h-8 w-8 text-zinc-300" />,
+      category: 'Automate',
+      content: 'Forget building and maintaining data and embedding pipelines and enjoy streaming inference, so that new incoming data gets vectorized immediately and automatically.',
     },
     {
-      icon: <UserCircleIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'CRM',
-      content: 'Registration forms: personal information, purchase history, segment information.',
+      icon: <ShieldCheckIcon className="h-8 w-8 text-zinc-300" />,
+      category: 'Safeguard',
+      content: 'Safeguard your data by self-hosting your own models. Scale inference flexibly to accommodate large data.',
     },
     {
-      icon: <DocumentIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Legal',
-      content: 'Contracts: parties involved, effective dates, terms and conditions, regulatory requirements, confidentiality clauses',
+      icon: <LifebuoyIcon className="h-8 w-8 text-zinc-300" />,
+      category: 'Scale',
+      content: 'Scale inference flexibly to accommodate large data.',
     },
   ]
 
   const useCases02 = [
     {
-      icon: <ClipboardDocumentCheckIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Finance',
-      content: 'Financial statements: Extract revenue, expenses, profit margins, asset details.',
-    },
-    {
-      icon: <TruckIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Supply Chain',
-      content: 'Shipping documents: tracking numbers, delivery dates, shipment contents, carrier details',
-    },
-    {
-      icon: <LifebuoyIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Technical Support',
-      content: 'Service agreements: Extract service levels, support hours, escalation procedures, contract duration, troubleshooting steps, maintenance schedules',
-    },
-    {
       icon: <SparklesIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Custom',
-      content: 'Special industry, domain and use-case specific documents. Book a demo to learn more!',
+      category: 'Fine-tune',
+      content: 'Fine-tune your embedding models for maximum performance, whether from open or closed source.',
+    },
+    {
+      icon: <MagnifyingGlassCircleIcon className="h-8 w-8 text-zinc-300" />,
+      category: 'Search',
+      content: 'Search across any type of data using best-in-class multi-modal vector search on your existing databases.',
+    },
+    {
+      icon: <BookOpenIcon className="h-8 w-8 text-zinc-300" />,
+      category: 'Book a Demo',
+      content: 'Special industry, domain and use-case specific demonstrations. Book a demo to learn more!',
+    },
+    {
+      icon: <PuzzlePieceIcon className="h-8 w-8 text-zinc-300" />,
+      category: 'Hero Illustration',
+      content: 'Showcase your use cases and solutions with engaging hero illustrations.',
     },
   ]
 

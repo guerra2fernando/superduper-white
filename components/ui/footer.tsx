@@ -22,23 +22,39 @@ export default function Footer() {
             {/* Social links */}
             <ul className="flex space-x-4 mt-4 mb-1">
               <li>
-                <a className="flex justify-center items-center text-zinc-700 hover:text-zinc-900 transition" href="#0" aria-label="Twitter">
-                  <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-                    <path d="m7.063 3 3.495 4.475L14.601 3h2.454l-5.359 5.931L18 17h-4.938l-3.866-4.893L4.771 17H2.316l5.735-6.342L2 3h5.063Zm-.74 1.347H4.866l8.875 11.232h1.36L6.323 4.347Z" />
+                <a className="flex justify-center items-center text-zinc-700 hover:text-zinc-900 transition" href="https://twitter.com/superduperdb" aria-label="Twitter">
+                <svg
+                    className="fill-current"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    height="24"
+                  >
+                    <path d="M24 4.557a9.926 9.926 0 0 1-2.827.775 4.933 4.933 0 0 0 2.163-2.724 9.865 9.865 0 0 1-3.127 1.195 4.92 4.92 0 0 0-8.379 4.482 13.978 13.978 0 0 1-10.15-5.144 4.922 4.922 0 0 0 1.523 6.573 4.903 4.903 0 0 1-2.23-.616v.061a4.923 4.923 0 0 0 3.95 4.829 4.904 4.904 0 0 1-2.224.085 4.924 4.924 0 0 0 4.604 3.417A9.868 9.868 0 0 1 0 19.54a13.965 13.965 0 0 0 7.548 2.212c9.142 0 14.307-7.721 14.307-14.419 0-.219-.005-.437-.015-.653A10.243 10.243 0 0 0 24 4.557z" />
                   </svg>
                 </a>
               </li>
               <li>
-                <a className="flex justify-center items-center text-zinc-700 hover:text-zinc-900 transition" href="#0" aria-label="Medium">
-                  <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-                    <path d="M17 2H3a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1Zm-1.708 3.791-.858.823a.251.251 0 0 0-.1.241V12.9a.251.251 0 0 0 .1.241l.838.823v.181h-4.215v-.181l.868-.843c.085-.085.085-.11.085-.241V7.993L9.6 14.124h-.329l-2.81-6.13V12.1a.567.567 0 0 0 .156.472l1.129 1.37v.181h-3.2v-.181l1.129-1.37a.547.547 0 0 0 .146-.472V7.351A.416.416 0 0 0 5.683 7l-1-1.209V5.61H7.8l2.4 5.283 2.122-5.283h2.971l-.001.181Z" />
+                <a className="flex justify-center items-center text-zinc-700 hover:text-zinc-900 transition" href="https://www.linkedin.com/company/superduperdb" aria-label="LinkedIn">
+                  <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 310" width="20" height="20">
+                    <path d="M72.16,99.73H9.927c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5H72.16c2.762,0,5-2.238,5-5V104.73
+		C77.16,101.969,74.922,99.73,72.16,99.73z"/>
+	<path d="M41.066,0.341C18.422,0.341,0,18.743,0,41.362C0,63.991,18.422,82.4,41.066,82.4
+		c22.626,0,41.033-18.41,41.033-41.038C82.1,18.743,63.692,0.341,41.066,0.341z"/>
+	<path d="M230.454,94.761c-24.995,0-43.472,10.745-54.679,22.954V104.73c0-2.761-2.238-5-5-5h-59.599
+		c-2.762,0-5,2.239-5,5v199.928c0,2.762,2.238,5,5,5h62.097c2.762,0,5-2.238,5-5v-98.918c0-33.333,9.054-46.319,32.29-46.319
+		c25.306,0,27.317,20.818,27.317,48.034v97.204c0,2.762,2.238,5,5,5H305c2.762,0,5-2.238,5-5V194.995
+		C310,145.43,300.549,94.761,230.454,94.761z"/>
                   </svg>
                 </a>
               </li>
               <li>
-                <a className="flex justify-center items-center text-zinc-700 hover:text-zinc-900 transition" href="#0" aria-label="Telegram">
-                  <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20">
-                    <path d="M17.968 3.276a.338.338 0 0 0-.232-.253 1.192 1.192 0 0 0-.63.045S3.087 8.106 2.286 8.664c-.172.121-.23.19-.259.272-.138.4.293.573.293.573l3.613 1.177a.388.388 0 0 0 .183-.011c.822-.519 8.27-5.222 8.7-5.38.068-.02.118 0 .1.049-.172.6-6.606 6.319-6.64 6.354a.138.138 0 0 0-.05.118l-.337 3.528s-.142 1.1.956 0a30.66 30.66 0 0 1 1.9-1.738c1.242.858 2.58 1.806 3.156 2.3a1 1 0 0 0 .732.283.825.825 0 0 0 .7-.622S17.894 5.292 17.98 3.909c.008-.135.021-.217.021-.317a1.177 1.177 0 0 0-.032-.316Z" />
+                <a className="flex justify-center items-center text-zinc-700 hover:text-zinc-900 transition" href="https://www.youtube.com/channel/UC-clq9x8EGtQc6MHW0GF73g" aria-label="YouTube">
+                  <svg className="fill-current " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.001 461.001" width="25" height="25">
+                    <path d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728
+		c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137
+		C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607
+		c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z"/>
                   </svg>
                 </a>
               </li>
@@ -50,19 +66,17 @@ export default function Footer() {
             <h6 className="text-sm text-zinc-800 font-medium mb-2">Company</h6>
             <ul className="text-sm space-y-2">
               <li>
-                <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">About us</a>
+                <a className="text-zinc-500 hover:text-zinc-900 transition" href="https://join.com/companies/superduperdb">Careers</a>
               </li>
               <li>
-                <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">Diversity & Inclusion</a>
+                <a className="text-zinc-500 hover:text-zinc-900 transition" href="https://blog.superduperdb.com/">Blog</a>
+              </li>
+              
+              <li>
+                <a className="text-zinc-500 hover:text-zinc-900 transition" href="https://github.com/SuperDuperDB/superduperdb/blob/main/CONTRIBUTING.md">Contibute</a>
               </li>
               <li>
-                <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">Blog</a>
-              </li>
-              <li>
-                <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">Careers</a>
-              </li>
-              <li>
-                <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">Financial statements</a>
+                <a className="text-zinc-500 hover:text-zinc-900 transition" href="/contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -72,13 +86,17 @@ export default function Footer() {
             <h6 className="text-sm text-zinc-800 font-medium mb-2">Resources</h6>
             <ul className="text-sm space-y-2">
               <li>
-                <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">Community</a>
+                <a className="text-zinc-500 hover:text-zinc-900 transition" href="https://blog.superduperdb.com/">Docs</a>
               </li>
               <li>
-                <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">Terms of service</a>
+                <a className="text-zinc-500 hover:text-zinc-900 transition" href="/pricing">Pricing</a>
               </li>
               <li>
-                <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">Collaboration features</a>
+                <a className="text-zinc-500 hover:text-zinc-900 transition" href="https://join.slack.com/t/superduperdb/shared_invite/zt-1zuojj0k0-RjAYBs1TDsvEa7yaFGa6QA">Slack</a>
+              </li>
+              
+              <li>
+                <a className="text-zinc-500 hover:text-zinc-900 transition" href="#">Brand Guide</a>
               </li>
             </ul>
           </div>
@@ -88,16 +106,13 @@ export default function Footer() {
             <h6 className="text-sm text-zinc-800 font-medium mb-2">Legals</h6>
             <ul className="text-sm space-y-2">
               <li>
-                <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">Refund policy</a>
+                <a className="text-zinc-500 hover:text-zinc-900 transition" href="https://github.com/SuperDuperDB/superduperdb/blob/main/CHANGELOG.md">Changelog</a>
               </li>
               <li>
-                <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">Terms & Conditions</a>
+                <a className="text-zinc-500 hover:text-zinc-900 transition" href="https://github.com/SuperDuperDB/superduperdb/blob/main/LICENSE">Licence</a>
               </li>
               <li>
-                <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">Privacy policy</a>
-              </li>
-              <li>
-                <a className="text-zinc-500 hover:text-zinc-900 transition" href="#0">Brand Kit</a>
+                <a className="text-zinc-500 hover:text-zinc-900 transition" href="https://pypi.org/project/superduperdb/">Pip Package</a>
               </li>
             </ul>
           </div>

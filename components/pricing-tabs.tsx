@@ -6,58 +6,57 @@ import PricingDecoration from '@/public/images/pricing-decoration.png'
 
 export default function PricingTabs() {
   const [tier, setTier] = useState<number>(0)
-
   const pricingDetails = [
     {
-      title: "Open Source",
+      title: "Community Edition",
       price: " $0 / month",
-      description: "Start instantly and eliminate database operations",
+      description: "Start building and deploying AI solutions with our open-source offering",
       button: "Get started",
       features: [
-        "Great for starter projects and evaluating distributed SQL",
-        "Available on GCP and AWS",
-        "SRE team support and guaranteed uptime",
-        "Elastic, auto-scale across multiple regions",
-        "Row based data partitioning across geographies",
-        "Automated, no downtime upgrades",
+        "Ideal for small projects and initial exploration",
+        "Integrate with major databases like PostgreSQL, MySQL, and SQLite",
+        "Access to community support and resources",
+        "Open-source on GitHub with regular updates",
+        "Basic AI workflow templates included",
+        "Use with local or cloud environments",
         "Daily and hourly backups"
       ],
       link: "View pricing"
     },
     {
-      title: "Enterprise",
+      title: "Professional",
       price: "From $995 / month",
-      description: "Streamlined cloud database experience on dedicated hardware",
+      description: "Advanced AI deployment and management on dedicated cloud infrastructure",
       button: "Contact us",
       features: [
-        "Built for mission-critical use cases in the cloud",
+        "Designed for production-grade applications",
         "Available on AWS, Azure, and GCP",
-        "SRE team support and guaranteed uptime",
-        "Node-based, self-service scale across multiple regions",
-        "Row based data partitioning across geographies",
-        "Automated, no downtime upgrades",
-        "Daily and hourly backups"
+        "Support with guaranteed uptime",
+        "Elastic, auto-scale capabilities across multiple regions",
+        "Advanced AI model integrations and API support",
+        "Enhanced security and compliance features",
+        "Daily and hourly backups with no downtime upgrades"
       ],
       link: "Contact us"
     },
     {
-      title: "Self-hosted",
+      title: "Enterprise",
       price: "Pricing upon request",
-      description: "Gain deep control and deploy across multiple clouds",
+      description: "Comprehensive AI solution for large-scale enterprise needs",
       button: "Contact us",
       features: [
-        "Ideal for those with advanced configuration needs",
-        "Available across public or private clouds, and across on-premise data centers (option for hybrid deployments)",
-        "Enterprise support options available",
-        "Node-based, manual scale across multiple regions and clouds",
-        "Row based data partitioning across geographies",
-        "Self-service, no downtime upgrades",
-        "Self-service backups"
+        "Tailored for mission-critical enterprise applications",
+        "Deploy across public or private clouds, or on-premise",
+        "Dedicated support team with SLA guarantees",
+        "Customizable AI workflow templates and integrations",
+        "Scalable across multiple regions and data centers",
+        "Full control over data and AI model management",
+        "Self-service backups and no downtime upgrades"
       ],
       link: "Contact us"
     }
   ]
-
+  
   return (
     <section>
       <div className="py-12 md:py-20">

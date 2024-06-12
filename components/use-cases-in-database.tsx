@@ -1,60 +1,60 @@
 'use client'
 import { 
-  BriefcaseIcon, 
-  ClipboardDocumentCheckIcon, 
-  UserCircleIcon, 
-  DocumentIcon, 
-  CurrencyDollarIcon, 
-  TruckIcon, 
-  LifebuoyIcon,
-  SparklesIcon 
+  CloudIcon,
+  CubeIcon,
+  BoltIcon,
+  ArrowPathIcon,
+  ScaleIcon,
+  BriefcaseIcon,
+  AdjustmentsHorizontalIcon,
+  BookOpenIcon
 } from '@heroicons/react/24/outline'
 
 export default function UseCasesInDatabase() {
 
   const useCases01 = [
     {
-      icon: <BriefcaseIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'HR',
-      content: 'Employment contracts: salary, termination date, probation period, non-compete clause, personal details',
+      icon: <CubeIcon className="h-8 w-8 text-zinc-300" />,
+      category: 'Framework Compatibility',
+      content: 'Work with your favorite Python and RAG frameworks like LangChain and LLamaIndex.',
     },
     {
-      icon: <CurrencyDollarIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Revenue Management',
-      content: 'Purchase orders: line items, quantity, price, customer name, payment terms, due dates',
+      icon: <CloudIcon className="h-8 w-8 text-zinc-300" />,
+      category: 'End-to-End Workflow',
+      content: 'Have the end-to-end RAG workflow contained in your database.',
     },
     {
-      icon: <UserCircleIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'CRM',
-      content: 'Registration forms: personal information, purchase history, segment information.',
+      icon: <BoltIcon className="h-8 w-8 text-zinc-300" />,
+      category: 'Instant Processing',
+      content: 'Have new incoming data instantly processed and made available to your applications.',
     },
     {
-      icon: <DocumentIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Legal',
-      content: 'Contracts: parties involved, effective dates, terms and conditions, regulatory requirements, confidentiality clauses',
+      icon: <ScaleIcon className="h-8 w-8 text-zinc-300" />,
+      category: 'Scalable Deployment',
+      content: 'Implement and scale various RAG applications side-by-side with one deployment, reusing workflow steps across your applications if possible.',
     },
   ]
 
   const useCases02 = [
     {
-      icon: <ClipboardDocumentCheckIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Finance',
-      content: 'Financial statements: Extract revenue, expenses, profit margins, asset details.',
+      icon: <ArrowPathIcon className="h-8 w-8 text-zinc-300" />,
+      category: 'API Switching',
+      content: 'Switch between AI APIs and the latest self-hosted embedding and language models.',
     },
     {
-      icon: <TruckIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Supply Chain',
-      content: 'Shipping documents: tracking numbers, delivery dates, shipment contents, carrier details',
+      icon: <AdjustmentsHorizontalIcon className="h-8 w-8 text-zinc-300" />,
+      category: 'Fine-tune Models',
+      content: 'Fine-tune LLMs with your data for optimal performance and accuracy.',
     },
     {
-      icon: <LifebuoyIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Technical Support',
-      content: 'Service agreements: Extract service levels, support hours, escalation procedures, contract duration, troubleshooting steps, maintenance schedules',
+      icon: <BookOpenIcon className="h-8 w-8 text-zinc-300" />,
+      category: 'Schedule a Demo',
+      content: 'Special industry, domain and use-case specific demonstrations. Schedule a demo to learn more!',
     },
     {
-      icon: <SparklesIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Custom',
-      content: 'Special industry, domain and use-case specific documents. Book a demo to learn more!',
+      icon: <BriefcaseIcon className="h-8 w-8 text-zinc-300" />,
+      category: 'Hero Illustration',
+      content: 'Showcase your use cases and solutions with engaging hero illustrations.',
     },
   ]
 

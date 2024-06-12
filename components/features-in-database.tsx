@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArchiveBoxIcon, KeyIcon, BellAlertIcon, ShieldCheckIcon, ArrowsPointingOutIcon, AdjustmentsHorizontalIcon } from "@heroicons/react/24/outline";
+import { ArchiveBoxIcon, SwatchIcon, ServerIcon, ScaleIcon, CogIcon, AdjustmentsHorizontalIcon } from "@heroicons/react/24/outline";
 import Illustration from "@/public/images/enterpriseGrid.svg";
 
 export default function FeaturesInDatabase() {
@@ -23,71 +23,74 @@ export default function FeaturesInDatabase() {
         </div>
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-extrabold text-zinc-900">Features in RAG Database</h2>
+          </div>
           
           <div className="max-w-xs mx-auto sm:max-w-none grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-4 lg:gap-8">
             <article className="flex flex-col border border-transparent ">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
                   <ArchiveBoxIcon className="w-6 h-6" style={{ color: '#D0342C' }} />
-                  <h3 className="font-inter-tight font-semibold text-zinc-900">Documents</h3>
+                  <h3 className="font-inter-tight font-semibold text-zinc-900">Framework Compatibility</h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
-                  like contracts, invoices, technical guides etc., whether structured or unstructured
+                  Work with your favorite Python and RAG frameworks like LangChain and LLamaIndex.
                 </p>
               </div>
             </article>
             <article className="flex flex-col border border-transparent ">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
-                  <KeyIcon className="w-6 h-6" style={{ color: '#45BE76' }} />
-                  <h3 className="font-inter-tight font-semibold text-zinc-900">Key-Value</h3>
+                  <ServerIcon className="w-6 h-6" style={{ color: '#45BE76' }} />
+                  <h3 className="font-inter-tight font-semibold text-zinc-900">End-to-End Workflow</h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
-                  Define needed information key-value pairs with minimal semantic and language-specific knowledge
+                  Have the end-to-end RAG workflow contained in your database.
                 </p>
               </div>
             </article>
             <article className="flex flex-col border border-transparent">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
-                  <BellAlertIcon className="w-6 h-6" style={{ color: '#3073b7' }} />
-                  <h3 className="font-inter-tight font-semibold text-zinc-900">Alerts</h3>
+                  <SwatchIcon className="w-6 h-6" style={{ color: '#3073b7' }} />
+                  <h3 className="font-inter-tight font-semibold text-zinc-900">Instant Processing</h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
-                  Create events and specific alerts to ensure you act on what's necessary
+                  Have new incoming data instantly processed and made available to your applications.
                 </p>
               </div>
             </article>
             <article className="flex flex-col border border-transparent">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
-                  <ShieldCheckIcon className="w-6 h-6" style={{ color: '#3073b7' }} />
-                  <h3 className="font-inter-tight font-semibold text-zinc-900">Safeguard</h3>
+                  <ScaleIcon className="w-6 h-6" style={{ color: '#D0342C' }} />
+                  <h3 className="font-inter-tight font-semibold text-zinc-900">Scalable Deployment</h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
-                  your data by running the entire application on your own infrastructure using latest LLMs
+                  Implement and scale various RAG applications side-by-side with one deployment, reusing workflow steps across your applications if possible.
                 </p>
               </div>
             </article>
             <article className="flex flex-col border border-transparent">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
-                  <ArrowsPointingOutIcon className="w-6 h-6" style={{ color: '#D0342C' }} />
-                  <h3 className="font-inter-tight font-semibold text-zinc-900">Scale</h3>
+                  <CogIcon className="w-6 h-6" style={{ color: '#45BE76' }} />
+                  <h3 className="font-inter-tight font-semibold text-zinc-900">API Switching</h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
-                  Auto-scale with maximum computational efficiency to and process large volumes of documents fast and safely
+                  Switch between AI APIs and the latest self-hosted embedding and language models.
                 </p>
               </div>
             </article>
             <article className="flex flex-col border border-transparent">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
-                  <AdjustmentsHorizontalIcon className="w-6 h-6" style={{ color: '#45BE76' }} />
-                  <h3 className="font-inter-tight font-semibold text-zinc-900">Fine-tune</h3>
+                  <AdjustmentsHorizontalIcon className="w-6 h-6" style={{ color: '#3073b7' }} />
+                  <h3 className="font-inter-tight font-semibold text-zinc-900">Fine-tune Models</h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
-                  your own models on your data for maximum accuracy
+                  Fine-tune LLMs with your data for optimal performance and accuracy.
                 </p>
               </div>
             </article>
