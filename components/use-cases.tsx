@@ -15,11 +15,8 @@ export default function UseCasesSection() {
                     {/* Section header */}
                     <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
                     <h2 className="font-inter-tight text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900">
-                    Instead of bringing your data to AI, bring your AI deployment to your data. 
-                        </h2>
-                        <p className="text-lg text-slate-400">
-                        Superduper integrates with your existing databases, facilitating data transfer to AI models, APIs and frameworks, ensuring that all steps of your AI workflows are contained in your databases end-to-end, instead of being spread across various places, systems and environments. 
-                        </p>
+                    Superduper allows your team to build complex AI applications without friction and at a fraction of the time.</h2>
+                        
                     </div>
 
           <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
@@ -39,17 +36,17 @@ export default function UseCasesSection() {
               description="Analyze, process, and extract meaningful insights from images and videos to build classification, segmentation, object detection, and recognition systems."
             />
             <UseCase
-              icon={<ChartBarIcon className="h-6 w-6 text-yellow-600" />}
+              icon={<ChartBarIcon className="h-6 w-6 text-red-600" />}
               title="Predictive Analytics"
               description="Predict behavioral patterns and anticipate changes and trends based on historical and current data for various applications."
             />
             <UseCase
-              icon={<ShieldExclamationIcon className="h-6 w-6 text-purple-600" />}
+              icon={<ShieldExclamationIcon className="h-6 w-6 text-green-600" />}
               title="Anomaly and Fraud Detection"
               description="Identify deviations or irregularities in data patterns, signaling potential instances of fraudulent activity or abnormal behavior."
             />
             <UseCase
-              icon={<ClockIcon className="h-6 w-6 text-orange-600" />}
+              icon={<ClockIcon className="h-6 w-6  text-blue-600" />}
               title="Time Series Prediction"
               description="Forecast future values based on historical data points, predicting trends, patterns, or outcomes over time."
             />

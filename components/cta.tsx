@@ -20,13 +20,13 @@ export default function Cta() {
                 </svg>
               </em>
             </h2>
-            <p className="text-lg text-zinc-500 mb-8">Observe and manage your SuperDuperDB environment, including configured applications, inference- and training jobs and queues. Configure AI workflows through an intuitive web-based visual interface.</p>
+            <p className="text-lg text-zinc-500 mb-8">Observe and manage your Superduper environment, including configured applications, inference- and training jobs and queues. Configure AI workflows through an intuitive web-based visual interface.</p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
               <div>
                 <a className="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow" href="/contact">Schedule a Demo</a>
               </div>
               <div>
-                <a className="btn text-zinc-600 bg-white hover:text-zinc-900 w-full shadow" href="#0">Open Source on Github</a>
+                <a className="btn text-zinc-600 bg-white hover:text-zinc-900 w-full shadow" href="https://github.com/SuperDuperDB/superduperdb">Open Source on Github</a>
               </div>
             </div>
           </div>

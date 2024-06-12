@@ -51,7 +51,7 @@ export default function TestimonialsCarousel() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl mx-auto text-center pt-8 pb-12 md:pb-20">
             <h2 className="font-inter-tight text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-zinc-400 via-zinc-200 to-zinc-200 mb-4">
-              Jumpstart AI adoption with Superduper AI App Templates:
+              Jumpstart AI adoption with Superduper AI App Templates
             </h2>
             <p className="text-lg text-zinc-400">
               Our enterprise platform comes with preconfigured AI App Templates,
@@ -99,7 +99,7 @@ export default function TestimonialsCarousel() {
                       <div className="text-right">
                         <a
                           className="text-sm font-medium text-zinc-500 hover:text-zinc-200 inline-flex items-center transition duration-150 ease-in-out group"
-                          href="#0"
+                          href="/solutions/key-value"
                         >
                           Learn More{" "}
                           <span className="tracking-normal text-zinc-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
@@ -142,7 +142,7 @@ export default function TestimonialsCarousel() {
                       <div className="text-right">
                         <a
                           className="text-sm font-medium text-zinc-500 hover:text-zinc-200 inline-flex items-center transition duration-150 ease-in-out group"
-                          href="#0"
+                          href="/solutions/in-database-rag"
                         >
                           Learn More{" "}
                           <span className="tracking-normal text-zinc-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
@@ -186,7 +186,7 @@ export default function TestimonialsCarousel() {
                       <div className="text-right">
                         <a
                           className="text-sm font-medium text-zinc-500 hover:text-zinc-200 inline-flex items-center transition duration-150 ease-in-out group"
-                          href="#0"
+                          href="/solutions/vector-search"
                         >
                           Learn More{" "}
                           <span className="tracking-normal text-zinc-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
@@ -231,7 +231,7 @@ export default function TestimonialsCarousel() {
                       <div className="text-right">
                         <a
                           className="text-sm font-medium text-zinc-500 hover:text-zinc-200 inline-flex items-center transition duration-150 ease-in-out group"
-                          href="#0"
+                          href="/contact"
                         >
                           Schedule a meeting{" "}
                           <span className="tracking-normal text-zinc-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">

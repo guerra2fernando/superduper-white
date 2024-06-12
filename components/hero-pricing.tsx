@@ -13,9 +13,9 @@ export default function HeroPricing() {
           <div className="max-w-3xl mx-auto">
               <div className="text-center">
                 <h1 className="font-inter-tight text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900 pb-4">
-                Transform Your Database with AI: SuperDuperDB Pricing Plans</h1>
+                SuperDuper Pricing Plans</h1>
                 <p className="text-lg text-zinc-500 mb-8">
-                Superduper is a platform for integrating AI models and workflows directly with and across major databases - for more flexible, secure and scalable enterprise AI solutions.
+                Superduper is an end-to-end platform for integrating AI models and workflows directly with and across major databases - for more flexible, secure and scalable enterprise AI adoption. 
                 </p>
                
               </div>

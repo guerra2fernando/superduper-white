@@ -23,14 +23,7 @@ export default function FeaturesKeyValue() {
         </div>
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="max-w-3xl mx-auto text-center pb-12">
-            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4">
-              Jumpstart AI adoption with Superduper AI App Templates
-            </h2>
-            <p className="text-lg text-zinc-500 mb-8">
-              Our preconfigured AI app template enables you to automate the extraction of information as key-value pairs and storing it in your database, making it available for your CRM systems, ERP, HR tools, and more. Utilizing the latest LLMs, best-in-class vector search, and RAG architecture, enables you to implement custom AI chat that adheres to your documents and business requirements.
-            </p>
-          </div>
+          
           <div className="max-w-xs mx-auto sm:max-w-none grid sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-4 lg:gap-8">
             <article className="flex flex-col border border-transparent ">
               <div className="grow flex flex-col p-5 pt-6">

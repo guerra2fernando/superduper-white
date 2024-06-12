@@ -16,7 +16,8 @@ export default function HeroKey() {
                 Document Key-Value Extraction + RAG
                 </h1>
                 <p className="text-lg text-zinc-500 mb-8">
-                Accurately retrieve mission-critical information from documents into your database for downstream business operations like accounting, analytics, and decision-making.
+                Accurately retrieve mission-critical information from documents into your database for downstream business operations like accounting, analytics, and decision-making. Our preconfigured AI app template enables you to automate the extraction of information as key-value pairs and storing it in your database, making it available for your CRM systems, ERP, HR tools, and more. Utilizing the latest LLMs, best-in-class vector search, and RAG architecture, enables you to implement custom AI chat that adheres to your documents and business requirements.
+
                 </p>
                 <div className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                   <div>

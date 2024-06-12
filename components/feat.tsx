@@ -35,16 +35,13 @@ export default function Why() {
     <section className="relative">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
-          <div className="max-w-3xl mx-auto text-center pb-12">
-            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4">Build. Deploy. Manage.</h2>
-          </div>
           {/* Items */}
           {items.map((item, index) => (
             <div key={index} className="flex flex-col md:flex-row items-center mb-8 md:mb-16">
               {/* Placeholder Image Left */}
               {index % 2 === 0 ? (
                 <>
-                  <div className="md:w-1/2 mb-4 md:mb-0 md:pr-8">
+                  <div className="md:w-1/2 mb-4 md:mb-0 md:pr-12">
                     <Image src={PlaceholderImage} alt="Placeholder" />
                   </div>
                   <div className="md:w-1/2">
@@ -55,7 +52,7 @@ export default function Why() {
                 </>
               ) : (
                 <>
-                  <div className="md:w-1/2 mb-4 md:mb-0 md:order-2 md:pl-8">
+                  <div className="md:w-1/2 mb-4 md:mb-0 md:order-2 md:pl-12">
                     <Image src={PlaceholderImage} alt="Placeholder" />
                   </div>
                   <div className="md:w-1/2 md:order-1">

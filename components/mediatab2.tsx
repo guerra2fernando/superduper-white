@@ -25,7 +25,7 @@ const listItems = [
     title: 'Admin User Interface',
     image: '../../../../images/adminui.png',
     content:
-      ' GUI allowing the user/developer to manage and supervise their SuperDuper environment including: SuperDuper provisioning wizard for Kubernetes, Jupyter Hub interface, Monitoring interface via Grafana, Jobs dashboard, SuperDuperDB model monitoring',
+      ' GUI allowing the user/developer to manage and supervise their SuperDuper environment including: SuperDuper provisioning wizard for Kubernetes, Jupyter Hub interface, Monitoring interface via Grafana, Jobs dashboard, Superduper model monitoring',
   },
   {
     title: 'Low-Code Configurator',

@@ -21,9 +21,9 @@ export default function Home() {
       <DatabasesSec />
       <Features02 />
       <Loop />
+      <UseCasesSection />
       <TestimonialsCarousel />
       <Why />
-      <UseCasesSection />
       <IntegrationsSec />
       <Features01 />
       <Cta />
