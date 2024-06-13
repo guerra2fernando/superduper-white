@@ -275,21 +275,21 @@ animation: slideToLeft2 12s linear infinite; /* Adjust duration and other proper
 
 @keyframes scroll-left {
   0% {
-      transform: translateX(-100%);
+      transform: translateX(-20%);
   }
   100% {
-      transform: translateX(-50%);
+      transform: translateX(0%);
   }
 }
 
 .animate-scroll-right {
-  animation: scroll-right 120s linear infinite;
+  animation: scroll-right 180s linear infinite;
   
   width: 200%; /* Double the width for smooth scrolling */
 }
 
 .animate-scroll-left {
-  animation: scroll-left 120s linear infinite;
+  animation: scroll-left 180s linear infinite;
   
   width: 200%; /* Double the width for smooth scrolling */
 }
