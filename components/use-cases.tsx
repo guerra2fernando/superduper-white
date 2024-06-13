@@ -8,16 +8,15 @@ interface UseCaseProps {
 
 export default function UseCasesSection() {
   return (
-    <section className="relative">
+    <section className="relative bg-zinc-800 pb-10">
       <div className="pt-10 pb-10 md:py-15">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        
-                    {/* Section header */}
-                    <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-                    <h2 className="font-inter-tight text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900">
-                    Superduper allows your team to build complex AI applications without friction and at a fraction of the time.</h2>
-                        
-                    </div>
+          {/* Section header */}
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
+            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-zinc-400 via-zinc-200 to-zinc-200">
+              Superduper allows your team to build complex AI applications without friction and at a fraction of the time.
+            </h2>
+          </div>
 
           <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
             <UseCase
@@ -59,12 +58,12 @@ export default function UseCasesSection() {
 
 function UseCase({ icon, title, description }: UseCaseProps) {
   return (
-    <div className="flex flex-col border border-transparent [background:linear-gradient(theme(colors.white),theme(colors.zinc.50))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] rounded-lg p-5">
+    <div className="flex flex-col border border-transparent [background:linear-gradient(#2E2E32,#2E2E32)_padding-box,linear-gradient(120deg,theme(colors.zinc.700),theme(colors.zinc.700/0),theme(colors.zinc.700))_border-box] rounded-lg p-5">
       <div className="flex items-center space-x-3 mb-1">
         {icon}
-        <h3 className="font-inter-tight font-semibold text-zinc-900">{title}</h3>
+        <h3 className="font-inter-tight font-semibold text-zinc-200">{title}</h3>
       </div>
-      <p className="grow max-w-md text-sm text-zinc-500">
+      <p className="grow max-w-md text-sm text-zinc-400">
         {description}
       </p>
     </div>

@@ -22,10 +22,10 @@ export default function Home() {
       <Features02 />
       <Loop />
       <UseCasesSection />
-      <TestimonialsCarousel />
       <Why />
       <IntegrationsSec />
       <Features01 />
+      <TestimonialsCarousel />
       <Cta />
     </>
   )
