@@ -45,7 +45,7 @@ export default function Why() {
                     <Image src={PlaceholderImage} alt="Placeholder" />
                   </div>
                   <div className="md:w-1/2">
-                    <h3 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4">{item.name}</h3>
+                    <h3 className="font-inter-tight text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900 mb-4">{item.name}</h3>
                     <p className="text-sm text-zinc-500 mb-4">{item.quote}</p>
                     <Image className="mt-4" src={item.img} alt={item.name} height={50} />
                   </div>
@@ -56,7 +56,7 @@ export default function Why() {
                     <Image src={PlaceholderImage} alt="Placeholder" />
                   </div>
                   <div className="md:w-1/2 md:order-1">
-                    <h3 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-900 mb-4">{item.name}</h3>
+                    <h3 className="font-inter-tight text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900 mb-4">{item.name}</h3>
                     <p className="text-sm text-zinc-500 mb-4">{item.quote}</p>
                     <Image className="mt-4" src={item.img} alt={item.name} height={50} />
                   </div>
