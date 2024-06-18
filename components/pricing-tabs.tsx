@@ -11,7 +11,7 @@ export default function PricingTabs() {
     {
       title: "Community Edition",
       price: " $0 / month",
-      description: "Start building and deploying AI solutions with our open-source offering",
+      description: "Build and manage AI applications easily without needing to move your data to complex pipelines and specialized vector databases. Just using Python!",
       button: "Get started",
       features: [
         "Ideal for small projects and initial exploration",
@@ -26,10 +26,11 @@ export default function PricingTabs() {
     {
       title: "Enterprise / Custom",
       price: "Pricing upon request",
-      description: "Comprehensive AI solution for large-scale enterprise needs",
+      description: "An end-to-end platform for integrating AI models and workflows directly with and across major databases - for more flexible, secure and scalable enterprise AI adoption.",
       button: "Contact us",
       features: [
         "Preconfigured AI application & workflow templates",
+        "UI for deployment and customization",
         "Tailored for mission-critical enterprise applications",
         "Deploy across public or private clouds, or on-premise",
         "Customizable AI workflow templates and integrations",
@@ -37,8 +38,8 @@ export default function PricingTabs() {
         "Elastic, auto-scale capabilities across multiple regions",
         "Advanced AI model integrations and API support",
         "Enhanced security and compliance features",
-        "Self-service backups and no downtime upgrades",
         "Data-science support for app customization",
+        "Self-service backups",
       ],
       link: "/contact"
     }
@@ -60,8 +61,15 @@ export default function PricingTabs() {
                         <div className="font-inter-tight inline-flex items-baseline mb-2">
                           <span className={`font-bold text-3xl ${index === 1 ? 'text-zinc-200' : 'text-zinc-900'}`}>{plan.price}</span>
                         </div>
+                        
                         <div className={`text-${index === 1 ? 'zinc-500' : 'zinc-500'}`}>{plan.description}</div>
+                        <div className="mt-8">
+                        <a className={`btn w-full shadow ${index === 1 ? 'text-zinc-600 bg-white hover:text-zinc-900' : 'text-zinc-100 bg-gradient-to-r from-zinc-700 to-zinc-900 hover:from-zinc-900 hover:to-zinc-900'}`} href={plan.link}>
+                          {plan.button}
+                        </a>
                       </div>
+                      </div>
+                      
                       <div className="grow">
                         <div className={`text-sm ${index === 1 ? 'text-zinc-200' : 'text-zinc-900'} font-medium mb-4`}>Includes:</div>
                         <ul className={`text-${index === 1 ? 'zinc-400' : 'zinc-600'} text-sm space-y-3 grow`}>
