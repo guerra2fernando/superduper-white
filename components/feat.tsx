@@ -41,7 +41,7 @@ export default function Why() {
               {/* Placeholder Image Left */}
               {index % 2 === 0 ? (
                 <>
-                  <div className="md:w-1/2 mb-4 md:mb-0 md:pr-12">
+                  <div className="md:w-1/2 mb-4 md:mb-0 md:pr-16">
                     <Image src={PlaceholderImage} alt="Placeholder" />
                   </div>
                   <div className="md:w-1/2">
@@ -52,7 +52,7 @@ export default function Why() {
                 </>
               ) : (
                 <>
-                  <div className="md:w-1/2 mb-4 md:mb-0 md:order-2 md:pl-12">
+                  <div className="md:w-1/2 mb-4 md:mb-0 md:order-2 md:pl-16">
                     <Image src={PlaceholderImage} alt="Placeholder" />
                   </div>
                   <div className="md:w-1/2 md:order-1">
