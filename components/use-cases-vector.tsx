@@ -6,8 +6,8 @@ import {
   LifebuoyIcon,
   SparklesIcon,
   MagnifyingGlassCircleIcon,
-  BookOpenIcon,
-  PuzzlePieceIcon
+  DocumentIcon,
+  ChatBubbleLeftRightIcon
 } from '@heroicons/react/24/outline'
 
 export default function UseCasesVector() {
@@ -16,45 +16,45 @@ export default function UseCasesVector() {
     {
       icon: <AdjustmentsHorizontalIcon className="h-8 w-8 text-zinc-300" />,
       category: 'Integrate',
-      content: 'Integrate and manage the latest open-source embedding models and API providers for different applications side-by-side.',
+      content: 'Seamlessly integrate vector search capabilities into your existing applications to enhance data retrieval efficiency and accuracy.',
     },
     {
       icon: <RocketLaunchIcon className="h-8 w-8 text-zinc-300" />,
       category: 'Automate',
-      content: 'Forget building and maintaining data and embedding pipelines and enjoy streaming inference, so that new incoming data gets vectorized immediately and automatically.',
+      content: 'Automate real-time data processing and embedding generation, ensuring immediate vectorization of new data for rapid searchability.',
     },
     {
       icon: <ShieldCheckIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Safeguard',
-      content: 'Safeguard your data by self-hosting your own models. Scale inference flexibly to accommodate large data.',
+      category: 'Secure',
+      content: 'Securely host your own models to ensure data privacy and compliance with regulations, while scaling operations as needed.',
     },
     {
       icon: <LifebuoyIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Scale',
-      content: 'Scale inference flexibly to accommodate large data.',
+      category: 'Customer Support',
+      content: 'Enhance customer support by integrating vector search to quickly retrieve relevant solutions from a knowledge base.',
     },
   ]
 
   const useCases02 = [
     {
       icon: <SparklesIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Fine-tune',
-      content: 'Fine-tune your embedding models for maximum performance, whether from open or closed source.',
+      category: 'Personalization',
+      content: 'Use embeddings to personalize content and product recommendations for users based on their past interactions and preferences.',
     },
     {
       icon: <MagnifyingGlassCircleIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Search',
-      content: 'Search across any type of data using best-in-class multi-modal vector search on your existing databases.',
+      category: 'Advanced Search',
+      content: 'Implement advanced, multi-modal search capabilities across text, images, and other data types to enhance retrieval accuracy.',
     },
     {
-      icon: <BookOpenIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Book a Demo',
-      content: 'Special industry, domain and use-case specific demonstrations. Book a demo to learn more!',
+      icon: <DocumentIcon className="h-8 w-8 text-zinc-300" />,
+      category: 'Document Management',
+      content: 'Improve document management systems by using vector search to find and organize documents based on content similarity.',
     },
     {
-      icon: <PuzzlePieceIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Hero Illustration',
-      content: 'Showcase your use cases and solutions with engaging hero illustrations.',
+      icon: <ChatBubbleLeftRightIcon className="h-8 w-8 text-zinc-300" />,
+      category: 'Chatbots',
+      content: 'Integrate with chatbots to enable them to understand and respond to user queries more effectively by leveraging vector embeddings.',
     },
   ]
 
@@ -63,7 +63,7 @@ export default function UseCasesVector() {
       <div className="py-12 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-200">Use-Cases</h2>
+            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-200">Use Cases</h2>
           </div>
         </div>
         <div className="max-w-[94rem] mx-auto space-y-6">

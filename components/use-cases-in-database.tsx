@@ -5,9 +5,9 @@ import {
   BoltIcon,
   ArrowPathIcon,
   ScaleIcon,
-  BriefcaseIcon,
+  ChatBubbleLeftRightIcon,
   AdjustmentsHorizontalIcon,
-  BookOpenIcon
+  DocumentTextIcon
 } from '@heroicons/react/24/outline'
 
 export default function UseCasesInDatabase() {
@@ -16,22 +16,22 @@ export default function UseCasesInDatabase() {
     {
       icon: <CubeIcon className="h-8 w-8 text-zinc-300" />,
       category: 'Framework Compatibility',
-      content: 'Work with your favorite Python and RAG frameworks like LangChain and LLamaIndex.',
+      content: 'Easily integrate with popular Python frameworks like LangChain and LLamaIndex to streamline the development of your AI applications.',
     },
     {
       icon: <CloudIcon className="h-8 w-8 text-zinc-300" />,
       category: 'End-to-End Workflow',
-      content: 'Have the end-to-end RAG workflow contained in your database.',
+      content: 'Maintain the complete RAG workflow within your database to simplify data management and processing tasks.',
     },
     {
       icon: <BoltIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Instant Processing',
-      content: 'Have new incoming data instantly processed and made available to your applications.',
+      category: 'Real-Time Data Processing',
+      content: 'Ensure new incoming data is instantly processed and made available for immediate use in applications, enhancing responsiveness.',
     },
     {
       icon: <ScaleIcon className="h-8 w-8 text-zinc-300" />,
       category: 'Scalable Deployment',
-      content: 'Implement and scale various RAG applications side-by-side with one deployment, reusing workflow steps across your applications if possible.',
+      content: 'Deploy and scale multiple RAG applications concurrently, optimizing resource usage and performance across all applications.',
     },
   ]
 
@@ -39,22 +39,22 @@ export default function UseCasesInDatabase() {
     {
       icon: <ArrowPathIcon className="h-8 w-8 text-zinc-300" />,
       category: 'API Switching',
-      content: 'Switch between AI APIs and the latest self-hosted embedding and language models.',
+      content: 'Easily switch between various AI APIs and the latest self-hosted models to leverage the best technologies for your needs.',
     },
     {
       icon: <AdjustmentsHorizontalIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Fine-tune Models',
-      content: 'Fine-tune LLMs with your data for optimal performance and accuracy.',
+      category: 'Fine-Tuning',
+      content: 'Customize large language models (LLMs) with your specific data to enhance their accuracy and performance for your applications.',
     },
     {
-      icon: <BookOpenIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Schedule a Demo',
-      content: 'Special industry, domain and use-case specific demonstrations. Schedule a demo to learn more!',
+      icon: <ChatBubbleLeftRightIcon className="h-8 w-8 text-zinc-300" />,
+      category: 'Customer Support',
+      content: 'Implement AI chatbots to provide instant, accurate responses to customer queries by leveraging real-time data processing.',
     },
     {
-      icon: <BriefcaseIcon className="h-8 w-8 text-zinc-300" />,
-      category: 'Hero Illustration',
-      content: 'Showcase your use cases and solutions with engaging hero illustrations.',
+      icon: <DocumentTextIcon className="h-8 w-8 text-zinc-300" />,
+      category: 'Automated Analysis',
+      content: 'Use RAG to analyze and generate insights from large volumes of documents, automating tasks like compliance checks and report generation.',
     },
   ]
 
@@ -63,7 +63,7 @@ export default function UseCasesInDatabase() {
       <div className="py-12 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-200">Use-Cases</h2>
+            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold text-zinc-200">Use Cases</h2>
           </div>
         </div>
         <div className="max-w-[94rem] mx-auto space-y-6">

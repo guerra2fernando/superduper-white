@@ -15,7 +15,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Superduper - AI Integration for Enterprise Databases',
     description: 'Implement custom AI solutions on your existing data infrastructure with SuperDuper, an end-to-end platform for integrating AI models and workflows directly with and across major databases.',
-    image: 'https://superduper.com/twitter-image.jpg',
+    image: 'https://superduper.com/og-image.jpg',
   }
 }
 

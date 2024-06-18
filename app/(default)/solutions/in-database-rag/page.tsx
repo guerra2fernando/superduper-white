@@ -1,7 +1,24 @@
 export const metadata = {
-  title: 'Home - Creative',
-  description: 'Page description',
+  title: 'In-Database RAG - SuperDuper AI',
+  description: 'Easily build generative AI RAG applications, such as AI chatbots, directly on your database. Enjoy end-to-end RAG workflows, instant data processing, scalable deployment, and seamless API switching.',
+  keywords: 'Preconfigured AI workflow templates, In-Database RAG, Retrieval Augmented Generation, AI chatbots, generative AI, RAG applications, AI frameworks, LangChain, LLamaIndex, scalable deployment, fine-tune LLMs, API switching',
+  author: 'SuperDuper',
+  viewport: 'width=device-width, initial-scale=1',
+  robots: 'index, follow',
+  og: {
+    title: 'In-Database RAG - SuperDuper AI',
+    description: 'Build generative AI RAG applications directly on your database with SuperDuper. Enjoy end-to-end RAG workflows, instant data processing, scalable deployment, and seamless API switching.',
+    image: 'https://superduper.io/og-image.jpg',
+    url: 'https://superduper.io/solutions/in-database-rag'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'In-Database RAG - SuperDuper AI',
+    description: 'Build generative AI RAG applications directly on your database with SuperDuper. Enjoy end-to-end RAG workflows, instant data processing, scalable deployment, and seamless API switching.',
+    image: 'https://superduper.io/og-image.jpg',
+  }
 }
+
 
 import Cta2 from '@/components/cta2'
 import UseCasesInDatabase from '@/components/use-cases-in-database'
