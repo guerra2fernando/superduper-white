@@ -12,6 +12,7 @@ export default function HeroPricing() {
         <div className="px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
               <div className="text-center">
+                
                 <h1 className="font-inter-tight text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900 pb-4">
                 SuperDuper Pricing Plans</h1>
                 <p className="text-lg text-zinc-500 mb-8">

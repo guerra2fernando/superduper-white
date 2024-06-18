@@ -12,6 +12,9 @@ export default function HeroInDatabase() {
         <div className="px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
               <div className="text-center">
+              <div className="inline-block bg-transparent mb-4 text-gray-500 font-semibold py-1 px-4 shadow-light2 border border-gray-300 bg-white rounded-full">
+  Preconfigured AI workflow templates
+</div>
                 <h1 className="font-inter-tight text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900 pb-4">
                 In-Database RAG - Retrieval Augmented Generation
                 </h1>
