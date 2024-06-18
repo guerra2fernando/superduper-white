@@ -14,8 +14,10 @@ export default function UseCasesSection() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="font-inter-tight text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-zinc-400 via-zinc-200 to-zinc-200">
-              Superduper allows your team to build complex AI applications without friction and at a fraction of the time.
+            Implement custom AI applications and workflows without friction and at a fraction of the time.
             </h2>
+            <p className="text-lg text-zinc-500 mb-8">
+            Enable your team to deliver enterprise AI applications at speed, from idea to high-scale. Build, deploy and manage all your AI workflows, from GenAI and LLMs to classic ML, in a single platform and your databases            </p>
           </div>
 
           <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
