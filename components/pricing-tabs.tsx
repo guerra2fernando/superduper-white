@@ -47,7 +47,7 @@ export default function PricingTabs() {
   
   return (
     <section>
-      <div className="py-12 md:py-20">
+      <div className="py-1 md:py-2">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="pb-12 md:pb-20">
             <div className="flex justify-center items-center">
