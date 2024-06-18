@@ -14,7 +14,7 @@ export default function Home() {
 
             {/* Page header */}
             <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-              <h1 className="font-inter-tight text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900 pb-4">Get started with SuperDuper</h1>
+              <h1 className="font-inter-tight text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900 pb-4">Get started with Superduper</h1>
               <p className="text-lg text-zinc-500">Talk to an expert about your requirements, needs, and timeline. Use the calendar below to schedule a demo.</p>
             </div>
 

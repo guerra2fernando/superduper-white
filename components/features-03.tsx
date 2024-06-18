@@ -32,7 +32,7 @@ export default function Features03() {
             <div className="lg:max-w-none lg:min-w-[524px]">
               <div className="mb-8">
                 <h3 className="font-inter-tight text-3xl font-bold text-zinc-200 mb-4">Focus on what you want to do rather than how</h3>
-                <p className="text-lg text-zinc-500">SuperDuper can help you, check out our features.</p>
+                <p className="text-lg text-zinc-500">Superduper can help you, check out our features.</p>
               </div>
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0 space-y-2">

@@ -20,7 +20,7 @@ export default function PricingTabs() {
         "Basic AI workflow templates included",
         "Use with local or cloud environments"
       ],
-      link: "https://github.com/SuperDuperDB/superduperdb"
+      link: "https://github.com/SuperduperDB/superduperdb"
     },
     {
       title: "Enterprise / Custom",

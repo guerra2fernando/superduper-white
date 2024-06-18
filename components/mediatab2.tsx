@@ -7,7 +7,7 @@ const listItems = [
   {
     title: 'Deployment System',
     image: '../../../../images/deployment-system.png',
-    content: 'A scalable deployment model using best-in-class distributed compute and deployment technologies ensuring that SuperDuper is deployed efficiently and securely with full production readiness to Kubernetes, Ray, Grafana, Vector-search service, Change data capture, Rest API interface, Jupyter Hub integration',
+    content: 'A scalable deployment model using best-in-class distributed compute and deployment technologies ensuring that Superduper is deployed efficiently and securely with full production readiness to Kubernetes, Ray, Grafana, Vector-search service, Change data capture, Rest API interface, Jupyter Hub integration',
   },
   {
     title: 'Prebuilt AI Apps',
@@ -16,7 +16,7 @@ const listItems = [
       'Preconfigured AI apps templates including inhouse models on different data science disciplines to be enabled with proprietary data.',
   },
   {
-    title: 'SuperDuper Core',
+    title: 'Superduper Core',
     image: '../../../../images/sddbcore.png',
     content:
       'framework that integrates self-hosted AI models as well as APIs directly with existing databases, simplifying AI development and deployment by transforming databases into AI environments, including inference, model training and vector search. For installation and use-cases see here on GitHub.',
@@ -25,13 +25,13 @@ const listItems = [
     title: 'Admin User Interface',
     image: '../../../../images/adminui.png',
     content:
-      ' GUI allowing the user/developer to manage and supervise their SuperDuper environment including: SuperDuper provisioning wizard for Kubernetes, Jupyter Hub interface, Monitoring interface via Grafana, Jobs dashboard, Superduper model monitoring',
+      ' GUI allowing the user/developer to manage and supervise their Superduper environment including: Superduper provisioning wizard for Kubernetes, Jupyter Hub interface, Monitoring interface via Grafana, Jobs dashboard, Superduper model monitoring',
   },
   {
     title: 'Low-Code Configurator',
     image: '../../../../images/lowcode.png',
     content:
-      'GUI for applying, configuring and developing AI applications, use-cases/workflows in SuperDuper',
+      'GUI for applying, configuring and developing AI applications, use-cases/workflows in Superduper',
   },
   
 ];

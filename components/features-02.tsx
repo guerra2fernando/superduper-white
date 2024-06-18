@@ -59,7 +59,7 @@ export default function Features02() {
                   </h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
-                Deploy SuperDuper, including your models, inference and training on your own infrastructure: on-prem, on the edge, your private or public cloud accounts.                </p>
+                Deploy Superduper, including your models, inference and training on your own infrastructure: on-prem, on the edge, your private or public cloud accounts.                </p>
               </div>
             </article>
           </div>

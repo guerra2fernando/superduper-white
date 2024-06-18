@@ -18,7 +18,7 @@ export default function Footer() {
                 <Image src={Logo} width={24} height={24} alt="Logo" />
               </Link>
             </div>
-            <div className="grow text-sm text-zinc-500">&copy; SuperDuper.com. All rights reserved.</div>
+            <div className="grow text-sm text-zinc-500">&copy; Superduper.com. All rights reserved.</div>
             {/* Social links */}
             <ul className="flex space-x-4 mt-4 mb-1">
               <li>
@@ -59,7 +59,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a className="flex justify-center items-center text-zinc-700 hover:text-zinc-900 transition" href="https://github.com/SuperDuperDB/superduperdb/" aria-label="Github">
+                <a className="flex justify-center items-center text-zinc-700 hover:text-zinc-900 transition" href="https://github.com/SuperduperDB/superduperdb/" aria-label="Github">
                 <svg
                     className="fill-current"
                     xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +86,7 @@ export default function Footer() {
               </li>
               
               <li>
-                <a className="text-zinc-500 hover:text-zinc-900 transition" href="https://github.com/SuperDuperDB/superduperdb/blob/main/CONTRIBUTING.md">Contibute</a>
+                <a className="text-zinc-500 hover:text-zinc-900 transition" href="https://github.com/SuperduperDB/superduperdb/blob/main/CONTRIBUTING.md">Contibute</a>
               </li>
               <li>
                 <a className="text-zinc-500 hover:text-zinc-900 transition" href="/contact">Contact</a>
@@ -119,10 +119,10 @@ export default function Footer() {
             <h6 className="text-sm text-zinc-800 font-medium mb-2">Legals</h6>
             <ul className="text-sm space-y-2">
               <li>
-                <a className="text-zinc-500 hover:text-zinc-900 transition" href="https://github.com/SuperDuperDB/superduperdb/blob/main/CHANGELOG.md">Changelog</a>
+                <a className="text-zinc-500 hover:text-zinc-900 transition" href="https://github.com/SuperduperDB/superduperdb/blob/main/CHANGELOG.md">Changelog</a>
               </li>
               <li>
-                <a className="text-zinc-500 hover:text-zinc-900 transition" href="https://github.com/SuperDuperDB/superduperdb/blob/main/LICENSE">Licence</a>
+                <a className="text-zinc-500 hover:text-zinc-900 transition" href="https://github.com/SuperduperDB/superduperdb/blob/main/LICENSE">Licence</a>
               </li>
               <li>
                 <a className="text-zinc-500 hover:text-zinc-900 transition" href="https://pypi.org/project/superduperdb/">Pip Package</a>

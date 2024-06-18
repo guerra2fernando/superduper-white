@@ -1,20 +1,20 @@
 export const metadata = {
-  title: 'In-Database RAG - SuperDuper AI',
+  title: 'In-Database RAG - Superduper',
   description: 'Easily build generative AI RAG applications, such as AI chatbots, directly on your database. Enjoy end-to-end RAG workflows, instant data processing, scalable deployment, and seamless API switching.',
   keywords: 'Preconfigured AI workflow templates, In-Database RAG, Retrieval Augmented Generation, AI chatbots, generative AI, RAG applications, AI frameworks, LangChain, LLamaIndex, scalable deployment, fine-tune LLMs, API switching',
-  author: 'SuperDuper',
+  author: 'Superduper',
   viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
   og: {
-    title: 'In-Database RAG - SuperDuper AI',
-    description: 'Build generative AI RAG applications directly on your database with SuperDuper. Enjoy end-to-end RAG workflows, instant data processing, scalable deployment, and seamless API switching.',
+    title: 'In-Database RAG - Superduper',
+    description: 'Build generative AI RAG applications directly on your database with Superduper. Enjoy end-to-end RAG workflows, instant data processing, scalable deployment, and seamless API switching.',
     image: 'https://superduper.io/og-image.jpg',
     url: 'https://superduper.io/solutions/in-database-rag'
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'In-Database RAG - SuperDuper AI',
-    description: 'Build generative AI RAG applications directly on your database with SuperDuper. Enjoy end-to-end RAG workflows, instant data processing, scalable deployment, and seamless API switching.',
+    title: 'In-Database RAG - Superduper',
+    description: 'Build generative AI RAG applications directly on your database with Superduper. Enjoy end-to-end RAG workflows, instant data processing, scalable deployment, and seamless API switching.',
     image: 'https://superduper.io/og-image.jpg',
   }
 }

@@ -47,7 +47,7 @@ export default function MobileMenu() {
             <Link className="font-medium text-sm text-slate-300 hover:text-white transition duration-150 ease-in-out py-2" href="https://docs.superduperdb.com/">Docs</Link>
           </li>
           <li>
-            <Link className="btn-sm text-slate-300 hover:text-white transition duration-150 ease-in-out w-full mt-4" href="https://github.com/SuperDuperDB/superduperdb">
+            <Link className="btn-sm text-slate-300 hover:text-white transition duration-150 ease-in-out w-full mt-4" href="https://github.com/SuperduperDB/superduperdb">
               Get Started
             </Link>
           </li>

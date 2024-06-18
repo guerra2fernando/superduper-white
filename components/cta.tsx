@@ -26,7 +26,7 @@ export default function Cta() {
                 <a className="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow" href="/contact">Schedule a Demo</a>
               </div>
               <div>
-                <a className="btn text-zinc-600 bg-white hover:text-zinc-900 w-full shadow" href="https://github.com/SuperDuperDB/superduperdb">Open Source on Github</a>
+                <a className="btn text-zinc-600 bg-white hover:text-zinc-900 w-full shadow" href="https://github.com/SuperduperDB/superduperdb">Open Source on Github</a>
               </div>
             </div>
           </div>
