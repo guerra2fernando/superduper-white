@@ -31,6 +31,34 @@ const integrations = [
     { src: weaviate, name: 'Weaviate' },
     { src: pytorch, name: 'PyTorch' },
     { src: postgresml, name: 'PostgresML' },
+    { src: anthropic, name: 'Anthropic' },
+    { src: huggingface, name: 'Hugging Face' },
+    { src: openai, name: 'OpenAI' },
+    { src: googleBigQuery, name: 'BigQuery' },
+    { src: cohere, name: 'Cohere' },
+    { src: langchain, name: 'LangChain' },
+    { src: lancedb, name: 'LanceDB' },
+    { src: llamaindex, name: 'LlamaIndex' },
+    { src: qdrant, name: 'Qdrant' },
+    { src: pinecone, name: 'Pinecone' },
+    { src: scikitLearn, name: 'Scikit-Learn' },
+    { src: weaviate, name: 'Weaviate' },
+    { src: pytorch, name: 'PyTorch' },
+    { src: postgresml, name: 'PostgresML' },
+    { src: anthropic, name: 'Anthropic' },
+    { src: huggingface, name: 'Hugging Face' },
+    { src: openai, name: 'OpenAI' },
+    { src: googleBigQuery, name: 'BigQuery' },
+    { src: cohere, name: 'Cohere' },
+    { src: langchain, name: 'LangChain' },
+    { src: lancedb, name: 'LanceDB' },
+    { src: llamaindex, name: 'LlamaIndex' },
+    { src: qdrant, name: 'Qdrant' },
+    { src: pinecone, name: 'Pinecone' },
+    { src: scikitLearn, name: 'Scikit-Learn' },
+    { src: weaviate, name: 'Weaviate' },
+    { src: pytorch, name: 'PyTorch' },
+    { src: postgresml, name: 'PostgresML' },
 ];
 
 const IntegrationsSec: React.FC = () => {
@@ -44,7 +72,7 @@ const IntegrationsSec: React.FC = () => {
                             Best-in-class support for the latest AI frameworks, libraries, models, and APIs. By nature compatible with anything Python.
                         </p>
                     </div>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
+                    <div className="mx-auto px-4 sm:px-6 relative" style={{ maxWidth: '96rem' }}>
                 <div className="overflow-hidden relative mask-fade">
                     <div className="flex space-x-6 animate-scroll-right items-center h-40">
                         {[...integrations, ...integrations].map((integration, index) => (

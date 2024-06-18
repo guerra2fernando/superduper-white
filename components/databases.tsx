@@ -27,6 +27,30 @@ const databases = [
     { src: impala, name: 'Impala' },
     { src: clickhouse, name: 'ClickHouse' },
     { src: trino, name: 'Trino' },
+    { src: pandas, name: 'Pandas' },
+    { src: s3, name: 'AWS S3' },
+    { src: oracle, name: 'Oracle' },
+    { src: sqlite, name: 'SQLite' },
+    { src: postgresql, name: 'PostgreSQL' },
+    { src: mongodb, name: 'MongoDB' },
+    { src: snowflake, name: 'Snowflake' },
+    { src: mysql, name: 'MySQL' },
+    { src: duckdb, name: 'DuckDB' },
+    { src: impala, name: 'Impala' },
+    { src: clickhouse, name: 'ClickHouse' },
+    { src: trino, name: 'Trino' },
+    { src: pandas, name: 'Pandas' },
+    { src: s3, name: 'AWS S3' },
+    { src: oracle, name: 'Oracle' },
+    { src: sqlite, name: 'SQLite' },
+    { src: postgresql, name: 'PostgreSQL' },
+    { src: mongodb, name: 'MongoDB' },
+    { src: snowflake, name: 'Snowflake' },
+    { src: mysql, name: 'MySQL' },
+    { src: duckdb, name: 'DuckDB' },
+    { src: impala, name: 'Impala' },
+    { src: clickhouse, name: 'ClickHouse' },
+    { src: trino, name: 'Trino' },
 ];
 
 const DatabasesSec: React.FC = () => {
@@ -47,7 +71,7 @@ const DatabasesSec: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-transparent to-white"></div>
             </div>
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
+            <div className="mx-auto px-4 sm:px-6 relative" style={{ maxWidth: '96rem' }}>
                 <div className="overflow-hidden relative mask-fade">
                     <div className="flex space-x-6 animate-scroll items-center h-40">
                         {[...databases, ...databases].map((database, index) => (
