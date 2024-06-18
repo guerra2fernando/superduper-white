@@ -1,6 +1,22 @@
 export const metadata = {
-  title: 'Home - Creative',
-  description: 'Page description',
+  title: 'Superduper - AI Integration for Enterprise Databases',
+  description: 'Superduper is an end-to-end platform for integrating AI models and workflows directly with and across major databases, providing flexible, secure, and scalable enterprise AI adoption.',
+  keywords: 'AI, machine learning, databases, enterprise AI, AI workflows, LLM, RAG, vector embeddings, computer vision, predictive analytics, anomaly detection, time series prediction, secure deployment, scalable AI, AI templates, custom AI solutions, Superduper, SuperDuperDB',
+  author: 'Superduper',
+  viewport: 'width=device-width, initial-scale=1',
+  robots: 'index, follow',
+  og: {
+    title: 'Superduper - AI Integration for Enterprise Databases',
+    description: 'Implement custom AI solutions on your existing data infrastructure with Superduper, an end-to-end platform for integrating AI models and workflows directly with and across major databases.',
+    image: 'https://superduper.com/og-image.jpg',
+    url: 'https://superduper.com'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Superduper - AI Integration for Enterprise Databases',
+    description: 'Implement custom AI solutions on your existing data infrastructure with SuperDuper, an end-to-end platform for integrating AI models and workflows directly with and across major databases.',
+    image: 'https://superduper.com/twitter-image.jpg',
+  }
 }
 
 import Hero from '@/components/hero'
