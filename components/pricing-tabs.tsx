@@ -71,7 +71,6 @@ export default function PricingTabs() {
                       </div>
                       
                       <div className="grow">
-                        <div className={`text-sm ${index === 1 ? 'text-zinc-200' : 'text-zinc-900'} font-medium mb-4`}>Includes:</div>
                         <ul className={`text-${index === 1 ? 'zinc-400' : 'zinc-600'} text-sm space-y-3 grow`}>
                           {plan.features.map((feature, i) => (
                             <li key={i} className={`flex items-center p-2 ${index === 1 ? (i % 2 === 0 ? 'bg-[rgba(34,34,34,1)]' : 'bg-zinc-900') : (i % 2 === 0 ? 'bg-zinc-100' : 'bg-[rgba(232,232,232,1)]')} rounded-md`}>
