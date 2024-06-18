@@ -29,17 +29,16 @@ export default function PricingTabs() {
       description: "Comprehensive AI solution for large-scale enterprise needs",
       button: "Contact us",
       features: [
+        "Preconfigured AI application & workflow templates",
         "Tailored for mission-critical enterprise applications",
         "Deploy across public or private clouds, or on-premise",
-        "Dedicated support team with SLA guarantees",
         "Customizable AI workflow templates and integrations",
-        "Scalable across multiple regions and data centers",
         "Full control over data and AI model management",
-        "Self-service backups and no downtime upgrades",
-        "Support with guaranteed uptime",
         "Elastic, auto-scale capabilities across multiple regions",
         "Advanced AI model integrations and API support",
-        "Enhanced security and compliance features"
+        "Enhanced security and compliance features",
+        "Self-service backups and no downtime upgrades",
+        "Data-science support for app customization",
       ],
       link: "/contact"
     }
