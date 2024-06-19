@@ -14,12 +14,12 @@ export default function UseCasesSection() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pt-8 md:pt-8 pb-8 md:pb-8">
             <h2 className="font-inter-tight text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-zinc-400 via-zinc-200 to-zinc-200">
-            Implement custom AI applications and workflows without friction and at a fraction of the time.
+            Implement custom AI applications and workflows more efficiently
             </h2>
             <p className="text-lg text-zinc-500">
-            Enable your team to deliver enterprise AI applications at speed, from idea to high-scale. Build, deploy and manage all your AI workflows, from GenAI and LLMs to classic ML, in a single platform and your databases            </p>
-          </div>
-
+            Enable your team to deliver enterprise AI applications at speed, from idea to high-scale. Build, deploy and manage all your AI workflows, from GenAI and LLMs to classic ML, in a single platform and your databases. Get in touch with our data scientist consultants to discuss your AI use-cases and requirements. </p>
+          
+           </div>
           <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
             <UseCase
               icon={<ServerIcon className="h-6 w-6 text-blue-600" />}
@@ -52,6 +52,7 @@ export default function UseCasesSection() {
               description="Forecast future values based on historical data points, predicting trends, patterns, or outcomes over time."
             />
           </div>
+          
         </div>
       </div>
     </section>
