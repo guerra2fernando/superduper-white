@@ -115,8 +115,8 @@ export default function Home() {
                   </div>
                 </form>
                 <div className="text-center mt-6">
-                  <div className="text-xs text-zinc-500">
-                    By submitting you agree with our <a className="underline hover:no-underline" href="#0">Terms</a>
+                  <div className="text-xs text-zinc-400">
+                  By submitting this form, you agree that SuperDuperDB may collect, store, and process your personal data. This data will be used solely for the purposes of providing and improving our services and will not be shared with third parties without your consent. Additionally, you consent to being contacted by SuperDuperDB regarding our services and any relevant updates.
                   </div>
                 </div>
               </div>
