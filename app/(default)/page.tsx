@@ -16,7 +16,10 @@ export const metadata = {
     title: 'Superduper - AI Integration for Enterprise Databases',
     description: 'Implement custom AI solutions on your existing data infrastructure with Superduper, an end-to-end platform for integrating AI models and workflows directly with and across major databases.',
     image: 'https://superduper.com/og-image.jpg',
-  }
+  },
+  openGraph: {
+    images: 'https://superduper.com/og-image.png',
+  },
 }
 
 import Hero from '@/components/hero'
