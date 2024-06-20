@@ -30,7 +30,7 @@ export default function Header() {
             <nav className="md:hidden bg-gray-100 w-full absolute top-16 left-0 z-20 p-4">
               <ul className="flex flex-col items-start pl-4">
                 <li className="w-full border-b border-gray-300">
-                  <button onClick={() => setSubmenuOpen(!submenuOpen)} className="w-full flex items-center justify-between py-2 text-slate-500 font-medium text-sm ">
+                  <button onClick={() => setSubmenuOpen(!submenuOpen)} className="w-full flex items-center justify-between py-2 text-slate-500 text-sm font-semibold">
                     <span>Solutions</span>
                     <ChevronDownIcon className="w-5 h-5 ml-2" />
                   </button>
@@ -40,7 +40,7 @@ export default function Header() {
                         <Link href="/solutions/key-value" className="flex items-center w-full">
                           <CheckCircleIcon className="h-5 w-5 text-gray-600 mr-3" />
                           <div className="text-left">
-                            <div className="text-sm text-gray-600">Key-Value</div>
+                            <div className="text-sm text-gray-600 font-semibold">Key-Value</div>
                             <div className="text-xs text-gray-500">Document Extraction + RAG</div>
                           </div>
                         </Link>
@@ -49,7 +49,7 @@ export default function Header() {
                         <Link href="/solutions/vector-search" className="flex items-center w-full">
                           <DocumentTextIcon className="h-5 w-5 text-gray-600 mr-3" />
                           <div className="text-left">
-                            <div className="text-sm text-gray-600">Vector</div>
+                            <div className="text-sm text-gray-600 font-semibold">Vector</div>
                             <div className="text-xs text-gray-500">Embedding Generation</div>
                           </div>
                         </Link>
@@ -58,7 +58,7 @@ export default function Header() {
                         <Link href="/solutions/in-database-rag" className="flex items-center w-full">
                           <ArchiveBoxIcon className="h-5 w-5 text-gray-600 mr-3" />
                           <div className="text-left">
-                            <div className="text-sm text-gray-600">In-Database RAG</div>
+                            <div className="text-sm text-gray-600 font-semibold">In-Database RAG</div>
                             <div className="text-xs text-gray-500">Chat with your data</div>
                           </div>
                         </Link>
@@ -67,16 +67,16 @@ export default function Header() {
                   )}
                 </li>
                 <li className="w-full border-b border-gray-300">
-                  <Link className="font-medium text-sm block py-2 text-slate-500 hover:bg-gray-200 w-full text-left" href="/pricing">Pricing</Link>
+                  <Link className="font-medium text-sm block py-2 text-slate-500 hover:bg-gray-200 w-full text-left font-semibold" href="/pricing">Pricing</Link>
                 </li>
                 <li className="w-full border-b border-gray-300">
-                  <Link className="font-medium text-sm block py-2 text-slate-500 hover:bg-gray-200 w-full text-left" href="https://blog.superduperdb.com/">Blog</Link>
+                  <Link className="font-medium text-sm block py-2 text-slate-500 hover:bg-gray-200 w-full text-left font-semibold" href="https://blog.superduperdb.com/">Blog</Link>
                 </li>
                 <li className="w-full border-b border-gray-300">
-                  <Link className="font-medium text-sm block py-2 text-slate-500 hover:bg-gray-200 w-full text-left" href="https://docs.superduperdb.com/">Docs</Link>
+                  <Link className="font-medium text-sm block py-2 text-slate-500 hover:bg-gray-200 w-full text-left font-semibold" href="https://docs.superduperdb.com/">Docs</Link>
                 </li>
                 <li className="w-full">
-                  <Link className="font-medium text-sm block py-2 text-slate-500 hover:bg-gray-200 w-full text-left" href="/contact">Contact</Link>
+                  <Link className="font-medium text-sm block py-2 text-slate-500 hover:bg-gray-200 w-full text-left font-semibold" href="/contact">Contact</Link>
                 </li>
               </ul>
             </nav>
@@ -88,7 +88,7 @@ export default function Header() {
             {/* Desktop menu links */}
             <ul className="flex grow justify-center flex-wrap items-center">
               <li className="relative group">
-                <div className="font-medium text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer">
+                <div className="font-medium text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer font-semibold">
                   Solutions
                 </div>
                 <ul className="absolute left-1/2 transform -translate-x-1/2 bg-gray-100 rounded shadow-lg min-w-[280px] opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-300 ease-in-out">
@@ -97,7 +97,7 @@ export default function Header() {
                     <Link href="/solutions/key-value" className="flex items-center w-full">
                       <CheckCircleIcon className="h-5 w-5 text-gray-800 mr-3" />
                       <div className="text-left">
-                        <div className="text-sm text-gray-600">Key-Value</div>
+                        <div className="text-sm text-gray-600 font-semibold">Key-Value</div>
                         <div className="text-xs text-gray-400">Document Extraction + RAG</div>
                       </div>
                     </Link>
@@ -106,7 +106,7 @@ export default function Header() {
                     <Link href="/solutions/vector-search" className="flex items-center w-full">
                       <DocumentTextIcon className="h-5 w-5 text-gray-800 mr-3" />
                       <div className="text-left">
-                        <div className="text-sm text-gray-600">Vector</div>
+                        <div className="text-sm text-gray-600 font-semibold">Vector</div>
                         <div className="text-xs text-gray-400">Embedding Generation</div>
                       </div>
                     </Link>
@@ -115,7 +115,7 @@ export default function Header() {
                     <Link href="/solutions/in-database-rag" className="flex items-center w-full">
                       <ArchiveBoxIcon className="h-5 w-5 text-gray-800 mr-3" />
                       <div className="text-left">
-                        <div className="text-sm text-gray-600">In-Database RAG</div>
+                        <div className="text-sm text-gray-600 font-semibold">In-Database RAG</div>
                         <div className="text-xs text-gray-400">Chat with your data</div>
                       </div>
                     </Link>
@@ -123,16 +123,16 @@ export default function Header() {
                 </ul>
               </li>
               <li>
-                <Link className="font-medium text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer" href="/pricing">Pricing</Link>
+                <Link className="font-medium text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer font-semibold" href="/pricing">Pricing</Link>
               </li>
               <li>
-                <Link className="font-medium text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer" href="https://blog.superduperdb.com/">Blog</Link>
+                <Link className="font-medium text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer font-semibold" href="https://blog.superduperdb.com/">Blog</Link>
               </li>
               <li>
-                <Link className="font-medium text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer" href="https://docs.superduperdb.com/">Docs</Link>
+                <Link className="font-medium text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer font-semibold" href="https://docs.superduperdb.com/">Docs</Link>
               </li>
               <li>
-                <Link className="font-medium text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer" href="/contact">Contact</Link>
+                <Link className="font-medium text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer font-semibold" href="/contact">Contact</Link>
               </li>
             </ul>
 
