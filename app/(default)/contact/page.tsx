@@ -2,30 +2,48 @@
 
 import Community from './community';
 import { useState, ChangeEvent, FormEvent } from 'react';
+import PhoneInput from 'react-phone-number-input';
+import 'react-phone-number-input/style.css';
 
 export default function Home() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    channel: '',
+    phone: '',
     message: ''
   });
+
+  const publicEmailProviders = ['gmail.com', 'hotmail.com', 'yahoo.com', 'outlook.com'];
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { id, value } = e.target;
     setFormData({ ...formData, [id]: value });
   };
 
+  const handlePhoneChange = (value: string | undefined) => {
+    setFormData({ ...formData, phone: value || '' });
+  };
+
+  const isWorkEmail = (email: string) => {
+    const domain = email.split('@')[1];
+    return !publicEmailProviders.includes(domain);
+  };
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
+
+    if (!isWorkEmail(formData.email)) {
+      alert('Please use a work email address (no public email providers).');
+      return;
+    }
+
     const emailData = {
       name: formData.name,
       email: formData.email,
-      channel: formData.channel,
+      phone: formData.phone,
       message: formData.message
     };
-  
+
     try {
       const res = await fetch('https://handle-email-form-fernando67.replit.app/api/sendEmail', {
         method: 'POST',
@@ -34,7 +52,7 @@ export default function Home() {
         },
         body: JSON.stringify(emailData),
       });
-  
+
       if (res.ok) {
         alert('Thank you for contacting SuperDuper!');
       } else {
@@ -49,7 +67,6 @@ export default function Home() {
       }
     }
   };
-  
 
   return (
     <>
@@ -76,6 +93,17 @@ export default function Home() {
                     <div>
                       <label className="block text-sm text-zinc-800 font-medium mb-2" htmlFor="email">Work Email</label>
                       <input id="email" className="form-input text-sm w-full" type="email" placeholder="mark@acmecorp.com" value={formData.email} onChange={handleChange} required />
+                    </div>
+                    <div>
+                      <label className="block text-sm text-zinc-800 font-medium mb-2" htmlFor="phone">Phone Number</label>
+                      <PhoneInput
+                        id="phone"
+                        className="form-input text-sm w-full border-none custom-phone-input"
+                        placeholder="Enter phone number"
+                        value={formData.phone}
+                        onChange={handlePhoneChange}
+                        required
+                      />
                     </div>
                     <div>
                       <label className="block text-sm font-medium mb-2" htmlFor="message">Project Details</label>

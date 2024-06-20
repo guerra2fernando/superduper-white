@@ -314,3 +314,16 @@ animation: slideToLeft2 12s linear infinite; /* Adjust duration and other proper
 .shadow-light2 {
   box-shadow: 0px 3px 3px rgb(0 0 0 / 5%);
 }
+
+.custom-phone-input .PhoneInputInput {
+  border: none;
+  outline: none;
+  font-size: 0.875rem; /* Match the text-sm size */
+  color: #4A4A4A; /* Match the color of other inputs, adjust as necessary */
+  border-radius: 4px;
+}
+
+.custom-phone-input .PhoneInputInput::placeholder {
+  color: #a5a5a5;
+  font-size: 0.875rem; /* Match the text-sm size */
+}
