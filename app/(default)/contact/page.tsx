@@ -1,10 +1,7 @@
-// page.tsx
 "use client";
 
-import Blocks from './blocks';
 import Community from './community';
 import { useState, ChangeEvent, FormEvent } from 'react';
-import { metadata } from './metadata';
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -23,25 +20,36 @@ export default function Home() {
     e.preventDefault();
     
     const emailData = {
-      to: 'demo@superduperdb.com',
-      subject: `[FORM] Message from ${formData.name}`,
-      text: `Name: ${formData.name}\nEmail: ${formData.email}\nChannel: ${formData.channel}\nMessage: ${formData.message}`
+      name: formData.name,
+      email: formData.email,
+      channel: formData.channel,
+      message: formData.message
     };
-
-    const res = await fetch('/api/sendEmail', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(emailData),
-    });
-
-    if (res.ok) {
-      alert('Thank you for contacting SuperDuper!');
-    } else {
-      alert('There was an error. Please try again.');
+  
+    try {
+      const res = await fetch('https://handle-email-form-fernando67.replit.app/api/sendEmail', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(emailData),
+      });
+  
+      if (res.ok) {
+        alert('Thank you for contacting SuperDuper!');
+      } else {
+        const errorData = await res.json();
+        alert(`There was an error: ${errorData.message}`);
+      }
+    } catch (error) {
+      if (error instanceof Error) {
+        alert(`There was an error: ${error.message}`);
+      } else {
+        alert('An unknown error occurred.');
+      }
     }
   };
+  
 
   return (
     <>
