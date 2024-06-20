@@ -29,23 +29,22 @@ export default function Features02() {
                   </h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
-                Implement AI workflows on any type of data directly with your existing databases, eliminating data pipelines and moving data, ensuring production-readiness.  
-                </p>
+                Integrate AI models and APIs on any type of data directly with your existing databases, eliminating data pipelines and moving data, ensuring production-readiness.</p>
               </div>
             </article>
             <article className="flex flex-col border border-transparent [background:linear-gradient(theme(colors.white),theme(colors.zinc.50))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box]  rounded-lg">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"  width="25" stroke-width="1.5" stroke="currentColor" className="size-6" style={{ color: '#D0342C' }}>
-  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z" />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"  width="25" strokeWidth="1.5" stroke="currentColor" className="size-6" style={{ color: '#D0342C' }}>
+  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z" />
 </svg>
                   
                   <h3 className="font-inter-tight font-semibold text-zinc-900">
-                  Implement AI workflows
+                  Implement composable AI workflows
                   </h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
-                Future-proof your AI stack by easily switching and combining any open and closed source models and APIs including upcoming models and providers.                </p>
+                Avoid vendor lock-in and future-proof your AI stack by easily switching and combining any open and closed source models, providers and tools.      </p>
               </div>
             </article>
             <article className="flex flex-col border border-transparent [background:linear-gradient(theme(colors.white),theme(colors.zinc.50))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box]  rounded-lg">

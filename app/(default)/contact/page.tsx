@@ -57,7 +57,7 @@ export default function Home() {
             {/* Form and Calendly Widget side by side */}
             <div className="flex flex-col md:flex-row justify-center items-start gap-8">
               {/* Form */}
-              <div className="max-w-4x1 p-6 rounded-lg shadow-2xl bg-gradient-to-b from-zinc-100 to-zinc-50/70 relative before:absolute before:-top-12 before:-left-16 before:w-96 before:h-96 before:bg-zinc-900 before:opacity-[.15] before:rounded-full before:blur-3xl before:-z-10">
+              <div className="max-w-[40rem] w-full p-6 rounded-lg shadow-2xl bg-gradient-to-b from-zinc-100 to-zinc-50/70 relative before:absolute before:-top-12 before:-left-16 before:w-96 before:h-96 before:bg-zinc-900 before:opacity-[.15] before:rounded-full before:blur-3xl before:-z-10">
                 <h2 className="text-xl font-bold text-zinc-800 mb-4">Send us a message</h2>
                 <form onSubmit={handleSubmit}>
                   <div className="space-y-4">
@@ -68,14 +68,6 @@ export default function Home() {
                     <div>
                       <label className="block text-sm text-zinc-800 font-medium mb-2" htmlFor="email">Work Email</label>
                       <input id="email" className="form-input text-sm w-full" type="email" placeholder="mark@acmecorp.com" value={formData.email} onChange={handleChange} required />
-                    </div>
-                    <div>
-                      <label className="block text-sm font-medium mb-2" htmlFor="channel">How did you hear about us?</label>
-                      <select id="channel" className="form-select w-full" value={formData.channel} onChange={handleChange} required>
-                        <option>Github</option>
-                        <option>Linkedin</option>
-                        <option>Event</option>
-                      </select>
                     </div>
                     <div>
                       <label className="block text-sm font-medium mb-2" htmlFor="message">Project Details</label>
@@ -94,7 +86,7 @@ export default function Home() {
               </div>
 
               {/* Calendly Widget */}
-              <div className="max-w-4x1 p-6 rounded-lg shadow-2xl bg-gradient-to-b from-zinc-100 to-zinc-50/70 relative before:absolute before:-top-12 before:-left-16 before:w-96 before:h-96 before:bg-zinc-900 before:opacity-[.15] before:rounded-full before:blur-3xl before:-z-10">
+              <div className="max-w-[40rem] w-full p-6 rounded-lg shadow-2xl bg-gradient-to-b from-zinc-100 to-zinc-50/70 relative before:absolute before:-top-12 before:-left-16 before:w-96 before:h-96 before:bg-zinc-900 before:opacity-[.15] before:rounded-full before:blur-3xl before:-z-10">
                 <h2 className="text-xl font-bold text-zinc-800 mb-4">Schedule a meeting</h2>
                 <div className="calendly-inline-widget" data-url="https://calendly.com/superduper-demo/30min" style={{ minWidth: '320px', height: '700px' }}></div>
                 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>

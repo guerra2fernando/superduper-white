@@ -23,7 +23,6 @@ export default function Hero() {
                 <p className="text-lg text-zinc-500 mb-8">
                 Superduper is an end-to-end platform for integrating AI models and workflows directly with and across major databases - for more flexible, secure and scalable enterprise AI adoption. 
 
-
                 </p>
                 <div className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                   <div>
