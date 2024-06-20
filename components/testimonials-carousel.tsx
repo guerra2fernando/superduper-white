@@ -54,11 +54,7 @@ export default function TestimonialsCarousel() {
               Jumpstart AI adoption with Superduper AI App Templates
             </h2>
             <p className="text-lg text-zinc-400">
-              Our enterprise platform comes with preconfigured AI App Templates,
-              which enable you to easily implement use-case and business-logic
-              configurations that meet your business logic and data
-              requirements. The templates contain different model options for
-              self-hosting as well as web user interfaces.
+            Our preconfigured AI App Templates enable you to easily implement AI that meets your business-logic and data requirements. The templates contain different model options for self-hosting as well as web user interfaces. Our data science consultants are here to help you build custom templates that meet your specific needs. 
             </p>
           </div>
 
