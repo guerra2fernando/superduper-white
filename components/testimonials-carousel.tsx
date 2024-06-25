@@ -206,7 +206,7 @@ export default function TestimonialsCarousel() {
                           fill="none"
                           viewBox="0 0 24 24"
                           strokeWidth="1.5"
-                          className="size-6"
+                          className="size-6 opacity-60"
                           stroke="#D0342C"
                           width="25"
                         >

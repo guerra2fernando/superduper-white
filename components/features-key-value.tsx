@@ -28,7 +28,7 @@ export default function FeaturesKeyValue() {
             <article className="flex flex-col border border-transparent ">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
-                  <ArchiveBoxIcon className="w-6 h-6" style={{ color: '#D0342C' }} />
+                  <ArchiveBoxIcon className="w-6 h-6 opacity-60" style={{ color: '#D0342C' }} />
                   <h3 className="font-inter-tight font-semibold text-zinc-900">Documents</h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
@@ -39,7 +39,7 @@ export default function FeaturesKeyValue() {
             <article className="flex flex-col border border-transparent ">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
-                  <KeyIcon className="w-6 h-6" style={{ color: '#45BE76' }} />
+                  <KeyIcon className="w-6 h-6 opacity-60" style={{ color: '#45BE76' }} />
                   <h3 className="font-inter-tight font-semibold text-zinc-900">Key-Value</h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
@@ -50,7 +50,7 @@ export default function FeaturesKeyValue() {
             <article className="flex flex-col border border-transparent">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
-                  <BellAlertIcon className="w-6 h-6" style={{ color: '#3073b7' }} />
+                  <BellAlertIcon className="w-6 h-6 opacity-60" style={{ color: '#3073b7' }} />
                   <h3 className="font-inter-tight font-semibold text-zinc-900">Alerts</h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
@@ -61,7 +61,7 @@ export default function FeaturesKeyValue() {
             <article className="flex flex-col border border-transparent">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
-                  <ShieldCheckIcon className="w-6 h-6" style={{ color: '#3073b7' }} />
+                  <ShieldCheckIcon className="w-6 h-6 opacity-60" style={{ color: '#3073b7' }} />
                   <h3 className="font-inter-tight font-semibold text-zinc-900">Safeguard</h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
@@ -72,7 +72,7 @@ export default function FeaturesKeyValue() {
             <article className="flex flex-col border border-transparent">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
-                  <ArrowsPointingOutIcon className="w-6 h-6" style={{ color: '#D0342C' }} />
+                  <ArrowsPointingOutIcon className="w-6 h-6 opacity-60" style={{ color: '#D0342C' }} />
                   <h3 className="font-inter-tight font-semibold text-zinc-900">Scale</h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
@@ -83,7 +83,7 @@ export default function FeaturesKeyValue() {
             <article className="flex flex-col border border-transparent">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
-                  <AdjustmentsHorizontalIcon className="w-6 h-6" style={{ color: '#45BE76' }} />
+                  <AdjustmentsHorizontalIcon className="w-6 h-6 opacity-60" style={{ color: '#45BE76' }} />
                   <h3 className="font-inter-tight font-semibold text-zinc-900">Fine-tune</h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">

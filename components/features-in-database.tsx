@@ -31,7 +31,7 @@ export default function FeaturesInDatabase() {
             <article className="flex flex-col border border-transparent ">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
-                  <ArchiveBoxIcon className="w-6 h-6" style={{ color: '#D0342C' }} />
+                  <ArchiveBoxIcon className="w-6 h-6 opacity-60" style={{ color: '#D0342C' }} />
                   <h3 className="font-inter-tight font-semibold text-zinc-900">Framework Compatibility</h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
@@ -42,7 +42,7 @@ export default function FeaturesInDatabase() {
             <article className="flex flex-col border border-transparent ">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
-                  <ServerIcon className="w-6 h-6" style={{ color: '#45BE76' }} />
+                  <ServerIcon className="w-6 h-6 opacity-60" style={{ color: '#45BE76' }} />
                   <h3 className="font-inter-tight font-semibold text-zinc-900">End-to-End Workflow</h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
@@ -53,7 +53,7 @@ export default function FeaturesInDatabase() {
             <article className="flex flex-col border border-transparent">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
-                  <SwatchIcon className="w-6 h-6" style={{ color: '#3073b7' }} />
+                  <SwatchIcon className="w-6 h-6 opacity-60" style={{ color: '#3073b7' }} />
                   <h3 className="font-inter-tight font-semibold text-zinc-900">Instant Processing</h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
@@ -64,7 +64,7 @@ export default function FeaturesInDatabase() {
             <article className="flex flex-col border border-transparent">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
-                  <ScaleIcon className="w-6 h-6" style={{ color: '#D0342C' }} />
+                  <ScaleIcon className="w-6 h-6 opacity-60" style={{ color: '#D0342C' }} />
                   <h3 className="font-inter-tight font-semibold text-zinc-900">Scalable Deployment</h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
@@ -75,7 +75,7 @@ export default function FeaturesInDatabase() {
             <article className="flex flex-col border border-transparent">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
-                  <CogIcon className="w-6 h-6" style={{ color: '#45BE76' }} />
+                  <CogIcon className="w-6 h-6 opacity-60" style={{ color: '#45BE76' }} />
                   <h3 className="font-inter-tight font-semibold text-zinc-900">API Switching</h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">
@@ -86,7 +86,7 @@ export default function FeaturesInDatabase() {
             <article className="flex flex-col border border-transparent">
               <div className="grow flex flex-col p-5 pt-6">
                 <div className="flex items-center space-x-3 mb-1">
-                  <AdjustmentsHorizontalIcon className="w-6 h-6" style={{ color: '#3073b7' }} />
+                  <AdjustmentsHorizontalIcon className="w-6 h-6 opacity-60" style={{ color: '#3073b7' }} />
                   <h3 className="font-inter-tight font-semibold text-zinc-900">Fine-tune Models</h3>
                 </div>
                 <p className="grow max-w-md text-sm text-zinc-500">

@@ -22,32 +22,32 @@ export default function UseCasesSection() {
            </div>
           <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
             <UseCase
-              icon={<ServerIcon className="h-6 w-6 text-blue-600" />}
+              icon={<ServerIcon className="h-6 w-6 opacity-60 text-blue-600" />}
               title="LLM and RAG applications"
               description="Allow large language models direct access to your data to build chatbots, assistants, sentiment analysis, classification, summarization."
             />
             <UseCase
-              icon={<MagnifyingGlassIcon className="h-6 w-6 text-green-600" />}
+              icon={<MagnifyingGlassIcon className="h-6 w-6 opacity-60 text-green-600" />}
               title="Vector Embedding Generation"
               description="Install and manage vector embedding models and APIs side-by-side, enabling semantic and similarity search, recommendation systems."
             />
             <UseCase
-              icon={<CameraIcon className="h-6 w-6 text-red-600" />}
+              icon={<CameraIcon className="h-6 w-6 opacity-60 text-red-600" />}
               title="Computer Vision"
               description="Analyze, process, and extract meaningful insights from images and videos to build classification, segmentation, object detection, and recognition systems."
             />
             <UseCase
-              icon={<ChartBarIcon className="h-6 w-6 text-red-600" />}
+              icon={<ChartBarIcon className="h-6 w-6 opacity-60 text-red-600" />}
               title="Predictive Analytics"
               description="Predict behavioral patterns and anticipate changes and trends based on historical and current data for various applications."
             />
             <UseCase
-              icon={<ShieldExclamationIcon className="h-6 w-6 text-blue-600 " />}
+              icon={<ShieldExclamationIcon className="h-6 w-6 opacity-60 text-blue-600 " />}
               title="Anomaly and Fraud Detection"
               description="Identify deviations or irregularities in data patterns, signaling potential instances of fraudulent activity or abnormal behavior."
             />
             <UseCase
-              icon={<ClockIcon className="h-6 w-6 text-green-600" />}
+              icon={<ClockIcon className="h-6 w-6 opacity-60 text-green-600" />}
               title="Time Series Prediction"
               description="Forecast future values based on historical data points, predicting trends, patterns, or outcomes over time."
             />

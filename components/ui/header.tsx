@@ -23,7 +23,7 @@ export default function Header() {
           {/* Hamburger Menu for Mobile on the right side */}
           <div className="md:hidden flex items-center">
             <button onClick={() => setMenuOpen(!menuOpen)} className="text-gray-500 hover:text-gray-700 focus:outline-none">
-              {menuOpen ? <XMarkIcon className="w-6 h-6" /> : <Bars3Icon className="w-6 h-6" />}
+              {menuOpen ? <XMarkIcon className="w-6 h-6 opacity-60" /> : <Bars3Icon className="w-6 h-6 opacity-60" />}
             </button>
           </div>
 

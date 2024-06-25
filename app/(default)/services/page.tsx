@@ -20,15 +20,15 @@ export const metadata = {
 }
 
 
-import HeroPricing from '@/components/hero-pricing'
-import PricingTabs from '@/components/pricing-tabs'
+import HeroServices from '@/components/hero-services'
+import Community from '../contact/community'
 import Cta from '@/components/cta'
 
 export default function Home() {
   return (
     <>
-      <HeroPricing />
-      <PricingTabs />
+      <HeroServices />
+      <Community />
       <Cta />
     </>
   )
