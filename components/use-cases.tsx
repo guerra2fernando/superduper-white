@@ -42,12 +42,12 @@ export default function UseCasesSection() {
               description="Predict behavioral patterns and anticipate changes and trends based on historical and current data for various applications."
             />
             <UseCase
-              icon={<ShieldExclamationIcon className="h-6 w-6 text-green-600" />}
+              icon={<ShieldExclamationIcon className="h-6 w-6 text-blue-600 " />}
               title="Anomaly and Fraud Detection"
               description="Identify deviations or irregularities in data patterns, signaling potential instances of fraudulent activity or abnormal behavior."
             />
             <UseCase
-              icon={<ClockIcon className="h-6 w-6  text-blue-600" />}
+              icon={<ClockIcon className="h-6 w-6 text-green-600" />}
               title="Time Series Prediction"
               description="Forecast future values based on historical data points, predicting trends, patterns, or outcomes over time."
             />

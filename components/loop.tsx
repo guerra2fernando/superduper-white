@@ -12,10 +12,10 @@ export default function Loop() {
 
               <div className="max-w-3xl mx-auto text-center">
                         <h2 className="font-inter-tight text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900">
-                            Instead of bringing your data to AI, bring your AI deployment to your data
+                        Make your databases the center-piece of your AI stack 
                         </h2>
                         <p className="text-lg text-zinc-500 ">
-                            Superduper integrates with your existing databases, facilitating data , APIs and frameworks, ensuring that all steps of your AI workflows are contained in your databases end-to-end, instead of being spread across various places, systems and environments.
+                        Instead of bringing your data to AI, Superduper brings AI to your databases, facilitating data transfer to AI models, APIs and frameworks, ensuring that all steps of your AI workflows are contained in your databases end-to-end, instead of being spread across various places, systems and environments. 
                         </p>
                     </div>
 

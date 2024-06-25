@@ -20,13 +20,20 @@ export default function Why() {
     {
       img: Why01,
       name: 'Faster development of more robust AI applications',
-      quote: 'Implement even the most complex custom AI workflows on your database with a declarative interface and integrations with major AI frameworks, model hubs and APIs. Use our abstractions, building blocks and templates and build your own, while still being able to drill down to any layer of customization.',
+      quote: 'Implement even the most complex AI applications on your database as workflow-as-code using Superduper’s declarative Python interface and integrations with major AI frameworks, model hubs, and APIs. Move fast with our abstractions, building blocks, and templates, while still being able to drill down to any layer of customization.',
       placeholderImage: PlaceholderImage01,
+    },
+    
+    {
+      img: Why02,
+      name: 'Avoid vendor-lock through composability',
+      quote: 'There are models and packages with specialized functionality for specific use cases, with better options constantly emerging. Implementing on Superduper allows you to switch between and combine frameworks like LangChain and LamaIndex within the same workflow to make your solutions the best they can be. Build on one database and reimplement on another easily.',
+      placeholderImage: PlaceholderImage02,
     },
     {
       img: Why02,
-      name: 'Secure deployment on your existing infrastructure',
-      quote: 'No setup of repetitive infrastructure and setup of ETL pipelines with every new application. Export your AI apps and workflows and deploy them with all needed components in minutes. A single scalable deployment including hosting your own models in-house, fine-tuning, and streaming inference.',
+      name: 'Secure and scalable deployment on your existing infrastructure',
+      quote: 'No setup of repetitive infrastructure and setup of ETL pipelines with every new application. Export your AI apps and workflows and deploy them with all needed components in minutes. A single scalable deployment including hosting your own models in-house, fine-tuning, and streaming inference on your own infrastructure.',
       placeholderImage: PlaceholderImage02,
     },
     {

@@ -42,7 +42,7 @@ export default function Header() {
                         <Link href="/solutions/key-value" className="flex items-center w-full">
                           <CheckCircleIcon className="h-5 w-5 text-gray-600 mr-3" />
                           <div className="text-left">
-                            <div className="text-sm text-gray-600 font-semibold">Key-Value</div>
+                            <div className="text-sm text-gray-600 font-semibold">Key-Value Extraction</div>
                             <div className="text-xs text-gray-500">Document Extraction + RAG</div>
                           </div>
                         </Link>
@@ -51,8 +51,8 @@ export default function Header() {
                         <Link href="/solutions/vector-search" className="flex items-center w-full">
                           <DocumentTextIcon className="h-5 w-5 text-gray-600 mr-3" />
                           <div className="text-left">
-                            <div className="text-sm text-gray-600 font-semibold">Vector</div>
-                            <div className="text-xs text-gray-500">Embedding Generation</div>
+                            <div className="text-sm text-gray-600 font-semibold">Vector Embedding Generation</div>
+                            <div className="text-xs text-gray-500">Generate Vectors from your data</div>
                           </div>
                         </Link>
                       </li>
@@ -67,6 +67,10 @@ export default function Header() {
                       </li>
                     </ul>
                   )}
+                </li>
+                
+                <li className="w-full border-b border-gray-300">
+                  <Link className="font-medium text-sm block py-2 text-slate-500 hover:bg-gray-200 w-full text-left font-semibold" href="/services">Services</Link>
                 </li>
                 <li className="w-full border-b border-gray-300">
                   <Link className="font-medium text-sm block py-2 text-slate-500 hover:bg-gray-200 w-full text-left font-semibold" href="/pricing">Pricing</Link>
@@ -99,7 +103,7 @@ export default function Header() {
                     <Link href="/solutions/key-value" className="flex items-center w-full">
                       <CheckCircleIcon className="h-5 w-5 text-gray-800 mr-3" />
                       <div className="text-left">
-                        <div className="text-sm text-gray-600 font-semibold">Key-Value</div>
+                        <div className="text-sm text-gray-600 font-semibold">Key-Value Extraction</div>
                         <div className="text-xs text-gray-400">Document Extraction + RAG</div>
                       </div>
                     </Link>
@@ -108,8 +112,8 @@ export default function Header() {
                     <Link href="/solutions/vector-search" className="flex items-center w-full">
                       <DocumentTextIcon className="h-5 w-5 text-gray-800 mr-3" />
                       <div className="text-left">
-                        <div className="text-sm text-gray-600 font-semibold">Vector</div>
-                        <div className="text-xs text-gray-400">Embedding Generation</div>
+                        <div className="text-sm text-gray-600 font-semibold">Vector Embedding Generation</div>
+                        <div className="text-xs text-gray-400">Generate Vectors from your data</div>
                       </div>
                     </Link>
                   </li>
@@ -123,6 +127,10 @@ export default function Header() {
                     </Link>
                   </li>
                 </ul>
+              </li>
+              
+              <li>
+                <Link className="font-medium text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer font-semibold" href="/services">Services</Link>
               </li>
               <li>
                 <Link className="font-medium text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer font-semibold" href="/pricing">Pricing</Link>
