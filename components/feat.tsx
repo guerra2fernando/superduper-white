@@ -35,7 +35,7 @@ export default function Why() {
     },
     {
       img: Why02,
-      name: 'Avoid vendor-lock through composability',
+      name: 'Avoid vendor lock-in through composability',
       quote: 'There are models and packages with specialized functionality for specific use cases, with better options constantly emerging. Implementing on Superduper allows you to switch between and combine frameworks like LangChain and LamaIndex within the same workflow to make your solutions the best they can be. Build on one database and reimplement on another easily.',
       placeholderImage: PlaceholderImage02,
     },
@@ -51,9 +51,13 @@ export default function Why() {
     },
     {
       img: Why03,
-      name: 'One platform for all enterprise AI needs',
+      name: 'One platform for all enterprise AI',
       quote: 'Implement any enterprise AI use-case and streamline your AI workflows. Build your AI stack with a single, open platform on your own, existing infrastructure, turning your databases into your artifact store and metadata store. Stop switching between different deployments and environments.',
       placeholderImage: PlaceholderImage03,
+      button: {
+        text: 'Schedule a demo',
+        link: '/contact'
+      }
     },
   ]
 

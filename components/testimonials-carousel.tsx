@@ -75,6 +75,7 @@ export default function TestimonialsCarousel() {
                           strokeWidth="1.5"
                           stroke="#D0342C"
                           width="25"
+                          className="opacity-60"
                         >
                           <path
                             strokeLinecap="round"
@@ -120,6 +121,7 @@ export default function TestimonialsCarousel() {
                           strokeWidth="1.5"
                           stroke="#45BE76"
                           width="25"
+                          className="opacity-60"
                         >
                           <path
                             strokeLinecap="round"
@@ -163,6 +165,7 @@ export default function TestimonialsCarousel() {
                           strokeWidth="1.5"
                           stroke="#3073b7"
                           width="25"
+                          className="opacity-60"
                         >
                           <path
                             strokeLinecap="round"
