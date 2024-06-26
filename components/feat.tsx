@@ -55,16 +55,6 @@ export default function Why() {
       quote: 'Implement any enterprise AI use-case and streamline your AI workflows. Build your AI stack with a single, open platform on your own, existing infrastructure, turning your databases into your artifact store and metadata store. Stop switching between different deployments and environments.',
       placeholderImage: PlaceholderImage03,
     },
-    {
-      img: Why02,
-      name: 'Here to support you',
-      quote: 'We know what it takes to implement complex AI in an enterprise context. Our data science and devops experts are here to help you implement applications that solve your specific problems optimally. ',
-      placeholderImage: PlaceholderImage02,
-      button: {
-        text: 'Contact Us',
-        link: '/contact'
-      }
-    },
   ]
 
   return (

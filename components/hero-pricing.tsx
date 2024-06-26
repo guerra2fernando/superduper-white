@@ -19,7 +19,7 @@ export default function HeroPricing() {
                 Accelerate your enterprise AI adoption now</h1>
                 <p className="text-lg text-zinc-500 mb-8">
                 Enable your team to deliver custom enterprise AI with no friction at a fraction of the time and say goodbye to unneeded complexity in your data and AI infrastructure stack.
-</p>
+                </p>
                
               </div>
           </div>
