@@ -86,12 +86,12 @@ const IntegrationsSec: React.FC = () => {
       >
         <Image
           src={Illustration}
-          className="max-w-none opacity-40"
+          className="max-w-none opacity-30"
           width={2146}
           priority
           alt="Hero Illustration"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-transparent to-white"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white"></div>
       </div>
            <div className="max-w-3xl mx-auto text-center">
                         <h2 className="font-inter-tight text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900">

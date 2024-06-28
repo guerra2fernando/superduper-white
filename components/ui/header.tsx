@@ -1,14 +1,40 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
-import { CheckCircleIcon, DocumentTextIcon, ArchiveBoxIcon } from '@heroicons/react/24/solid'
 import Logo from './logo'
 import Link from 'next/link'
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
-  const [submenuOpen, setSubmenuOpen] = useState(false)
+  const [megamenuOpen, setMegamenuOpen] = useState(false)
+
+  useEffect(() => {
+    let timeoutId: string | number | NodeJS.Timeout | undefined;
+    const solutionsLink = document.getElementById('solutions-link');
+    const megamenu = document.getElementById('megamenu');
+
+    const handleMouseEnter = () => {
+      clearTimeout(timeoutId);
+      setMegamenuOpen(true);
+    };
+
+    const handleMouseLeave = () => {
+      timeoutId = setTimeout(() => setMegamenuOpen(false), 300);
+    };
+
+    solutionsLink?.addEventListener('mouseenter', handleMouseEnter);
+    solutionsLink?.addEventListener('mouseleave', handleMouseLeave);
+    megamenu?.addEventListener('mouseenter', handleMouseEnter);
+    megamenu?.addEventListener('mouseleave', handleMouseLeave);
+
+    return () => {
+      solutionsLink?.removeEventListener('mouseenter', handleMouseEnter);
+      solutionsLink?.removeEventListener('mouseleave', handleMouseLeave);
+      megamenu?.removeEventListener('mouseenter', handleMouseEnter);
+      megamenu?.removeEventListener('mouseleave', handleMouseLeave);
+    };
+  }, []);
 
   return (
     <header className="fixed w-full z-30 top-0 bg-white ">
@@ -31,44 +57,40 @@ export default function Header() {
           {menuOpen && (
             <nav className="md:hidden bg-gray-100 w-full absolute top-16 left-0 z-20 p-4">
               <ul className="flex flex-col items-start pl-4">
+                
+              <li className="w-full border-b border-gray-300">
+                  <Link className="font-medium text-sm block py-2 text-slate-500 hover:bg-gray-200 w-full text-left font-semibold" href="/about">About</Link>
+                </li>
                 <li className="w-full border-b border-gray-300">
-                  <button onClick={() => setSubmenuOpen(!submenuOpen)} className="w-full flex items-center justify-between py-2 text-slate-500 text-sm font-semibold">
+                  <button onClick={() => setMegamenuOpen(!megamenuOpen)} className="w-full flex items-center justify-between py-2 text-slate-500 text-sm font-semibold">
                     <span>Solutions</span>
                     <ChevronDownIcon className="w-5 h-5 ml-2" />
                   </button>
-                  {submenuOpen && (
-                    <ul className="w-full bg-gray-100 rounded shadow-md mt-1">
-                      <li className="border-b border-gray-300 flex items-center px-4 py-2 hover:bg-gray-300">
-                        <Link href="/solutions/key-value" className="flex items-center w-full">
-                          <CheckCircleIcon className="h-5 w-5 text-gray-600 mr-3" />
-                          <div className="text-left">
+                  {megamenuOpen && (
+                    <div className="w-full bg-gray-100 rounded shadow-md mt-1 p-4 grid grid-cols-1">
+                      <ul className="w-full">
+                        <li className="border-b border-gray-300 px-4 py-2 hover:bg-gray-300">
+                          <Link href="/solutions/key-value" className="w-full block">
                             <div className="text-sm text-gray-600 font-semibold">Key-Value Extraction</div>
                             <div className="text-xs text-gray-500">Document Extraction + RAG</div>
-                          </div>
-                        </Link>
-                      </li>
-                      <li className="border-b border-gray-300 flex items-center px-4 py-2 hover:bg-gray-300">
-                        <Link href="/solutions/vector-search" className="flex items-center w-full">
-                          <DocumentTextIcon className="h-5 w-5 text-gray-600 mr-3" />
-                          <div className="text-left">
+                          </Link>
+                        </li>
+                        <li className="border-b border-gray-300 px-4 py-2 hover:bg-gray-300">
+                          <Link href="/solutions/vector-search" className="w-full block">
                             <div className="text-sm text-gray-600 font-semibold">Vector Embedding Generation</div>
                             <div className="text-xs text-gray-500">Generate Vectors from your data</div>
-                          </div>
-                        </Link>
-                      </li>
-                      <li className=" border-gray-300 flex items-center px-4 py-2 hover:bg-gray-300">
-                        <Link href="/solutions/in-database-rag" className="flex items-center w-full">
-                          <ArchiveBoxIcon className="h-5 w-5 text-gray-600 mr-3" />
-                          <div className="text-left">
+                          </Link>
+                        </li>
+                        <li className="px-4 py-2 hover:bg-gray-300">
+                          <Link href="/solutions/in-database-rag" className="w-full block">
                             <div className="text-sm text-gray-600 font-semibold">In-Database RAG</div>
                             <div className="text-xs text-gray-500">Chat with your data</div>
-                          </div>
-                        </Link>
-                      </li>
-                    </ul>
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
                   )}
                 </li>
-                
                 <li className="w-full border-b border-gray-300">
                   <Link className="font-medium text-sm block py-2 text-slate-500 hover:bg-gray-200 w-full text-left font-semibold" href="/services">Services</Link>
                 </li>
@@ -90,43 +112,16 @@ export default function Header() {
 
           {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">
-
             {/* Desktop menu links */}
             <ul className="flex grow justify-center flex-wrap items-center">
-              <li className="relative group">
-                <div className="font-medium text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer font-semibold">
+              
+            <li>
+                <Link className="font-medium text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer font-semibold" href="/about">About</Link>
+              </li>
+              <li>
+                <div id="solutions-link" className="font-medium mt-1 text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer font-semibold">
                   Solutions
                 </div>
-                <ul className="absolute left-1/2 transform -translate-x-1/2 bg-gray-100 rounded shadow-lg min-w-[280px] opacity-0 group-hover:opacity-100 group-hover:visible invisible transition-opacity duration-300 ease-in-out">
-                  <div className="absolute left-1/2 transform  -translate-x-1/2 -top-2 w-4 h-4 bg-gray-100 rotate-45 -z-10"></div>
-                  <li className="border-b border-gray-300 flex items-center px-4 py-2 hover:bg-gray-200 rounded-t">
-                    <Link href="/solutions/key-value" className="flex items-center w-full">
-                      <CheckCircleIcon className="h-5 w-5 text-gray-800 mr-3" />
-                      <div className="text-left">
-                        <div className="text-sm text-gray-600 font-semibold">Key-Value Extraction</div>
-                        <div className="text-xs text-gray-400">Document Extraction + RAG</div>
-                      </div>
-                    </Link>
-                  </li>
-                  <li className="border-b border-gray-300 flex items-center px-4 py-2 hover:bg-gray-200">
-                    <Link href="/solutions/vector-search" className="flex items-center w-full">
-                      <DocumentTextIcon className="h-5 w-5 text-gray-800 mr-3" />
-                      <div className="text-left">
-                        <div className="text-sm text-gray-600 font-semibold">Vector Embedding Generation</div>
-                        <div className="text-xs text-gray-400">Generate Vectors from your data</div>
-                      </div>
-                    </Link>
-                  </li>
-                  <li className="border-b border-gray-300 flex items-center px-4 py-2 hover:bg-gray-200 rounded-b">
-                    <Link href="/solutions/in-database-rag" className="flex items-center w-full">
-                      <ArchiveBoxIcon className="h-5 w-5 text-gray-800 mr-3" />
-                      <div className="text-left">
-                        <div className="text-sm text-gray-600 font-semibold">In-Database RAG</div>
-                        <div className="text-xs text-gray-400">Chat with your data</div>
-                      </div>
-                    </Link>
-                  </li>
-                </ul>
               </li>
               
               <li>
@@ -145,7 +140,6 @@ export default function Header() {
                 <Link className="font-medium text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer font-semibold" href="/contact">Contact</Link>
               </li>
             </ul>
-
           </nav>
 
           {/* Desktop sign in links */}
@@ -154,7 +148,53 @@ export default function Header() {
               <Link className="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow" href="/contact">Get Started</Link>
             </li>
           </ul>
+        </div>
+      </div>
 
+      {/* Full-width Megamenu */}
+      <div 
+        id="megamenu"
+        className={`absolute left-0 w-full bg-gray-100 shadow-lg transition-all duration-300 ease-in-out ${
+          megamenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+        }`}
+        style={{ top: '100%' }}
+      >
+        <div className="max-w-6xl mx-auto p-4 grid grid-cols-4 gap-4">
+          <ul>
+            <li className="px-4 py-2 hover:bg-gray-200 rounded">
+              <Link href="/solutions/key-value">
+                <div className="text-sm text-gray-600 font-semibold">Key-Value Extraction</div>
+                <div className="text-xs text-gray-400">Document Extraction + RAG</div>
+              </Link>
+            </li>
+            <li className="px-4 py-2 hover:bg-gray-200 rounded">
+              <Link href="/solutions/vector-search">
+                <div className="text-sm text-gray-600 font-semibold">Vector Embedding Generation</div>
+                <div className="text-xs text-gray-400">Generate Vectors from your data</div>
+              </Link>
+            </li>
+            <li className="px-4 py-2 hover:bg-gray-200 rounded">
+              <Link href="/solutions/in-database-rag">
+                <div className="text-sm text-gray-600 font-semibold">In-Database RAG</div>
+                <div className="text-xs text-gray-400">Chat with your data</div>
+              </Link>
+            </li>
+          </ul>
+          <ul>
+            <li className="px-4 py-2 hover:bg-gray-200 rounded">Lorem ipsum</li>
+            <li className="px-4 py-2 hover:bg-gray-200 rounded">Lorem ipsum</li>
+            <li className="px-4 py-2 hover:bg-gray-200 rounded">Lorem ipsum</li>
+          </ul>
+          <ul>
+            <li className="px-4 py-2 hover:bg-gray-200 rounded">Lorem ipsum</li>
+            <li className="px-4 py-2 hover:bg-gray-200 rounded">Lorem ipsum</li>
+            <li className="px-4 py-2 hover:bg-gray-200 rounded">Lorem ipsum</li>
+          </ul>
+          <ul>
+            <li className="px-4 py-2 hover:bg-gray-200 rounded">Lorem ipsum</li>
+            <li className="px-4 py-2 hover:bg-gray-200 rounded">Lorem ipsum</li>
+            <li className="px-4 py-2 hover:bg-gray-200 rounded">Lorem ipsum</li>
+          </ul>
         </div>
       </div>
     </header>

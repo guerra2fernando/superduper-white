@@ -2,7 +2,6 @@ import Image from 'next/image'
 import { StaticImageData } from 'next/image'
 import Why01 from '@/public/images/why-icon-1.png'
 import Why02 from '@/public/images/why-icon-2.png'
-import Why03 from '@/public/images/why-icon-3.png'
 import PlaceholderImage01 from '@/public/images/carousel-illustration-01.jpg'
 import PlaceholderImage02 from '@/public/images/carousel-illustration-02.jpg'
 import PlaceholderImage03 from '@/public/images/carousel-illustration-03.jpg'
@@ -13,7 +12,7 @@ interface Button {
 }
 
 interface Item {
-  img: StaticImageData
+  img?: StaticImageData
   name: string
   quote: string
   placeholderImage: StaticImageData
@@ -26,7 +25,7 @@ export default function Why() {
     {
       img: Why01,
       name: 'Faster development of more robust AI applications',
-      quote: 'Implement even the most complex AI applications on your database as workflow-as-code using Superduper’s declarative Python interface and integrations with major AI frameworks, model hubs, and APIs. Move fast with our abstractions, building blocks, and templates, while still being able to drill down to any layer of customization.',
+      quote: 'Implement even the most complex AI applications on your database as workflow-as-code using Superduper declarative Python interface and integrations with major AI frameworks, model hubs, and APIs. Move fast with our abstractions, building blocks, and templates, while still being able to drill down to any layer of customization.',
       placeholderImage: PlaceholderImage01,
       button: {
         text: 'Go to documentation',
@@ -34,7 +33,6 @@ export default function Why() {
       }
     },
     {
-      img: Why02,
       name: 'Avoid vendor lock-in through composability',
       quote: 'There are models and packages with specialized functionality for specific use cases, with better options constantly emerging. Implementing on Superduper allows you to switch between and combine frameworks like LangChain and LamaIndex within the same workflow to make your solutions the best they can be. Build on one database and reimplement on another easily.',
       placeholderImage: PlaceholderImage02,
@@ -50,7 +48,6 @@ export default function Why() {
       }
     },
     {
-      img: Why03,
       name: 'One platform for all enterprise AI',
       quote: 'Implement any enterprise AI use-case and streamline your AI workflows. Build your AI stack with a single, open platform on your own, existing infrastructure, turning your databases into your artifact store and metadata store. Stop switching between different deployments and environments.',
       placeholderImage: PlaceholderImage03,
@@ -84,7 +81,9 @@ export default function Why() {
                   <div className="md:w-1/2">
                     <h3 className="font-inter-tight text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900 mb-4">{item.name}</h3>
                     <p className="text-sm text-zinc-500 mb-4">{item.quote}</p>
-                    <Image className="mt-4" src={item.img} alt={item.name} height={50} />
+                    {item.img && (
+                      <Image className="mt-4" src={item.img} alt={item.name} height={50} />
+                    )}
                     {item.button && (
                       <div className="mt-4">
                         <a className="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800 shadow" href={item.button.link}>{item.button.text}</a>
@@ -107,7 +106,9 @@ export default function Why() {
                   <div className="md:w-1/2 md:order-1">
                     <h3 className="font-inter-tight text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900 mb-4">{item.name}</h3>
                     <p className="text-sm text-zinc-500 mb-4">{item.quote}</p>
-                    <Image className="mt-4" src={item.img} alt={item.name} height={50} />
+                    {item.img && (
+                      <Image className="mt-4" src={item.img} alt={item.name} height={50} />
+                    )}
                     {item.button && (
                       <div className="mt-4">
                         <a className="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800  shadow" href={item.button.link}>{item.button.text}</a>
