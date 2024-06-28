@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ArrowPathIcon, ChartBarIcon, ClockIcon } from "@heroicons/react/24/outline";
 import Illustration from "@/public/images/enterpriseGrid.svg";
 
-export default function WhyChooseSuperduper() {
+export default function FeaturesAIStack() {
   return (
     <section className="relative">
       <div className="pt-10 pb-10 md:py-15">

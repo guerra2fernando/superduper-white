@@ -3,7 +3,7 @@ import Image from 'next/image'
 import HeroImage from '@/public/images/hero-image.png'
 import Stats from '@/components/stats'
 
-export default function HeroKey() {
+export default function HeroAIStack() {
   return (
     <section className="relative before:absolute before:inset-0 before:h-80 before:pointer-events-none before:bg-gradient-to-b before:from-white before:-z-10">
       <div className="pt-32 pb-14 md:pt-40  md:pb-14">
