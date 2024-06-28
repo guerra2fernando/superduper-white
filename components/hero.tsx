@@ -10,11 +10,10 @@ import Stats from '@/components/stats'
 const databases = [
   'Snowflake',
   'MongoDB',
-  'Postgres',
+  'PostgreSQL',
   'DuckDB',
   'SQLite',
   'MySQL',
-  'PostgreSQL'
 ]
 
 export default function Hero() {
