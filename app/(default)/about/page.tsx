@@ -23,12 +23,14 @@ export const metadata = {
 import Cta from '@/components/cta'
 import HeroAbout from '@/components/hero-about'
 import LeadershipTeam from '@/components/leadership'
+import Community from '../contact/community'
 
 export default function Home() {
   return (
     <>
       <HeroAbout />
       <LeadershipTeam />
+      <Community />
       <Cta />
     </>
   )

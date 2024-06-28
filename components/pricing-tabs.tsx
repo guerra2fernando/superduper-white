@@ -63,23 +63,23 @@ export default function PricingTabs() {
               <div className="max-w-2xl w-full grid gap-6 items-start lg:max-w-none lg:grid-cols-3">
                 {pricingDetails.map((plan, index) => (
                   <div key={index} className="h-full">
-                    <div className={`relative flex flex-col h-full p-6 rounded-lg ${index === 1 ? 'bg-zinc-800' : 'border border-transparent [background:linear-gradient(theme(colors.zinc.50),theme(colors.zinc.50))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box]'}`}>
+                    <div className="relative flex flex-col h-full p-6 rounded-lg border border-transparent [background:linear-gradient(theme(colors.zinc.50),theme(colors.zinc.50))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box]">
                       <div className="mb-4">
-                        <div className={`text-lg ${index === 1 ? 'text-zinc-200' : 'text-zinc-900'} font-semibold mb-1`}>{plan.title}</div>
+                        <div className="text-lg text-zinc-900 font-semibold mb-1">{plan.title}</div>
                         <div className="font-inter-tight inline-flex items-baseline mb-2">
-                          <span className={`font-bold text-3xl ${index === 1 ? 'text-zinc-200' : 'text-zinc-900'}`}>{plan.price}</span>
+                          <span className="font-bold text-3xl text-zinc-900">{plan.price}</span>
                         </div>
-                        <div className={`text-${index === 1 ? 'zinc-500' : 'zinc-500'}`}>{plan.description}</div>
+                        <div className="text-zinc-500">{plan.description}</div>
                         <div className="mt-8">
-                          <a className={`btn w-full shadow ${index === 1 ? 'text-zinc-600 bg-white hover:text-zinc-900' : 'text-zinc-100 bg-gradient-to-r from-zinc-700 to-zinc-900 hover:from-zinc-900 hover:to-zinc-900'}`} href={plan.link}>
+                          <a className="btn w-full shadow text-zinc-100 bg-gradient-to-r from-zinc-700 to-zinc-900 hover:from-zinc-900 hover:to-zinc-900" href={plan.link}>
                             {plan.button}
                           </a>
                         </div>
                       </div>
                       <div className="grow">
-                        <ul className={`text-${index === 1 ? 'zinc-400' : 'zinc-600'} text-sm space-y-3 grow`}>
+                        <ul className="text-zinc-600 text-sm space-y-3 grow">
                           {plan.features.map((feature, i) => (
-                            <li key={i} className={`flex items-center p-2 ${index === 1 ? (i % 2 === 0 ? 'bg-[rgba(34,34,34,1)]' : 'bg-zinc-900') : (i % 2 === 0 ? 'bg-zinc-100' : 'bg-[rgba(232,232,232,1)]')} rounded-md`}>
+                            <li key={i} className={`flex items-center p-2 ${i % 2 === 0 ? 'bg-zinc-100' : 'bg-[rgba(232,232,232,1)]'} rounded-md`}>
                               <CheckIcon className="w-5 h-5 text-emerald-500 mr-3" />
                               {feature}
                             </li>
@@ -87,7 +87,7 @@ export default function PricingTabs() {
                         </ul>
                       </div>
                       <div className="mt-8">
-                        <a className={`btn w-full shadow ${index === 1 ? 'text-zinc-600 bg-white hover:text-zinc-900' : 'text-zinc-100 bg-gradient-to-r from-zinc-700 to-zinc-900 hover:from-zinc-900 hover:to-zinc-900'}`} href={plan.link}>
+                        <a className="btn w-full shadow text-zinc-100 bg-gradient-to-r from-zinc-700 to-zinc-900 hover:from-zinc-900 hover:to-zinc-900" href={plan.link}>
                           {plan.button}
                         </a>
                       </div>

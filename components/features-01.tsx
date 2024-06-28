@@ -4,10 +4,11 @@ import { useState, useRef, useEffect } from 'react'
 import { Transition } from '@headlessui/react'
 import Image from 'next/image'
 import FeatureIllustration from '@/public/images/feature-illustration.png'
-import Buildanappimg from '@/public/images/buildanapp.png'
-import Exportimg from '@/public/images/export.png'
-import Doneimg from '@/public/images/done.png'
-import Shipimg from '@/public/images/ship.png'
+import Diagram1 from '@/public/images/diagram-1.png'
+import Diagram2 from '@/public/images/diagram-2.png'
+import Diagram3 from '@/public/images/diagram-3.png'
+import Diagram4 from '@/public/images/diagram-4.png'
+import Diagram5 from '@/public/images/diagram-5.png'
 
 import FeatureImg from '@/public/images/feature-illustration.png'
 import { Sonsie_One } from 'next/font/google'
@@ -96,98 +97,38 @@ export default function Features01() {
                     <path d="M8.667.186H2.675a.999.999 0 0 0 0 1.998h3.581L.971 7.469a.999.999 0 1 0 1.412 1.412l5.285-5.285v3.58a.999.999 0 1 0 1.998 0V1.186a.999.999 0 0 0-.999-.999Z" />
                   </svg>
                 </div>
-                <div className="text-sm text-zinc-500">Reuse your application as a template and implement business logic directly in the config file without touching the code.</div>
+                <div className="text-sm text-zinc-500">Reuse your application as a template and implement business logic directly in the config file of your application.</div>
               </button >
             </div>
             {/* Tabs items */}
-            <div className="relative lg:max-w-none [mask-image:linear-gradient(white_0%,white_calc(100%-40px),_transparent_calc(100%-1px))] -mx-6">
-              <div className="relative flex flex-col pt-12 md:pt-20 mx-6" ref={tabs}>
-                {/* Item 1 */}
-                <Transition
-                  show={tab === 1}
-                  className="w-full text-center"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterFrom="opacity-0 -translate-y-4"
-                  enterTo="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveFrom="opacity-100 translate-y-0"
-                  leaveTo="opacity-0 translate-y-4"
-                  beforeEnter={() => heightFix()}
-                  unmount={false}                      
-                >
-                  <div className="inline-flex relative align-top">
-                    <Image className="rounded-t-lg border border-transparent [background:linear-gradient(theme(colors.white),theme(colors.white))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] box-content shadow-2xl" src={Buildanappimg} width={600} height={360} alt="Feature 01" />
-                  </div>
-                </Transition>
-                {/* Item 2 */}
-                <Transition
-                  show={tab === 2}
-                  className="w-full text-center"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterFrom="opacity-0 -translate-y-4"
-                  enterTo="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveFrom="opacity-100 translate-y-0"
-                  leaveTo="opacity-0 translate-y-4"
-                  beforeEnter={() => heightFix()}
-                  unmount={false}                      
-                >
-                  <div className="inline-flex relative align-top">
-                    <Image className="rounded-t-lg border border-transparent [background:linear-gradient(theme(colors.white),theme(colors.white))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] box-content shadow-2xl" src={Exportimg} width={600} height={360} alt="Feature 02" />
-                  </div>
-                </Transition>
-                {/* Item 3 */}
-                <Transition
-                  show={tab === 3}
-                  className="w-full text-center"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterFrom="opacity-0 -translate-y-4"
-                  enterTo="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveFrom="opacity-100 translate-y-0"
-                  leaveTo="opacity-0 translate-y-4"
-                  beforeEnter={() => heightFix()}
-                  unmount={false}                      
-                >
-                  <div className="inline-flex relative align-top">
-                    <Image className="rounded-t-lg border border-transparent [background:linear-gradient(theme(colors.white),theme(colors.white))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] box-content shadow-2xl" src={Shipimg} width={600} height={360} alt="Feature 03" />
-                  </div>
-                </Transition>
-                {/* Item 4 */}
-                <Transition
-                  show={tab === 4}
-                  className="w-full text-center"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterFrom="opacity-0 -translate-y-4"
-                  enterTo="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveFrom="opacity-100 translate-y-0"
-                  leaveTo="opacity-0 translate-y-4"
-                  beforeEnter={() => heightFix()}
-                  unmount={false}                      
-                >
-                  <div className="inline-flex relative align-top">
-                    <Image className="rounded-t-lg border border-transparent [background:linear-gradient(theme(colors.white),theme(colors.white))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] box-content shadow-2xl" src={Doneimg} width={600} height={360} alt="Feature 04" />
-                  </div>
-                </Transition>
-                <Transition
-                  show={tab === 5}
-                  className="w-full text-center"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterFrom="opacity-0 -translate-y-4"
-                  enterTo="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveFrom="opacity-100 translate-y-0"
-                  leaveTo="opacity-0 translate-y-4"
-                  beforeEnter={() => heightFix()}
-                  unmount={false}                      
-                >
-                  <div className="inline-flex relative align-top">
-                    <Image className="rounded-t-lg border border-transparent [background:linear-gradient(theme(colors.white),theme(colors.white))_padding-box,linear-gradient(120deg,theme(colors.zinc.300),theme(colors.zinc.100),theme(colors.zinc.300))_border-box] box-content shadow-2xl" src={Doneimg} width={600} height={360} alt="Feature 04" />
-                  </div>
-                </Transition>
-              </div>
-            </div>
+            <div className="relative lg:max-w-none -mx-6 pt-3">
+  <div className="relative mx-6" ref={tabs} style={{ height: '582px' }}>
+    {[1, 2, 3, 4, 5].map((item) => (
+      <Transition
+        key={item}
+        show={tab === item}
+        className="w-full text-center absolute top-0 left-0"
+        enter="transition ease-in-out duration-100"
+        enterFrom="opacity-70"
+        enterTo="opacity-100"
+        leave="transition ease-in-out duration-100"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-70"
+        unmount={false}
+      >
+        <div className="inline-flex relative align-top">
+          <Image 
+            className="box-content" 
+            src={item === 1 ? Diagram1 : item === 2 ? Diagram2 : item === 3 ? Diagram3 : item === 4 ? Diagram4 : Diagram5} 
+            width={1200} 
+            height={582} 
+            alt={`Feature ${item.toString().padStart(2, '0')}`} 
+          />
+        </div>
+      </Transition>
+    ))}
+  </div>
+</div>
           </div>
         </div>
       </div>

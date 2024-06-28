@@ -21,7 +21,7 @@ export default function HeroServices() {
                 We know what it takes to implement complex AI in an enterprise context. Our data science and devops experts are here to help you implement applications that solve your specific problems optimally. 
                 </p>
                 
-                <div className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <div className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-20">
                   <div>
                     <Link className="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow" href="/contact">Contact us</Link>
                   </div>
