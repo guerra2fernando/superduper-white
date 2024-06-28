@@ -23,7 +23,6 @@ export default function Why() {
 
   const items: Item[] = [
     {
-      img: Why01,
       name: 'Faster development of more robust AI applications',
       quote: 'Implement even the most complex AI applications on your database as workflow-as-code using Superduper declarative Python interface and integrations with major AI frameworks, model hubs, and APIs. Move fast with our abstractions, building blocks, and templates, while still being able to drill down to any layer of customization.',
       placeholderImage: PlaceholderImage01,

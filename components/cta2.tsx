@@ -6,20 +6,7 @@ import Illustration from "@/public/images/enterpriseGrid.svg";
 export default function Cta() {
   return (
     <section className="relative">
-      {/* Illustration */}
-      <div
-        className="absolute inset-0 -z-10 pointer-events-none"
-        aria-hidden="true"
-      >
-        <Image
-          src={Illustration}
-          className="max-w-none opacity-30 object-cover object-center"
-          layout="fill"
-          priority
-          alt="Hero Illustration"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white"></div>
-      </div>
+      
       <div className="relative py-12 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="relative max-w-3xl mx-auto text-center pb-12 md:pb-16">

@@ -4,6 +4,9 @@ import { useState, useEffect } from 'react'
 import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outline'
 import Logo from './logo'
 import Link from 'next/link'
+import ContactMenu from "@/public/images/scale.png";
+import Image from 'next/image'
+
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -119,7 +122,7 @@ export default function Header() {
                 <Link className="font-medium text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer font-semibold" href="/about">About</Link>
               </li>
               <li>
-                <div id="solutions-link" className="font-medium mt-1 text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer font-semibold">
+                <div id="solutions-link" className="font-medium mt-[0.17rem] text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer font-semibold">
                   Solutions
                 </div>
               </li>
@@ -160,41 +163,55 @@ export default function Header() {
         style={{ top: '100%' }}
       >
         <div className="max-w-6xl mx-auto p-4 grid grid-cols-4 gap-4">
+          
+        <ul>
+            <li className="px-4 py-2 hover:bg-gray-200 rounded">
+            <Link href="/solutions/ai-stack">
+                <div className="font-bold text-sm text-gray-800">AI Stack Modernization
+                </div>
+              </Link>
+              </li>
+              <li className="px-4 py-2 hover:bg-gray-200 rounded">
+            <Link href="/solutions/architecture">
+                <div className="font-bold text-sm text-gray-800 ">Architecture Simplification
+                </div>
+              </Link>
+              </li>
+          </ul>
+          
           <ul>
+            <li className="px-4 py-2 font-bold text-sm text-gray-800 rounded">Solutions by Business Unit</li>
+            <li className="px-4 py-2 hover:bg-gray-200 rounded text-sm text-gray-600 ">Human Resources</li>
+            <li className="px-4 py-2 hover:bg-gray-200 rounded text-sm text-gray-600 ">Finance</li>
+            <li className="px-4 py-2 hover:bg-gray-200 rounded text-sm text-gray-600 ">Product</li>
+            <li className="px-4 py-2 hover:bg-gray-200 rounded text-sm text-gray-600 ">Legal</li>
+          </ul>
+          <ul>
+          <li className="px-4 py-2 font-bold text-sm text-gray-800 rounded">Solutions by Use Cases</li>
+
             <li className="px-4 py-2 hover:bg-gray-200 rounded">
               <Link href="/solutions/key-value">
-                <div className="text-sm text-gray-600 font-semibold">Key-Value Extraction</div>
-                <div className="text-xs text-gray-400">Document Extraction + RAG</div>
+                <div className="text-sm text-gray-600 ">Key-Value Extraction</div>
               </Link>
             </li>
             <li className="px-4 py-2 hover:bg-gray-200 rounded">
               <Link href="/solutions/vector-search">
-                <div className="text-sm text-gray-600 font-semibold">Vector Embedding Generation</div>
-                <div className="text-xs text-gray-400">Generate Vectors from your data</div>
+                <div className="text-sm text-gray-600 ">Vector Embedding Generation</div>
               </Link>
             </li>
             <li className="px-4 py-2 hover:bg-gray-200 rounded">
               <Link href="/solutions/in-database-rag">
-                <div className="text-sm text-gray-600 font-semibold">In-Database RAG</div>
-                <div className="text-xs text-gray-400">Chat with your data</div>
+                <div className="text-sm text-gray-600 ">In-Database RAG</div>
               </Link>
             </li>
           </ul>
+          
           <ul>
-            <li className="px-4 py-2 hover:bg-gray-200 rounded">Lorem ipsum</li>
-            <li className="px-4 py-2 hover:bg-gray-200 rounded">Lorem ipsum</li>
-            <li className="px-4 py-2 hover:bg-gray-200 rounded">Lorem ipsum</li>
-          </ul>
-          <ul>
-            <li className="px-4 py-2 hover:bg-gray-200 rounded">Lorem ipsum</li>
-            <li className="px-4 py-2 hover:bg-gray-200 rounded">Lorem ipsum</li>
-            <li className="px-4 py-2 hover:bg-gray-200 rounded">Lorem ipsum</li>
-          </ul>
-          <ul>
-            <li className="px-4 py-2 hover:bg-gray-200 rounded">Lorem ipsum</li>
-            <li className="px-4 py-2 hover:bg-gray-200 rounded">Lorem ipsum</li>
-            <li className="px-4 py-2 hover:bg-gray-200 rounded">Lorem ipsum</li>
-          </ul>
+            <li><Link href="/">
+                <Image src={ContactMenu} alt="Contact Menu" />
+              </Link>
+              </li>
+              </ul>
         </div>
       </div>
     </header>
