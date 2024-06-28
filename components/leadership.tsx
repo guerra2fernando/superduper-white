@@ -20,26 +20,26 @@ export default function LeadershipTeam() {
 
   const teamMembers: TeamMember[] = [
     {
+          name: 'Timo Hagenow',
+          role: 'Co-founder & CEO',
+          image: timoImage,
+          linkedin: 'https://www.linkedin.com/in/timohagenow/'
+    },
+    {
       name: 'Duncan Blythe',
-      role: 'Co-founder & CEO',
+      role: 'Co-founder & CTO',
       image: duncanImage,
       linkedin: 'https://www.linkedin.com/in/duncan-blythe-71877312b/'
     },
     {
-      name: 'Timo Hagenow',
-      role: 'Co-founder & CTO',
-      image: timoImage,
-      linkedin: 'https://www.linkedin.com/in/timohagenow/'
-    },
-    {
       name: 'Fotis Nikolaidis',
-      role: 'Head of Engineering',
+      role: 'Head of Infrastructure',
       image: fotisImage,
       linkedin: 'https://www.linkedin.com/in/fotis-nikolaidis-444a6634/'
     },
     {
       name: 'Guy Figdor',
-      role: 'Head of Product',
+      role: 'Board Member',
       image: guyImage,
       linkedin: 'https://www.linkedin.com/in/guyfig/'
     }
