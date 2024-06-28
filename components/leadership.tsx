@@ -3,6 +3,7 @@
 import Image, { StaticImageData } from 'next/image'
 import { useState } from 'react'
 
+import Illustration from "@/public/images/enterpriseGrid.svg";
 import duncanImage from '@/public/images/duncan.png'
 import timoImage from '@/public/images/timo.png'
 import fotisImage from '@/public/images/fotis.jpg'
@@ -47,9 +48,24 @@ export default function LeadershipTeam() {
 
   return (
     <section className="relative">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        {/* Illustration */}
+        <div
+          className="absolute inset-0 -z-10 -mx-28 rounded-b-[3rem] pointer-events-none mt-40"
+          style={{ top: '-200px' }}
+          aria-hidden="true"
+        >
+          <Image
+            src={Illustration}
+            className="max-w-none opacity-20"
+            width={2146}
+            priority
+            alt="Hero Illustration"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-transparent to-white"></div>
+        </div>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
         <div className="py-12 md:py-20">
-          <h2 className="font-inter-tight text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900 pb-4 text-center mb-12">
+          <h2 className="font-inter-tight text-3xl md:text-4xl font-bold mb-14 bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900">
             Leadership Team
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
