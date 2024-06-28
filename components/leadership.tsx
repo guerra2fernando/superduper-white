@@ -39,7 +39,7 @@ export default function LeadershipTeam() {
       linkedin: 'https://www.linkedin.com/in/fotis-nikolaidis-444a6634/'
     },
     {
-      name: 'Guy Figdor',
+      name: 'Guy Fighel',
       role: 'Board Member',
       image: guyImage,
       linkedin: 'https://www.linkedin.com/in/guyfig/'
