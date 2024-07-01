@@ -5,13 +5,22 @@ import Image from 'next/image'
 import { CheckIcon } from '@heroicons/react/24/solid'
 import PricingDecoration from '@/public/images/pricing-decoration.png'
 
+interface DescriptionProps {
+  text: string;
+}
+
+// New component for rendering description with HTML
+const Description: React.FC<DescriptionProps> = ({ text }) => (
+  <div className="text-zinc-500" dangerouslySetInnerHTML={{ __html: text }} />
+)
+
 export default function PricingTabs() {
   const [tier, setTier] = useState<number>(0)
   const pricingDetails = [
     {
-      title: "Open Source Framework",
+      title: "Open-Source Framework",
       price: "Free",
-      description: "Develop AI applications using a versatile and modular open-source framework designed for flexibility and innovation.",
+      description: "A versatile and modular open-source framework designed for building AI apps and workflows with your existing databases.",
       button: "Get Started",
       features: [
         "Perfect for small-scale projects and initial prototyping",
@@ -23,32 +32,30 @@ export default function PricingTabs() {
       link: "https://github.com/SuperDuperDB/superduperdb"
     },
     {
-      title: "Cloud-Native Platform",
+      title: "Enterprise (Self-hosted)",
       price: "Pricing upon request",
-      description: "Empower your enterprise AI solutions with a self-hosted Kubernetes platform offering scalable runtime and frontend capabilities.",
+      description: "A cloud-native Kubernetes platform offering scalable runtime, a Web UI as well as preconfigured AI applications and workflows.",
       button: "Contact Us",
       features: [
-        "Elastic and auto-scaling infrastructure",
+        "Perfect for enterprise teams of any size",
         "Deployable across public clouds, private clouds, or on-premises",
-        "Comes with preconfigured AI application and workflow templates",
+        "Elastic and auto-scaling infrastructure",
+        "Preconfigured AI applications and workflow templates",
         "Comprehensive admin and configuration web interface",
-        "Seamless integration with external databases",
-        "Business Consulting / Scalable and Real-Time Execution"
+        "Custom AI development / Data science consulting"
       ],
       link: "/contact"
     },
     {
-      title: "Snowflake-Native Platform",
+      title: "Snowflake Native App",
       price: "Pricing upon request",
-      description: "A tailored Cloud-Native Platform optimized for processing data directly within the Snowflake environment.",
+      description: "A Snowflake native app with all features of the enterprise version.<br /><br />",
       button: "Contact Us",
       features: [
-        "Includes all features of the Cloud-Native Platform",
-        "Direct integration with existing Snowflake databases",
-        "Runs in Snowpark Container Services, eliminating data transfer hassles",
-        "Delivered as a Snowflake NativeApp, ensuring isolation among multiple users",
+        "Perfect for Snowflake users",
         "More cost-efficient compared to traditional cloud providers",
-        "Business Consulting / Secure and In-Situ Execution"
+        "Runs in Snowpark Container Services, eliminating data transfer hassles",
+        "Delivered as a Snowflake Native App, ensuring isolation among multiple users"
       ],
       link: "/contact"
     }
@@ -69,7 +76,7 @@ export default function PricingTabs() {
                         <div className="font-inter-tight inline-flex items-baseline mb-2">
                           <span className="font-bold text-3xl text-zinc-900">{plan.price}</span>
                         </div>
-                        <div className="text-zinc-500">{plan.description}</div>
+                        <Description text={plan.description} />
                         <div className="mt-8">
                           <a className="btn w-full shadow text-zinc-100 bg-gradient-to-r from-zinc-700 to-zinc-900 hover:from-zinc-900 hover:to-zinc-900" href={plan.link}>
                             {plan.button}
