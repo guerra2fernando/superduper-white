@@ -1,7 +1,6 @@
 "use client";
 
-
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import HeroImage from '@/public/images/hero-image.png'
@@ -18,19 +17,27 @@ const databases = [
 
 export default function Hero() {
   const [currentDb, setCurrentDb] = useState(0)
-  const [isVisible, setIsVisible] = useState(true)
+  const [displayText, setDisplayText] = useState('')
+  const [isDeleting, setIsDeleting] = useState(false)
+
+  const type = useCallback(() => {
+    const fullText = databases[currentDb]
+    setDisplayText(prev => 
+      isDeleting ? fullText.substring(0, prev.length - 1) : fullText.substring(0, prev.length + 1)
+    )
+
+    if (!isDeleting && displayText === fullText) {
+      setTimeout(() => setIsDeleting(true), 1500)
+    } else if (isDeleting && displayText === '') {
+      setIsDeleting(false)
+      setCurrentDb((prev) => (prev + 1) % databases.length)
+    }
+  }, [currentDb, isDeleting, displayText])
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setIsVisible(false)
-      setTimeout(() => {
-        setCurrentDb((prev) => (prev + 1) % databases.length)
-        setIsVisible(true)
-      }, 500) // Wait for fade out before changing text
-    }, 2500) // Total time for each database (2s visible + 0.5s transition)
-
-    return () => clearInterval(interval)
-  }, [])
+    const timer: NodeJS.Timeout = setTimeout(type, isDeleting ? 50 : 100)
+    return () => clearTimeout(timer)
+  }, [type, isDeleting])
 
   return (
     <section className="relative before:absolute before:inset-0 before:h-80 before:pointer-events-none before:bg-gradient-to-b before:from-white before:-z-10">
@@ -42,13 +49,8 @@ export default function Hero() {
               <div className="text-center">
                 <h1 className="font-inter-tight text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900 pb-4">
                 Implement custom AI solutions with <em className="relative not-italic inline-flex justify-center items-end text-zinc-900">
-                  <span className={`transition-opacity duration-500 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
-                    {databases[currentDb]}
-                  </span>
-                <svg className="absolute fill-zinc-300 w-[calc(100%+1rem)] -z-10" xmlns="http://www.w3.org/2000/svg" width="120" height="10" viewBox="0 0 120 10" aria-hidden="true" preserveAspectRatio="none">
-                  <path d="M118.273 6.09C79.243 4.558 40.297 5.459 1.305 9.034c-1.507.13-1.742-1.521-.199-1.81C39.81-.228 79.647-1.568 118.443 4.2c1.63.233 1.377 1.943-.17 1.89Z" />
-                </svg>
-              </em>
+                  <span className="min-w-[200px] text-left">{displayText}<span className="animate-blink">|</span></span>
+                </em>
                 </h1>
                 <p className="text-lg text-zinc-500 mb-8">
                 Superduper is an end-to-end platform for integrating AI models and workflows directly with major databases - for more flexible, secure and scalable enterprise AI adoption. 

@@ -327,3 +327,13 @@ animation: slideToLeft2 12s linear infinite; /* Adjust duration and other proper
   color: #a5a5a5;
   font-size: 0.875rem; /* Match the text-sm size */
 }
+
+@keyframes blink {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 0.7s infinite;
+}
