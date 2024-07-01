@@ -111,7 +111,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="mt-5">
-                    <button className="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow">Request Demo</button>
+                    <button className="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow">Request demo</button>
                   </div>
                 </form>
                 <div className="text-center mt-6">

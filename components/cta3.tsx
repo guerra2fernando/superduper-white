@@ -21,7 +21,7 @@ export default function Cta3() {
             <p className="text-lg text-zinc-500 mb-8">Reach out to us to learn more about Superduper, our enterprise options. Discuss your AI use-cases and challenges and with our AI and data science experts and find out how we can help you to solve them.</p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4">
             <div>
-                <a className="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow" href="/contact">Schedule a Demo</a>
+                <a className="btn text-zinc-100 bg-zinc-900 hover:bg-zinc-800 w-full shadow" href="/contact">Schedule a demo</a>
               </div>
               <div>
                 <a className="btn text-zinc-600 bg-white hover:text-zinc-900 w-full shadow" href="https://github.com/SuperduperDB/superduperdb">Open Source on Github</a>
