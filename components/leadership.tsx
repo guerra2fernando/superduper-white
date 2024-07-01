@@ -66,7 +66,8 @@ export default function LeadershipTeam() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 text-center">
         <div className="py-12 md:py-20">
           <h2 className="font-inter-tight text-3xl md:text-4xl font-bold mb-14 bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900">
-            Leadership Team
+          Meet our leadership team
+
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member, index) => (

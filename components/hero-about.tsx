@@ -16,9 +16,9 @@ export default function HeroAbout() {
               Our mission
 </div>
                 <h1 className="font-inter-tight text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900 pb-4">
-                Simplify how businesses build and operate world-changing applications</h1>
+                Simplify how organizations build and operate AI with their data</h1>
                 <p className="text-lg text-zinc-500 mb-8">
-                AI is transforming businesses across industries. However, integrating AI with existing databases remains a challenge. SuperDuperDB bridges this gap, enabling seamless AI implementation directly within your database infrastructure. We empower organizations to leverage their data for AI applications without the complexity of traditional setups. Our platform simplifies AI deployment, enhances data security, and accelerates development cycles. With SuperDuperDB, businesses can unlock the full potential of their data, creating innovative AI solutions that drive competitive advantage.  <a href='https://join.com/companies/superduperdb' target='_blank'>Join us!</a>  </p>
+                AI is transforming businesses across industries. However, integrating AI with existing databases remains a challenge. SuperDuperDB bridges this gap, enabling seamless AI implementation directly within your database infrastructure. We empower organizations to leverage their data for AI applications without the complexity of traditional setups. Our platform simplifies AI deployment, enhances data security, and accelerates development cycles. With SuperDuperDB, businesses can unlock the full potential of their data, creating innovative AI solutions that drive competitive advantage.  <a href='https://join.com/companies/superduperdb' className='underline' target='_blank'>Join us!</a>  </p>
                 
                
               </div>
