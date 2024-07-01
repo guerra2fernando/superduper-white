@@ -25,13 +25,13 @@ export const metadata = {
 import Hero from '@/components/hero'
 import Features01 from '@/components/features-01'
 import Features02 from '@/components/features-02'
-import Cta from '@/components/cta'
 import DatabasesSec from '@/components/databases'
 import Loop from '@/components/loop'
 import Why from '@/components/feat'
 import IntegrationsSec from '@/components/integrations'
 import TestimonialsCarousel from '@/components/testimonials-carousel'
 import UseCasesSection from '@/components/use-cases'
+import Cta3 from '@/components/cta3'
 
 export default function Home() {
   return (
@@ -45,7 +45,7 @@ export default function Home() {
       <IntegrationsSec />
       <Features01 />
       <TestimonialsCarousel />
-      <Cta />
+      <Cta3 />
     </>
   )
 }

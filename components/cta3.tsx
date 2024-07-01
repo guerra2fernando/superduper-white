@@ -15,7 +15,7 @@ export default function Cta3() {
                 <Image src={Logo} width={60} height={60} alt="Logo" />
               </Link>
             </div>
-            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900 mb-4">Start implementing AI with on your data today
+            <h2 className="font-inter-tight text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900 mb-4">Start implementing AI <br />with on your data today
 
             </h2>
             <p className="text-lg text-zinc-500 mb-8">Reach out to us to learn more about Superduper, our enterprise options. Discuss your AI use-cases and challenges and with our AI and data science experts and find out how we can help you to solve them.</p>

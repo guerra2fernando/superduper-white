@@ -20,11 +20,10 @@ export const metadata = {
 }
 
 
-import Cta from '@/components/cta'
 import HeroAbout from '@/components/hero-about'
 import LeadershipTeam from '@/components/leadership'
-import Community from '../contact/community'
 import Investors from '@/components/investors'
+import Cta3 from '@/components/cta3'
 
 export default function Home() {
   return (
@@ -32,7 +31,7 @@ export default function Home() {
       <HeroAbout />
       <LeadershipTeam />
       <Investors />
-      <Community />
+      <Cta3 />
     </>
   )
 }
