@@ -61,9 +61,7 @@ export default function Header() {
             <nav className="md:hidden bg-gray-100 w-full absolute top-16 left-0 z-20 p-4">
               <ul className="flex flex-col items-start pl-4">
                 
-              <li className="w-full border-b border-gray-300">
-                  <Link className="font-medium text-sm block py-2 text-slate-500 hover:bg-gray-200 w-full text-left font-semibold" href="/about">About</Link>
-                </li>
+              
                 <li className="w-full border-b border-gray-300">
                   <button onClick={() => setMegamenuOpen(!megamenuOpen)} className="w-full flex items-center justify-between py-2 text-slate-500 text-sm font-semibold">
                     <span>Solutions</span>
@@ -106,6 +104,9 @@ export default function Header() {
                 <li className="w-full border-b border-gray-300">
                   <Link className="font-medium text-sm block py-2 text-slate-500 hover:bg-gray-200 w-full text-left font-semibold" href="https://docs.superduperdb.com/">Docs</Link>
                 </li>
+                <li className="w-full border-b border-gray-300">
+                  <Link className="font-medium text-sm block py-2 text-slate-500 hover:bg-gray-200 w-full text-left font-semibold" href="/about">About</Link>
+                </li>
                 <li className="w-full">
                   <Link className="font-medium text-sm block py-2 text-slate-500 hover:bg-gray-200 w-full text-left font-semibold" href="/contact">Contact</Link>
                 </li>
@@ -118,9 +119,6 @@ export default function Header() {
             {/* Desktop menu links */}
             <ul className="flex grow justify-center flex-wrap items-center">
               
-            <li>
-                <Link className="font-medium text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer font-semibold" href="/about">About</Link>
-              </li>
               <li>
                 <div id="solutions-link" className="font-medium mt-[0.17rem] text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer font-semibold">
                   Solutions
@@ -138,6 +136,10 @@ export default function Header() {
               </li>
               <li>
                 <Link className="font-medium text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer font-semibold" href="https://docs.superduperdb.com/">Docs</Link>
+              </li>
+              
+            <li>
+                <Link className="font-medium text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer font-semibold" href="/about">About</Link>
               </li>
               <li>
                 <Link className="font-medium text-sm text-slate-500 hover:text-slate-800 py-2 mx-4 lg:mx-5 transition duration-150 ease-in-out cursor-pointer font-semibold" href="/contact">Contact</Link>
