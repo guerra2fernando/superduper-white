@@ -1,31 +1,27 @@
 'use client'
 
 import { useState, useRef, useEffect } from 'react'
-import { Transition } from '@headlessui/react'
 import Image from 'next/image'
-import FeatureIllustration from '@/public/images/feature-illustration.png'
+import Diagram from '@/public/images/diagram.png'
 import Diagram1 from '@/public/images/diagram-1.png'
 import Diagram2 from '@/public/images/diagram-2.png'
 import Diagram3 from '@/public/images/diagram-3.png'
 import Diagram4 from '@/public/images/diagram-4.png'
 import Diagram5 from '@/public/images/diagram-5.png'
 
-import FeatureImg from '@/public/images/feature-illustration.png'
-import { Sonsie_One } from 'next/font/google'
-
 export default function Features01() {
+  const [tab, setTab] = useState<number>(0)  // 0 represents the default state
 
-  const [tab, setTab] = useState<number>(1)
-
-  const tabs = useRef<HTMLDivElement>(null)
-
-  const heightFix = () => {
-    if (tabs.current && tabs.current.parentElement) tabs.current.parentElement.style.height = `${tabs.current.clientHeight}px`
+  const getDiagram = () => {
+    switch(tab) {
+      case 1: return Diagram1;
+      case 2: return Diagram2;
+      case 3: return Diagram3;
+      case 4: return Diagram4;
+      case 5: return Diagram5;
+      default: return Diagram;
+    }
   }
-
-  useEffect(() => {
-    heightFix()
-  }, [])   
 
   return (
     <section className="relative bg-zinc-50">
@@ -36,7 +32,13 @@ export default function Features01() {
             <p className="text-lg text-zinc-500 mb-8">
             The Superduper formalism makes your applications and workflows flexible, configurable and reproducible, enabling you to transition from development to production seamlessly without any overhead. </p>
           </div>
+          
           <div>
+            {/* Diagram */}
+            <div className="mb-12">
+              <Image src={getDiagram()} width={1200} height={582} alt="Diagram" />
+            </div>
+
             {/* Tabs buttons */}
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4 md:gap-6">
               <button
@@ -100,35 +102,6 @@ export default function Features01() {
                 <div className="text-sm text-zinc-500">Reuse your application as a template and implement business logic directly in the config file of your application.</div>
               </button >
             </div>
-            {/* Tabs items */}
-            <div className="relative lg:max-w-none -mx-6 pt-3">
-  <div className="relative mx-6" ref={tabs} style={{ height: '582px' }}>
-    {[1, 2, 3, 4, 5].map((item) => (
-      <Transition
-        key={item}
-        show={tab === item}
-        className="w-full text-center absolute top-0 left-0"
-        enter="transition ease-in-out duration-100"
-        enterFrom="opacity-70"
-        enterTo="opacity-100"
-        leave="transition ease-in-out duration-100"
-        leaveFrom="opacity-100"
-        leaveTo="opacity-70"
-        unmount={false}
-      >
-        <div className="inline-flex relative align-top">
-          <Image 
-            className="box-content" 
-            src={item === 1 ? Diagram1 : item === 2 ? Diagram2 : item === 3 ? Diagram3 : item === 4 ? Diagram4 : Diagram5} 
-            width={1200} 
-            height={582} 
-            alt={`Feature ${item.toString().padStart(2, '0')}`} 
-          />
-        </div>
-      </Transition>
-    ))}
-  </div>
-</div>
           </div>
         </div>
       </div>
