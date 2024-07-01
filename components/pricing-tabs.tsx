@@ -49,7 +49,7 @@ export default function PricingTabs() {
     {
       title: "Snowflake Native App",
       price: "Pricing upon request",
-      description: "A Snowflake native app with all features of the enterprise version.<br /><br />",
+      description: "A Snowflake native app with all features of the enterprise version.<br /><br /><br />",
       button: "Contact Us",
       features: [
         "Perfect for Snowflake users",
@@ -92,11 +92,6 @@ export default function PricingTabs() {
                             </li>
                           ))}
                         </ul>
-                      </div>
-                      <div className="mt-8">
-                        <a className="btn w-full shadow text-zinc-100 bg-gradient-to-r from-zinc-700 to-zinc-900 hover:from-zinc-900 hover:to-zinc-900" href={plan.link}>
-                          {plan.button}
-                        </a>
                       </div>
                     </div>
                   </div>
