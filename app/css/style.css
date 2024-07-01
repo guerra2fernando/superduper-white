@@ -337,3 +337,32 @@ animation: slideToLeft2 12s linear infinite; /* Adjust duration and other proper
 .animate-blink {
   animation: blink 0.7s infinite;
 }
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+}
+
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 8rem; /* Adjust this value based on your design */
+  margin: 0 0.5rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

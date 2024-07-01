@@ -50,88 +50,49 @@ const integrations = [
     { src: stability, name: 'Stability' },
     { src: unstructured, name: 'Unstructured' },
     { src: vllm, name: 'Vllm' },
-    // duplicate the list to create the scrolling effect
-    { src: anthropic, name: 'Anthropic' },
-    { src: huggingface, name: 'Hugging Face' },
-    { src: openai, name: 'OpenAI' },
-    { src: googleBigQuery, name: 'BigQuery' },
-    { src: cohere, name: 'Cohere' },
-    { src: langchain, name: 'LangChain' },
-    { src: lancedb, name: 'LanceDB' },
-    { src: llamaindex, name: 'LlamaIndex' },
-    { src: scikitLearn, name: 'Scikit-Learn' },
-    { src: pytorch, name: 'PyTorch' },
-    { src: amazonBedrock, name: 'Bedrock' },
-    { src: jina, name: 'Jina' },
-    { src: keras, name: 'Keras' },
-    { src: mistral, name: 'Mistral' },
-    { src: numpy, name: 'Numpy' },
-    { src: ollama, name: 'Ollama' },
-    { src: opencv, name: 'OpenCV' },
-    { src: ray, name: 'Ray' },
-    { src: sentenceTransformers, name: 'SBERT' },
-    { src: spacy, name: 'spaCy' },
-    { src: stability, name: 'Stability' },
-    { src: unstructured, name: 'Unstructured' },
-    { src: vllm, name: 'Vllm' }
 ];
 
 const IntegrationsSec: React.FC = () => {
     return (
         <section className='pb-20 pt-10 relative'>
             <div
-        className="absolute inset-0 -z-10 -mx-28 rounded-b-[3rem] pointer-events-none mt-40"
-        style={{ top: "-200px" }}
-        aria-hidden="true"
-      >
-        <Image
-          src={Illustration}
-          className="max-w-none opacity-30"
-          width={2146}
-          priority
-          alt="Hero Illustration"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white"></div>
-      </div>
-           <div className="max-w-3xl mx-auto text-center">
-                        <h2 className="font-inter-tight text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900">
-                        Work with your favorite technologies and solutions 
-                        </h2>
-                        <p className="text-lg text-zinc-500 mb-8">
-                        Best-in-class support for the latest AI frameworks, libraries, models and APIs. By nature compatible with anything Python.                        </p>
-                    </div>
-                    <div className="mx-auto px-4 sm:px-6 relative" style={{ maxWidth: '96rem' }}>
+                className="absolute inset-0 -z-10 -mx-28 rounded-b-[3rem] pointer-events-none mt-40"
+                style={{ top: "-200px" }}
+                aria-hidden="true"
+            >
+                <Image
+                    src={Illustration}
+                    className="max-w-none opacity-30"
+                    width={2146}
+                    priority
+                    alt="Hero Illustration"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-white"></div>
+            </div>
+            <div className="max-w-3xl mx-auto text-center">
+                <h2 className="font-inter-tight text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-zinc-500 via-zinc-900 to-zinc-900">
+                    Work with your favorite technologies and solutions 
+                </h2>
+                <p className="text-lg text-zinc-500 mb-8">
+                    Best-in-class support for the latest AI frameworks, libraries, models and APIs. By nature compatible with anything Python.
+                </p>
+            </div>
+            <div className="mx-auto px-4 sm:px-6 relative" style={{ maxWidth: '96rem' }}>
                 <div className="overflow-hidden relative mask-fade">
                     <div className="flex space-x-6 animate-scroll-right items-center h-40">
-                        {[...integrations, ...integrations].map((integration, index) => (
-                            <div 
-                                key={index} 
-                                className="flex flex-col items-center justify-center min-w-[8rem] p-4 mx-2 rounded-lg shadow-light2 border border-gray-300 bg-white"
-                            >
-                                <Image
-                                    className="h-16 w-auto mb-2"
-                                    loading="lazy"
-                                    src={integration.src}
-                                    alt={`Logo of ${integration.name}`}
-                                />
-                                <p className="text-sm text-gray-700">{integration.name}</p>
-                            </div>
+                        {integrations.map((integration, index) => (
+                            <IntegrationItem key={index} integration={integration} />
+                        ))}
+                        {integrations.map((integration, index) => (
+                            <IntegrationItem key={`clone-${index}`} integration={integration} />
                         ))}
                     </div>
                     <div className="flex space-x-6 animate-scroll-left items-center h-40">
-                        {[...integrations, ...integrations].map((integration, index) => (
-                            <div 
-                                key={index} 
-                                className="flex flex-col items-center justify-center min-w-[8rem] p-4 mx-2 rounded-lg shadow-light2 border border-gray-300 bg-white"
-                            >
-                                <Image
-                                    className="h-16 w-auto mb-2"
-                                    loading="lazy"
-                                    src={integration.src}
-                                    alt={`Logo of ${integration.name}`}
-                                />
-                                <p className="text-sm text-gray-700">{integration.name}</p>
-                            </div>
+                        {integrations.map((integration, index) => (
+                            <IntegrationItem key={index} integration={integration} />
+                        ))}
+                        {integrations.map((integration, index) => (
+                            <IntegrationItem key={`clone-${index}`} integration={integration} />
                         ))}
                     </div>
                 </div>
@@ -139,5 +100,19 @@ const IntegrationsSec: React.FC = () => {
         </section>
     );
 };
+
+const IntegrationItem: React.FC<{ integration: { src: any; name: string } }> = ({ integration }) => (
+    <div 
+        className="flex flex-col items-center justify-center min-w-[8rem] p-4 mx-2 rounded-lg shadow-light2 border border-gray-300 bg-white"
+    >
+        <Image
+            className="h-16 w-auto mb-2"
+            loading="lazy"
+            src={integration.src}
+            alt={`Logo of ${integration.name}`}
+        />
+        <p className="text-sm text-gray-700">{integration.name}</p>
+    </div>
+);
 
 export default IntegrationsSec;
